@@ -6,9 +6,6 @@ PREREQUISITES:
 - biopython
 - matplotlib
 
-
-
-
 ==============================================================================
 
 GraPhlAn is a software tool for producing high-quality circular 
@@ -20,9 +17,60 @@ phylogenetically- and taxonomically-driven investigation.
 
 
 ==============================================================================
+	INSTALLATION
+..............................................................................
+
+GraPhlAn is available in bitbucket and should be obtained using Mercurial 
+(http://mercurial.selenic.com/) at https://bitbucket.org/nsegata/graphlan/
+
+
+In a Unix environment, this means you have
+to type:
+$ hg clone ssh://hg@bitbucket.org/nsegata/graphlan
+or
+$ hg clone https://hg@bitbucket.org/nsegata/graphlan
+
+This will download the GraPhlAn repository locally in the "graphlan" 
+subfolder. You then have to put this subfolder into the system path so that
+you can use GraPhlAn from any location in your system:
+$ export PATH=`pwd`/graphlan/:$PATH
+
+Adding the above line into the bash configuration file will make the path 
+addition permanent.
+
+For Windows or MacOS systems a similar proedure should be followed. Is is also
+possible (but not recommende) to obtain the sofware using the download link
+availabe at https://bitbucket.org/nsegata/graphlan/src ("get source" on the
+top right corner).
+
+
+
+==============================================================================
+	PREREQUISITES
+..............................................................................
+
+You need to have the following programs and libraries installed:
+- python 2.7 or higher ( http://www.python.org/ )
+- the biopython python library 1.6 or higher ( http://biopython.org )
+- the matplotlib python library 1.1 or higher 
+  ( http://matplotlib.sourceforge.net )
+
+
+
+==============================================================================
+	USAGE
+..............................................................................
+
+
+
+
+==============================================================================
+	COMMAND AND SYNTAX OF THE ANNOTATION FILE
+..............................................................................
+
 
 ------------------------------------------------------------------------------
-GLOBAL TREE OPTIONS:
+    GLOBAL TREE OPTIONS:
 ------------------------------------------------------------------------------
 
 Global structural and visual characteristics affecting the entire tree are
@@ -57,7 +105,7 @@ branch_bracket_width [def 1.0] : the width of the branch bracket relative to
     the position of the most separated child roots
 
 ------------------------------------------------------------------------------
-GRAPHICAL TREE OPTIONS:
+    GRAPHICAL TREE OPTIONS:
 ------------------------------------------------------------------------------
 
 The graphical tree options are the most common way of personalizing the trees.
@@ -99,7 +147,7 @@ be used to apply the same property to multiple parts of the clade' subtree
 ^ : all (an only) the terminal nodes of the specified clade are affected
 
 ------------------------------------------------------------------------------
-ANNOTATION OPTIONS
+    ANNOTATION OPTIONS
 ------------------------------------------------------------------------------
 
 [clade_name]	annotation_option	graphical_tree_option_value
@@ -136,7 +184,7 @@ annotation_background_edge_color [def annotation_background_color] : the color
 
 
 ------------------------------------------------------------------------------
-RING OPTIONS
+    RING OPTIONS
 ------------------------------------------------------------------------------
 
 We call rings the graphical elements external to the tree itself that can be
@@ -210,7 +258,7 @@ ring_separator_color [def. 'k' for black]: the color of the circular line
  
 
 ------------------------------------------------------------------------------
-COLORS
+    COLORS
 ------------------------------------------------------------------------------
 
 Colors are strings that can be:
@@ -224,7 +272,7 @@ Colors are strings that can be:
     corresponds to (full) red
 
 ------------------------------------------------------------------------------
-MARKER SHAPES:
+    MARKER SHAPES:
 ------------------------------------------------------------------------------
 
 As of August 2012 we support the marker types available in matplotlib version
@@ -256,6 +304,7 @@ markers.
 '_' : hline marker
 
 
+==============================================================================
 
 
 
