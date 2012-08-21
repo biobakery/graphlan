@@ -9,7 +9,7 @@ annotation_legend_font_size	24
 annotation_background_separation	-0.03
 annotation_background_offset	0.0
 annotation_background_width	0.07
-branch_tichkness	2.5
+branch_thickness	2.5
 clade_marker_size	10
 clade_marker_edge_width	0.8
 ring_internal_separator_thickness	1	0.5

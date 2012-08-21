@@ -78,8 +78,6 @@ branch_attr = ( ( 'branch_thickness',           float,  0.75        ),
               )
 
 
-
-
 leg_sep = '_._._'
 leg_attr    = ( ( 'annotation_background_color',        str,    "w"         ),
                 ( 'annotation_background_edge_color',   str,    "k"         ),
@@ -90,6 +88,8 @@ leg_attr    = ( ( 'annotation_background_color',        str,    "w"         ),
               )
 
 lev_sep = '.'
+
+legal_options = set(zip(*clade_attr+ext_attr+structural_attr+global_graphical_attr+branch_attr+leg_attr)[0]) | set(['class'])
 
 def random_keys(used_keys):
     n = 1
@@ -130,24 +130,37 @@ class CircTree(PpaTree):
     
             if not out_file:
                 out_file = inp_file
+       
+        def legal( prop ):
+            if prop not in legal_options:
+                sys.stderr.write( "Error: \"%s\" is not a legal option\nExiting...\n\n" % prop )
+                sys.exit(0)
+        def legal2( prop ):
+            if prop not in legal_options:
+                sys.stderr.write( "Er2222222222ror: \"%s\" is not a legal option\nExiting...\n\n" % prop )
+                sys.exit(0)
         
         self._tmp_levs = set()
         for line in (l.strip().split('\t') for l in lines if l[0] != '#'):
             ll = len(line)
             if ll == 2:
+                legal( line[0] ) #  in legal_options, "%s is not a valid option" % line[1]
                 gprops[line[0]] = line[1]
             elif ll == 3:
                 clade,prop,val = line
                 if clade == '*':
+                    legal( prop )
                     gprops[prop] = val
                 elif clade in ext_attr_d:
                     prop,lev = clade,prop
+                    legal( prop )
                     ilev = int(lev)
                     if prop not in gprops:
                         gprops[prop] = {}
                     if ilev not in gprops[prop]:
                         gprops[prop][ilev] = val
                 elif clade[-1] in ['*','+','^']:
+                    legal( prop )
                     cl = list(self.tree.find_clades( {"name": clade[:-1]} ))
                     if cl != 1: #??
                         cl = list(self.tree.find_clades( {"name": clade[:-1].split(lev_sep)[-1]} ))
@@ -160,11 +173,15 @@ class CircTree(PpaTree):
                     if clade[-1] not in ['^']:
                         props[clade[:-1]][prop] = val
                 elif clade.split(lev_sep)[-1] in clade_names:
+                    legal( prop )
                     props[clade][prop] = val
                 else:
+                    prop,lev = clade, prop
+                    legal( prop )
                     classes[clade][prop] = val
             elif ll == 4:
                 clade,prop,lev,val = line
+                legal( prop )
                 if clade == '*':
                     ilev = int(lev)
                     if prop in gprops :

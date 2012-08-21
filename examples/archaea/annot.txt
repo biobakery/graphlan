@@ -8,14 +8,14 @@ start_rotation	270
 total_plotted_degrees	360	
 *	ring_width	1	1.0
 *	ring_width	4	0.7
-*	branch_line_width	0.916126068736
-*	annotation_ext_offset	0.001
-*	branch_acestor_clade_color	0
+*	branch_thickness	0.916126068736
+*	annotation_background_separation	0.001
+*	branch_color_from_ancestor	0
 *	branch_bracket_depth	0.75
 *	ring_edge_width	1	0.0
 *	ring_edge_width	2	0.0
 *	ring_edge_width	3	0.0
-label_font_size	7
+annotation_font_size	7
 annotation_legend_font_size	10
 Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanosarcina.mazei.Go1	ring_height	4	1.92812559107
 Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanothermococcus.okinawensis.IH1	ring_height	4	0.922640438812
