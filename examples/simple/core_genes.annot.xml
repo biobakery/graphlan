@@ -1,0 +1,959 @@
+<phy:phyloxml xmlns:phy="http://www.phyloxml.org">
+  <phy:phylogeny rooted="true">
+    <phy:clade>
+      <phy:clade>
+        <phy:name>Clostridi</phy:name>
+        <phy:branch_length>1.0</phy:branch_length>
+        <phy:clade>
+          <phy:name>Clostridiales</phy:name>
+          <phy:branch_length>1.0</phy:branch_length>
+          <phy:clade>
+            <phy:name>Ruminococcaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Faecalibacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Papillibacter</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Acetivibrio</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Anaerotruncus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Sporobacter</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Anaerofilum</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Butyricicoccus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Ethanoligenens</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Fastidiosipila</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Ruminococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Hydrogenoanaerobacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Acetanaerobacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Subdoligranulum</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Oscillibacter</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+        </phy:clade>
+        <phy:clade>
+          <phy:name>Clostridiale</phy:name>
+          <phy:branch_length>1.0</phy:branch_length>
+          <phy:clade>
+            <phy:name>unclassified</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Veillonellaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Dialister</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Acidaminococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Sporomusa</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Succiniclasticum</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Veillonella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Anaeroglobus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Schwartzia</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Mitsuokella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Selenomonas</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Centipeda</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Megasphaera</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Phascolarctobacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Megamonas</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Allisonella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+        </phy:clade>
+      </phy:clade>
+      <phy:clade>
+        <phy:name>Clostridia</phy:name>
+        <phy:branch_length>1.0</phy:branch_length>
+        <phy:clade>
+          <phy:name>Thermoanaerobacterales</phy:name>
+          <phy:branch_length>1.0</phy:branch_length>
+          <phy:clade>
+            <phy:name>Thermoanaerobacteraceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Thermoanaerobacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+          </phy:clade>
+        </phy:clade>
+        <phy:clade>
+          <phy:name>Clostridiales</phy:name>
+          <phy:branch_length>1.0</phy:branch_length>
+          <phy:clade>
+            <phy:name>Incertae_Sedis_XIV</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Blautia</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Proteocatella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Howardella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Incertae_Sedis_XI</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Anaerococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Helcococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Peptoniphilus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Parvimonas</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Sporanaerobacter</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Gallicola</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Tissierella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Finegoldia</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Incertae_Sedis_XVIII</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Symbiobacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Incertae_Sedis_XIII</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Mogibacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Anaerovorax</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Eubacteriaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Pseudoramibacter</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Garciella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Eubacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Anaerofustis</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Clostridiaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Alkaliphilus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Clostridium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Anaerobacter</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Sarcina</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Oxobacter</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Gracilibacteraceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+        </phy:clade>
+      </phy:clade>
+      <phy:clade>
+        <phy:name>Bacill</phy:name>
+        <phy:branch_length>1.0</phy:branch_length>
+        <phy:clade>
+          <phy:name>Bacillale</phy:name>
+          <phy:branch_length>1.0</phy:branch_length>
+          <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Clades in which X is a core gene</phy:property>
+          <phy:property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#0000FF</phy:property>
+          <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class2</phy:property>
+          <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#0000FF</phy:property>
+          <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+          <phy:property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Y: X is a clade-specific core gene for clade X</phy:property>
+          <phy:clade>
+            <phy:name>unclassified</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Thermoactinomycetaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Clades in which X is a core gene</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#0000FF</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class2</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#0000FF</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">K: X is a core gene in clade X</phy:property>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Thermoactinomyces</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Planifilum</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Staphylococcaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Clades in which X is a core gene</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="annotation_background_color" ref="A:1">#0000FF</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class2</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#0000FF</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+            <phy:property applies_to="clade" datatype="xsd:string" id_ref="annotation" ref="A:1">Z: X is a core gene in clade Z</phy:property>
+            <phy:clade>
+              <phy:name>Gemella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Staphylococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Salinicoccus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Jeotgalicoccus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Nosocomiicoccus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Macrococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+          </phy:clade>
+        </phy:clade>
+        <phy:clade>
+          <phy:name>Bacillales</phy:name>
+          <phy:branch_length>1.0</phy:branch_length>
+          <phy:clade>
+            <phy:name>Listeriaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Listeria</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Brochothrix</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Sporolactobacillaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Marinococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Planococcaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Planococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Kurthia</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Planomicrobium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Sporosarcina</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Paenibacillaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Thermicanus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Cohnella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Paenibacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Ammoniphilus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Thermobacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Brevibacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+        </phy:clade>
+      </phy:clade>
+      <phy:clade>
+        <phy:name>Clostrid</phy:name>
+        <phy:branch_length>1.0</phy:branch_length>
+        <phy:clade>
+          <phy:name>Clostridiales</phy:name>
+          <phy:branch_length>1.0</phy:branch_length>
+          <phy:clade>
+            <phy:name>Peptococcaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Dehalobacter</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Desulfonispora</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Peptococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Peptostreptococcaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Sporacetigenium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Peptostreptococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Filifactor</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Lachnospiraceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Moryella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Lachnobacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Hespellia</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Parasporobacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Johnsonella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Acetitomaculum</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Coprococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Syntrophococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Butyrivibrio</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Anaerostipes</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Dorea</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Robinsoniella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Shuttleworthia</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Oribacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Catonella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Pseudobutyrivibrio</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Anaerosporobacter</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Roseburia</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+          </phy:clade>
+        </phy:clade>
+      </phy:clade>
+      <phy:clade>
+        <phy:name>Bacilli</phy:name>
+        <phy:branch_length>1.0</phy:branch_length>
+        <phy:clade>
+          <phy:name>Lactobacillales</phy:name>
+          <phy:branch_length>1.0</phy:branch_length>
+          <phy:clade>
+            <phy:name>Streptococcaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Lactococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Lactovum</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Streptococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Leuconostocaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Leuconostoc</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Weissella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Lactobacillaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Pediococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Lactobacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Carnobacteriaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Marinilactibacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Granulicatella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Atopostipes</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Desemzia</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Trichococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Alloiococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Carnobacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Alkalibacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Dolosigranulum</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Aerococcaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Eremococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Globicatella</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Facklamia</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">35</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class_label" ref="A:1">Genomes containing gene X</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="class" ref="A:1">class1</phy:property>
+              <phy:property applies_to="clade" datatype="xsd:string" id_ref="clade_marker_color" ref="A:1">#FF0000</phy:property>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Abiotrophia</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Aerococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Enterococcaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Vagococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Enterococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Tetragenococcus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Catellicoccus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+        </phy:clade>
+        <phy:clade>
+          <phy:name>Bacillales</phy:name>
+          <phy:branch_length>1.0</phy:branch_length>
+          <phy:clade>
+            <phy:name>Bacillaceae</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Geobacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Exiguobacterium</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Bacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Oceanobacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Tumebacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>unclassified</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Anoxybacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Ureibacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+            <phy:clade>
+              <phy:name>Lysinibacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+          <phy:clade>
+            <phy:name>Bacillales_incertae_sedis</phy:name>
+            <phy:branch_length>1.0</phy:branch_length>
+            <phy:clade>
+              <phy:name>Rummeliibacillus</phy:name>
+              <phy:branch_length>1.0</phy:branch_length>
+            </phy:clade>
+          </phy:clade>
+        </phy:clade>
+      </phy:clade>
+    </phy:clade>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="clade_marker_size" ref="A:1">10</phy:property>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="branch_thickness" ref="A:1">0.5</phy:property>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="branch_bracket_width" ref="A:1">0.5</phy:property>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="branch_bracket_depth" ref="A:1">0.75</phy:property>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="leg_keys" ref="A:1">class1_._._class2</phy:property>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="leg_annotation_background_color" ref="A:1">._._._#0000FF</phy:property>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="leg_annotation_background_edge_color" ref="A:1">._._._.</phy:property>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="leg_clade_marker_color" ref="A:1">#FF0000_._._#0000FF</phy:property>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="leg_clade_marker_edge_width" ref="A:1">._._._.</phy:property>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="leg_clade_marker_size" ref="A:1">35_._._35</phy:property>
+    <phy:property applies_to="phylogeny" datatype="xsd:string" id_ref="ignore_branch_len" ref="A:1">1</phy:property>
+  </phy:phylogeny>
+</phy:phyloxml>
