@@ -10,11 +10,12 @@
 # Author:   Nicola Segata
 # email:    nsegata@hsph.harvard.edu
 #
-# Copyright: (c) 2012
-# Licence: <your licence>
 #
 #------------------------------------------------------------------------------
 
+__author__ = 'Nicola Segata (nsegata@hsph.harvard.edu)'
+__version__ = '0.9'
+__date__ = '22 August 2012'
 
 import sys 
 import argparse
@@ -22,7 +23,8 @@ import os
 from src.graphlan_lib import CircTree as CTree
 
 def read_params(args):
-    parser = argparse.ArgumentParser(description='GraPhlAn')
+    parser = argparse.ArgumentParser(description= "GraPhlAn "+__version__+" ("+__date__+")\n"
+                                                  "AUTHORS: "+__author__+"\n\n")
     arg = parser.add_argument
 
     arg('intree', type=str, metavar='input_tree',
@@ -44,10 +46,15 @@ def read_params(args):
     arg('--pad', default=0.5, type=float, metavar='pad_in',
         help = "the distance between the most external graphical element and "
                "the border of the image")
+    arg( '-v','--version', action='store_true', 
+        help="Prints the current GraPhlAn version and exit\n" )
     return vars(parser.parse_args())
 
 if __name__ == "__main__":
     args = read_params( sys.argv )
+    if pars['version']:
+        sys.stdout.write("GraPhlAn version "+__version__+"\t("+__date__+")"+"\n")
+        sys.exit(0)
     ctree = CTree( args['intree'], args['warnings'] )
     ctree.draw( args['outimg'], 
                 out_format = args['format'], 

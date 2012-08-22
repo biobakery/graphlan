@@ -1,19 +1,16 @@
-First very partial draft of the manual....
-
-
-PREREQUISITES:
-
-- biopython
-- matplotlib
-
-==============================================================================
 
 GraPhlAn is a software tool for producing high-quality circular 
 representations of taxonomic and phylogenetic trees. GraPhlAn focuses on 
 concise, integrative, informative, and publication-ready representations of 
 phylogenetically- and taxonomically-driven investigation.
 
-
+You can find below the instruction for installing and using the software.
+If you have any questions or comment please refer to the project home page at
+https://bitbucket.org/nsegata/graphlan
+or to the GraPhlAn google group:
+https://groups.google.com/d/forum/graphlan-users
+or email me at 
+nsegata@hsph.harvard.edu
 
 
 ==============================================================================
@@ -38,9 +35,9 @@ $ export PATH=`pwd`/graphlan/:$PATH
 Adding the above line into the bash configuration file will make the path 
 addition permanent.
 
-For Windows or MacOS systems a similar proedure should be followed. Is is also
-possible (but not recommende) to obtain the sofware using the download link
-availabe at https://bitbucket.org/nsegata/graphlan/src ("get source" on the
+For Windows or MacOS systems a similar procedure should be followed. Is is also
+possible (but not recommended) to obtain the software using the download link
+available at https://bitbucket.org/nsegata/graphlan/src ("get source" on the
 top right corner).
 
 
@@ -61,12 +58,95 @@ You need to have the following programs and libraries installed:
 	USAGE
 ..............................................................................
 
+The GraPhlAn package consists in two main scripts:
+1- graphlan.py
+2- graphlan_annotate.py
+
+The first produces graphical output of an input tree in any of the three most
+popular format: Newick, PhyloXML, or text format. The second modifies any 
+input tree (in any of the three standard format) adding additional 
+information regarding structural or graphical aspects of the tree (like colors 
+and style of the taxa, labels, shadows, heatmaps, ...); graphlan_annotate.py
+generates PhyloXML files that can be converted into images by graphlan.py.
+
+
+				...........
+
+
+More specifically, here are all the options one can set for graphlan.py:
+
+usage: graphlan.py [-h] [--format ['output_image_format']]
+                   [--warnings WARNINGS] [--dpi image_dpi] [--size image size]
+                   [--pad pad_in] [-v]
+                   input_tree output_image
+
+GraPhlAn 0.9 (22 August 2012)
+AUTHORS: Nicola Segata (nsegata@hsph.harvard.edu)
+
+positional arguments:
+  input_tree            the input tree in PhyloXML format
+  output_image          the output image (the format is guessed from the
+                        extension unless --format is given. (png, pdf, ps,
+                        eps, svg are the available file formats
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --format ['output_image_format']
+                        set the format of the output image (default none
+                        meaning that the format is guessed from the output
+                        file extension)
+  --warnings WARNINGS   set whether warning messages should be reported or not
+                        (default 1)
+  --dpi image_dpi       the dpi of the output image for non vectorial formats
+  --size image size     the size of the output image (in inches, default 7.0)
+  --pad pad_in          the distance between the most external graphical
+                        element and the border of the image
+  -v, --version         Prints the current GraPhlAn version and exit
+
+				...........
+
+
+Input tree files for graphlan.py can be generated, personalized, and annotated
+using the graphlan_annotate.py module. In addition to the tree topology and
+(possibly) branch lengths, graphlan_annotate.py reads an "annotation file" 
+(--annot option) which specifies the graphical options for the tree. The
+syntax of the annotation file is described comprehensively below. Here is the
+command line invocation syntax.
+
+usage: graphlan_annotate.py [-h] [--annot the annotation file] [-v]
+                            input_tree [output_tree]
+
+GraPhlAn annotate module 0.9 (22 August 2012) AUTHORS: Nicola Segata
+(nsegata@hsph.harvard.edu)
+
+positional arguments:
+  input_tree            the input tree (in Newick, Nexus, PhyloXML or plain
+                        text format
+  output_tree           the output tree in PhyloXML format containing the
+                        newly added annotations. If not specified, the input
+                        tree file will be overwritten
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --annot the annotation file
+                        specify the annotation file
+  -v, --version         Prints the current MetaPhlAn version and exit
+
 
 
 
 ==============================================================================
 	COMMAND AND SYNTAX OF THE ANNOTATION FILE
 ..............................................................................
+
+The annotation file is a tab-delimited file listing the graphical options for
+clades. Usually each line has three fields: the name of the clade, the name of
+the option, and the value to assign to the option. Lines can however have two
+fields (typically for "global" option not referred to a specific clade) or 
+four fields when the external rings (a sort of circular heatmap) is specified.
+
+Below we report and describe all available options and their syntax subdivided
+by option types.
 
 
 ------------------------------------------------------------------------------
@@ -254,8 +334,8 @@ ring_separator_color [def. 'k' for black]: the color of the circular line
     separating different ring levels.
 
 
+				...........
 
- 
 
 ------------------------------------------------------------------------------
     COLORS
