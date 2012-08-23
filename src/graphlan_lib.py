@@ -137,7 +137,7 @@ class CircTree(PpaTree):
                 sys.exit(0)
         def legal2( prop ):
             if prop not in legal_options:
-                sys.stderr.write( "Er2222222222ror: \"%s\" is not a legal option\nExiting...\n\n" % prop )
+                sys.stderr.write( "Er2222222ror: \"%s\" is not a legal option\nExiting...\n\n" % prop )
                 sys.exit(0)
         
         self._tmp_levs = set()
@@ -176,7 +176,6 @@ class CircTree(PpaTree):
                     legal( prop )
                     props[clade][prop] = val
                 else:
-                    prop,lev = clade, prop
                     legal( prop )
                     classes[clade][prop] = val
             elif ll == 4:

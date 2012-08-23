@@ -49,7 +49,7 @@ def read_params(args):
 
 if __name__ == "__main__":
     args = read_params( sys.argv )
-    if pars['version']:
+    if args['version']:
         sys.stdout.write("GraPhlAn version "+__version__+"\t("+__date__+")"+"\n")
         sys.exit(0)
     ctree = CTree( args['intree'] )
