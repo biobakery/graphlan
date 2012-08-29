@@ -95,7 +95,7 @@ def random_keys(used_keys):
     n = 1
     nl = string.ascii_uppercase+string.ascii_lowercase
     while True:
-        nl = [a+b for a in string.ascii_letters for b in nl]
+        nl = [n for n in nl]+[a+b for a in nl for b in nl]
         for l in nl:
             if l not in used_keys:
                 yield l
@@ -199,8 +199,9 @@ class CircTree(PpaTree):
                     if ilev not in gprops[prop]:
                         gprops[prop][ilev] = ext_attr_d[prop][1] 
                 else:
+                    print line 
                     sys.stderr.write( "Classes not implemented for external"
-                                       "annotations" )
+                                       "annotations\n" )
 
         def _rec_annotate_( clade, rkeys_gen, path ):
             name = clade.name if clade.name else ""
@@ -922,7 +923,7 @@ class CircTree(PpaTree):
             #           labelspacing = 0.05,
             #           prop = {'size':self.annotation_legend_font_size}
             #        )
-            ll = [ax.scatter( 0.0, 0.0)]*len(self._ext_key)
+            ll = [ax.scatter( 0.0, 0.0, s = 0)]*len(self._ext_key)
             plt.figlegend( ll, sorted(self._ext_key), 'upper left',
                            frameon = False, shadow=False, 
                            scatterpoints = 1, #borderpad = 0, 
