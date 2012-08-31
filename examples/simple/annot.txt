@@ -1,0 +1,58 @@
+branch_bracket_width	0.5
+branch_bracket_depth	0.75
+class1	clade_marker_color	#FF0000
+class1	clade_marker_size	35
+class1	class_label	Genomes containing gene X
+class2	clade_marker_color	#0000FF
+class2	clade_marker_size	35
+class2	annotation_background_color	#0000FF	
+class2	class_label	Clades in which X is a core gene
+clade_marker_size	10	
+branch_thickness	0.5
+Bacill.Bacillale	class	class1
+Bacill.Bacillale.Staphylococcaceae.Gemella	class	class1
+Bacill.Bacillale.Staphylococcaceae.Jeotgalicoccus	class	class1
+Bacill.Bacillale.Staphylococcaceae.Macrococcus	class	class1
+Bacill.Bacillale.Staphylococcaceae.Nosocomiicoccus	class	class1
+Bacill.Bacillale.Staphylococcaceae.Salinicoccus	class	class1
+Bacill.Bacillale.Staphylococcaceae.Staphylococcus	class	class1
+Bacill.Bacillale.Staphylococcaceae.unclassified	class	class1
+Bacill.Bacillale.Staphylococcaceae.Macrococcus	class	class1
+Bacill.Bacillale.unclassified	class	class1
+Bacill.Bacillale.Thermoactinomycetaceae.Planifilum	class	class1
+Bacill.Bacillale.Thermoactinomycetaceae.Thermoactinomyces	class	class1
+Bacill.Bacillale.Thermoactinomycetaceae.unclassified	class	class1
+Bacilli.Lactobacillales.Aerococcaceae.Eremococcus	class	class1
+Bacilli.Lactobacillales.Aerococcaceae.Facklamia	class	class1
+Bacilli.Lactobacillales.Carnobacteriaceae.Alloiococcus	class	class1
+Bacilli.Lactobacillales.Carnobacteriaceae.Carnobacterium	class	class1
+Bacilli.Lactobacillales.Carnobacteriaceae.Desemzia	class	class1
+Bacilli.Lactobacillales.Lactobacillaceae.Lactobacillus	class	class1
+Bacilli.Lactobacillales.Lactobacillaceae.Pediococcus	class	class1
+Clostrid.Clostridiales.Lachnospiraceae.Dorea	class	class1
+Clostridia.Clostridiales.Incertae_Sedis_XI.Finegoldia	class	class1
+Clostridia.Clostridiales.Incertae_Sedis_XI.Gallicola	class	class1
+Clostridia.Clostridiales.Incertae_Sedis_XI.Helcococcus	class	class1
+Clostridia.Clostridiales.Incertae_Sedis_XI.Peptoniphilus	class	class1
+Clostridia.Clostridiales.Incertae_Sedis_XVIII.Symbiobacterium	class	class1
+Clostrid.Clostridiales.Lachnospiraceae.Butyrivibrio	class	class1
+Clostrid.Clostridiales.Lachnospiraceae.Coprococcus	class	class1
+Clostrid.Clostridiales.Lachnospiraceae.Oribacterium	class	class1
+Clostrid.Clostridiales.Lachnospiraceae.Parasporobacterium	class	class1
+Bacilli.Lactobacillales.Aerococcaceae.Globicatella	class	class1
+Clostridi.Clostridiales.Ruminococcaceae.Butyricicoccus	class	class1
+Clostridi.Clostridiales.Ruminococcaceae.Papillibacter	class	class1
+Clostridi.Clostridiale.Veillonellaceae.Selenomonas	class	class1
+Clostrid.Clostridiales.Peptostreptococcaceae.Filifactor	class	class1
+Clostridi.Clostridiale.Veillonellaceae.Sporomusa	class	class1
+Clostridia.Thermoanaerobacterales.Thermoanaerobacteraceae.Thermoanaerobacterium	class	class1
+Clostrid.Clostridiales.Peptostreptococcaceae.Sporacetigenium	class	class1
+Clostrid.Clostridiales.Lachnospiraceae.Roseburia	class	class1
+Clostrid.Clostridiales.Lachnospiraceae.Shuttleworthia	class	class1
+Bacill.Bacillale.Staphylococcaceae	class	class2
+Bacill.Bacillale.Thermoactinomycetaceae	class	class2
+Bacill.Bacillale	class	class2
+#Bacill.Bacillale	annotation_background_color	#0000FF
+Bacill.Bacillale	annotation	Y: X is a clade-specific core gene for clade X
+Bacill.Bacillale.Staphylococcaceae	annotation	Z: X is a core gene in clade Z
+Bacill.Bacillale.Thermoactinomycetaceae	annotation	K: X is a core gene in clade X	
