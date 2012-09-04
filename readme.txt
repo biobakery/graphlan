@@ -299,9 +299,9 @@ ring_alpha [def. 1.0]: the transparency value. 0.0 means completely transparent
     (thus invisible), 1.0 means completely opaque (no transparencies) 
 
 ring_shape [def. R]: the shape of the ring. Default is 'R' for rectangular which
-    means that the whole available area is used. The alternative is currently 
-    'v' only which means a triangular shape that can be used as pointing arrow 
-    for highlighting specific clades. 
+    means that the whole available area is used. The alternatives are currently 
+    'v' or '^' which mean triangular shape (with opposite directions) that can 
+    be used as pointing arrow for highlighting specific clades. 
 
 ring_edge_width [def 0.1]: the width of the border of the ring segment
 

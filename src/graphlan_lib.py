@@ -135,10 +135,6 @@ class CircTree(PpaTree):
             if prop not in legal_options:
                 sys.stderr.write( "Error: \"%s\" is not a legal option\nExiting...\n\n" % prop )
                 sys.exit(0)
-        def legal2( prop ):
-            if prop not in legal_options:
-                sys.stderr.write( "Er2222222ror: \"%s\" is not a legal option\nExiting...\n\n" % prop )
-                sys.exit(0)
         
         self._tmp_levs = set()
         for line in (l.strip().split('\t') for l in lines if l[0] != '#'):
@@ -509,6 +505,25 @@ class CircTree(PpaTree):
                                                      zorder = 15,
                                                     )
                             self._ext_patches.append( arb )
+                    elif el['ring_shape'] in ['^']:
+                        art = mpatches.Polygon([ [theta,bottom],
+                                                 [theta+width/2.0,bottom+height],
+                                                 [theta+width,bottom ] ],
+                                                 alpha = el['ring_alpha'],
+                                                 color = el['ring_color'],
+                                                 linewidth = 0.0, #el['ring_edge_width'],
+                                                 #ec = el['ring_edge_color'] if el['ring_edge_color'] else el['ring_color'] 
+                                                 )
+                        if el['ring_edge_width'] > 0.0:
+                            arb = mpatches.Polygon([ [theta,bottom + height],
+                                                     [theta+width/2.0,bottom], 
+                                                     [theta+width,bottom + height] ],
+                                                     color = 'none', #el['ring_color'],
+                                                     linewidth = el['ring_edge_width'],
+                                                     ec = el['ring_edge_color'] if el['ring_edge_color'] else el['ring_color'],
+                                                     zorder = 15,
+                                                    )
+                            self._ext_patches.append( arb )
                         
                     self._ext_patches.append( art )
             for c in clade.clades:
@@ -569,8 +584,8 @@ class CircTree(PpaTree):
 
         self._n_terminals = self.tree.count_terminals()
         # with few leaves, the total rotation is lowered (unless the user set it)
-        if self._n_terminals < 72 and 'total_plotted_degrees' not in gprops:
-            self.total_plotted_degrees = self._n_terminals * 5.0 
+        if self._n_terminals < 51 and 'total_plotted_degrees' not in gprops:
+            self.total_plotted_degrees = self._n_terminals * 7.0 
         self.total_plotted_degrees = self.total_plotted_degrees * rpi / 180.0
         self.start_rotation = self.start_rotation * rpi / 180.0 
 
@@ -909,7 +924,7 @@ class CircTree(PpaTree):
             ax.set_title(self.title,fontdict = {'size':self.title_font_size})
          
         #a,b = ax.get_ylim()
-        ylim((0.0,self._tot_offset*1.025))
+        ylim((0.0,self._tot_offset*1.075))
         
         #ax.legend(  frameon = False, markerscale = 0  )
         #for t in self._ext_key:
