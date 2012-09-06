@@ -184,6 +184,13 @@ branch_bracket_depth [def 0.25] : the relative position of the branch bracket
 branch_bracket_width [def 1.0] : the width of the branch bracket relative to 
     the position of the most separated child roots
 
+branch_thickness [def 0.75] : the global thickness of the lines connecting taxa
+
+branch_color [def black] : the global thickness of the lines connecting taxa
+
+branch_color_from_ancestor [def 1] : whether to use the color of the closest
+    ancestor colored taxa for the downstream branches
+
 ------------------------------------------------------------------------------
     GRAPHICAL TREE OPTIONS:
 ------------------------------------------------------------------------------
@@ -319,6 +326,8 @@ Specifically, the ring options can be:
 ring_label [def. None]: the label to be displayed at "stat_rotation" position 
     for the rings. total_plotted_degrees should be less than 360 to make space 
     for these labels
+
+ring_label_color [def. black]: the color of the ring label
 
 ring_label_font_size [def. 11]: the font size of the ring labels
 

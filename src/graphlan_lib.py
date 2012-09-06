@@ -45,6 +45,7 @@ ext_attr = ( ( 'ring_color',                        str,    '#000000'   ),
              ( 'ring_shape',                        str,     "R"        ),
              ( 'ring_label',                        str,     None       ),
              ( 'ring_label_font_size',              int,     11         ),
+             ( 'ring_label_color',                  str,     'k'         ),
              ( 'ring_edge_width',                   float,   0.1        ), 
              ( 'ring_edge_color',                   str,     None       ),
              ( 'ring_internal_separator_thickness', float,   0.0        ),
@@ -916,8 +917,9 @@ class CircTree(PpaTree):
                 s = -90 if 0.5*rpi < self.start_rotation < 1.5*rpi else 90
                 rot = (self.start_rotation*360.0/rpi2 + s)%360.0
                 fs = v['ring_label_font_size'] 
+                lcol = v['ring_label_color'] 
                 ax.text( self.start_rotation, b, v['ring_label'], rotation = rot,
-                         ha="center", va="center", fontsize = fs  )
+                         ha="center", va="center", fontsize = fs, color = lcol  )
 
 
         if hasattr(self,"title"):
