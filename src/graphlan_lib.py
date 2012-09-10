@@ -585,8 +585,8 @@ class CircTree(PpaTree):
 
         self._n_terminals = self.tree.count_terminals()
         # with few leaves, the total rotation is lowered (unless the user set it)
-        if self._n_terminals < 51 and 'total_plotted_degrees' not in gprops:
-            self.total_plotted_degrees = self._n_terminals * 7.0 
+        if self._n_terminals < 36 and 'total_plotted_degrees' not in gprops:
+            self.total_plotted_degrees = self._n_terminals * 10.0 
         self.total_plotted_degrees = self.total_plotted_degrees * rpi / 180.0
         self.start_rotation = self.start_rotation * rpi / 180.0 
 
@@ -653,7 +653,7 @@ class CircTree(PpaTree):
                     sys.stderr.write("Warning: label "
                                      "\""+clade.annotation+"\" has "
                                      "a default gray background because no color is found for "
-                                     "the corresponding \"annotation wing\"\n")
+                                     "the corresponding \"annotation\"\n")
                 clade.annotation_background_color = [0.3,0.3,0.3] 
             if hasattr( clade, 'annotation_background_color'):
                 if clade.is_terminal(): # same as non-terminal ??
