@@ -10,32 +10,48 @@ annotation_background_separation	-0.03
 annotation_background_offset	0.0
 annotation_background_width	0.07
 branch_thickness	2.5
+ring_label_font_size	1	10
+ring_label_font_size	2	10
+ring_label_font_size	3	10
+ring_label_font_size	4	10
+ring_label_font_size	5	10
+ring_label_font_size	6	10
+ring_label_font_size	7	10
+ring_label_font_size	8	10
 clade_marker_size	10
 clade_marker_edge_width	0.8
 ring_internal_separator_thickness	1	0.5
 ring_separator_color	1	#888888
 ring_label	1	Stool (prevalence)
+ring_label_color	1	#0000FF
 ring_internal_separator_thickness	2	0.5
 ring_separator_color	2	#888888
 ring_label	2	Cheek (prevalence)
+ring_label_color	2	#FFA500
 ring_internal_separator_thickness	3	0.5
 ring_separator_color	3	#888888
 ring_label	3	Plaque (prevalence)
+ring_label_color	3	#FF0000
 ring_internal_separator_thickness	4	0.5
 ring_separator_color	4	#888888
 ring_label	4	Tongue (prevalence)
+ring_label_color	4	#800000
 ring_internal_separator_thickness	5	0.5
 ring_separator_color	5	#888888
 ring_label	5	Nose (prevalence)
+ring_label_color	5	#006400
 ring_internal_separator_thickness	6	0.5	
 ring_separator_color	6	#888888	
 ring_label	6	Vagina (prevalence)
+ring_label_color	6	#800080
 ring_internal_separator_thickness	7	0.5	
 ring_separator_color	7	#888888	
 ring_label	7	Skin (prevalence)
+ring_label_color	7	#696969
 ring_internal_separator_thickness	8	0.5	
 ring_separator_color	8	#888888	
 ring_label	8	Abundance when present
+ring_label_color	8	#696969
 t645951833	ring_color	8	#0000FF
 t645951833	ring_height	8	0.44330825
 t645951833	ring_width	8	0.7

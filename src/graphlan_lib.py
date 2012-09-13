@@ -196,8 +196,7 @@ class CircTree(PpaTree):
                     if ilev not in gprops[prop]:
                         gprops[prop][ilev] = ext_attr_d[prop][1] 
                 else:
-                    print line 
-                    sys.stderr.write( "Classes not implemented for external"
+                    sys.stderr.write( "Classes not implemented for external "
                                        "annotations\n" )
 
         def _rec_annotate_( clade, rkeys_gen, path ):
