@@ -316,8 +316,7 @@ class CircTree(PpaTree):
                 tot_dist += self.tree.distance( last, t) * 0.5 / self._max_depth
                 last = t
 
-
-        coffset = self.start_rotation + (2.0*rpi - self.total_plotted_degrees) * 0.5
+        coffset = self.start_rotation + (rpi2 - self.total_plotted_degrees) * 0.5
         circ_step = self.total_plotted_degrees*(1.0-self.clade_separation) / self._n_terminals 
         self.circ_pos = coffset+circ_step/2
         self._last_leaf = self.tree.root 
@@ -584,7 +583,7 @@ class CircTree(PpaTree):
 
         self._n_terminals = self.tree.count_terminals()
         # with few leaves, the total rotation is lowered (unless the user set it)
-        if self._n_terminals < 36 and 'total_plotted_degrees' not in gprops:
+        if self._n_terminals < 16 and 'total_plotted_degrees' not in gprops:
             self.total_plotted_degrees = self._n_terminals * 10.0 
         self.total_plotted_degrees = self.total_plotted_degrees * rpi / 180.0
         self.start_rotation = self.start_rotation * rpi / 180.0 
@@ -912,9 +911,11 @@ class CircTree(PpaTree):
                 bot = offset + self._ext_bottoms[l]
                 bot1 = offset + ( self._ext_bottoms[l+1] if l+1 in self._ext_bottoms else self._ext_bottoms[l] +
                             (self._ext_max_height[l]*0.1 if l in self._ext_max_height else 0.1) )
+                off = (rpi2-self.total_plotted_degrees)*0.5
                 b = (bot+bot1)*0.5
                 s = -90 if 0.5*rpi < self.start_rotation < 1.5*rpi else 90
-                rot = (self.start_rotation*360.0/rpi2 + s)%360.0
+                #rot = (self.start_rotation*360.0/rpi2 + s + off*360.0/rpi2 )%360.0
+                rot = (self.start_rotation*360.0/rpi2 + s )%360.0
                 fs = v['ring_label_font_size'] 
                 lcol = v['ring_label_color'] 
                 ax.text( self.start_rotation, b, v['ring_label'], rotation = rot,
