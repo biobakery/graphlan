@@ -1,0 +1,948 @@
+#title	Human Microbiome Project species tree
+#title_font_size	33
+annotation_background_alpha	0.1
+total_plotted_degrees	300
+start_rotation	270
+branch_bracket_width	0.0
+class_legend_font_size	24
+annotation_legend_font_size	24	
+annotation_background_separation	-0.03
+annotation_background_offset	0.0
+annotation_background_width	0.07
+branch_thickness	2.5
+ring_label_font_size	1	13
+ring_label_font_size	2	13
+ring_label_font_size	3	13
+ring_label_font_size	4	13
+ring_label_font_size	5	13
+ring_label_font_size	6	13
+ring_label_font_size	7	13
+ring_label_font_size	8	13
+clade_marker_size	20
+clade_marker_edge_width	0.8
+ring_internal_separator_thickness	1	0.5
+ring_separator_color	1	#888888
+ring_label	1	Stool (prevalence)
+ring_label_color	1	#0000FF
+ring_internal_separator_thickness	2	0.5
+ring_separator_color	2	#888888
+ring_label	2	Cheek (prevalence)
+ring_label_color	2	#FFA500
+ring_internal_separator_thickness	3	0.5
+ring_separator_color	3	#888888
+ring_label	3	Plaque (prevalence)
+ring_label_color	3	#FF0000
+ring_internal_separator_thickness	4	0.5
+ring_separator_color	4	#888888
+ring_label	4	Tongue (prevalence)
+ring_label_color	4	#800000
+ring_internal_separator_thickness	5	0.5
+ring_separator_color	5	#888888
+ring_label	5	Nose (prevalence)
+ring_label_color	5	#006400
+ring_internal_separator_thickness	6	0.5	
+ring_separator_color	6	#888888	
+ring_label	6	Vagina (prevalence)
+ring_label_color	6	#800080
+ring_internal_separator_thickness	7	0.5	
+ring_separator_color	7	#888888	
+ring_label	7	Skin (prevalence)
+ring_label_color	7	#696969
+ring_internal_separator_thickness	8	0.5	
+ring_separator_color	8	#888888	
+ring_label	8	Abundance when present
+ring_label_color	8	#696969
+Bacteroides	annotation	Bacteroides
+Bacteroides	annotation_background_color	k
+Bacteroides	annotation_font_size	14
+Prevotella	annotation	Prevotella
+Prevotella	annotation_background_color	k
+Prevotella	annotation_font_size	14
+t649989989	ring_color	8	#800000
+t649989989	ring_height	8	0.221198344
+t649989989	ring_width	8	0.7
+t649989988	ring_color	8	#FF0000
+t649989988	ring_height	8	0.035
+t649989988	ring_width	8	0.7
+t643886200	ring_color	8	#0000FF
+t643886200	ring_height	8	3.20445565
+t643886200	ring_width	8	0.7
+t647000295	ring_color	8	#800080
+t647000295	ring_height	8	0.07
+t647000295	ring_width	8	0.7
+t648276716	ring_color	8	#FF0000
+t648276716	ring_height	8	0.07
+t648276716	ring_width	8	0.7
+t645951840	ring_color	8	#FF0000
+t645951840	ring_height	8	0.0802612
+t645951840	ring_width	8	0.7
+t648276713	ring_color	8	#800000
+t648276713	ring_height	8	0.07
+t648276713	ring_width	8	0.7
+t649989986	ring_color	8	#FF0000
+t649989986	ring_height	8	0.07
+t649989986	ring_width	8	0.7
+t645951836	ring_color	8	#800000
+t645951836	ring_height	8	0.12
+t645951836	ring_width	8	0.7
+t648861012	ring_color	8	#FF0000
+t648861012	ring_height	8	0.16
+t648861012	ring_width	8	0.7
+t645951825	ring_color	8	#0000FF
+t645951825	ring_height	8	0.07
+t645951825	ring_width	8	0.7
+t647000292	ring_color	8	#0000FF
+t647000292	ring_height	8	0.07
+t647000292	ring_width	8	0.7
+t647000293	ring_color	8	#006400
+t647000293	ring_height	8	0.07
+t647000293	ring_width	8	0.7
+t648028051	ring_color	8	#800000
+t648028051	ring_height	8	1.506632
+t648028051	ring_width	8	0.7
+t648276715	ring_color	8	#800080
+t648276715	ring_height	8	0.07
+t648276715	ring_width	8	0.7
+t649989987	ring_color	8	#FF0000
+t649989987	ring_height	8	0.07
+t649989987	ring_width	8	0.7
+t648861012	clade_marker_color	#87CEFA
+t649989988	clade_marker_color	#87CEFA
+t649989989	clade_marker_color	#87CEFA
+t649989986	clade_marker_color	#87CEFA
+t649989987	clade_marker_color	#87CEFA
+t647000292	clade_marker_color	#87CEFA
+t647000293	clade_marker_color	#87CEFA
+t647000295	clade_marker_color	#87CEFA
+t645951825	clade_marker_color	#87CEFA
+t648028051	clade_marker_color	#87CEFA
+t645951836	clade_marker_color	#87CEFA
+t648276713	clade_marker_color	#87CEFA
+t648276716	clade_marker_color	#87CEFA
+t648276715	clade_marker_color	#87CEFA
+t645951840	clade_marker_color	#87CEFA
+t643886200	clade_marker_color	#87CEFA
+t649989989	clade_marker_size	300.0
+t649989988	clade_marker_size	100.0
+t643886200	clade_marker_size	60.268292683
+t647000295	clade_marker_size	68.9999999999
+t648276716	clade_marker_size	120.8695652174
+t645951840	clade_marker_size	245.857142857
+t648276713	clade_marker_size	68.2857142857
+t649989986	clade_marker_size	72.9565217391
+t645951836	clade_marker_size	290.714285714
+t648861012	clade_marker_size	290.714285714
+t645951825	clade_marker_size	40.0
+t647000292	clade_marker_size	68.2857142857
+t647000293	clade_marker_size	60.268292683
+t648028051	clade_marker_size	300.0
+t648276715	clade_marker_size	289.571428571
+t649989987	clade_marker_size	278.142857143
+t649989989	ring_color	1	#0000FF
+t649989989	ring_height	1	1.01
+t649989989	ring_alpha	1	0.0
+t649989989	ring_color	2	#FFA500
+t649989989	ring_height	2	1.01
+t649989989	ring_alpha	2	0.587301587302
+t649989989	ring_color	3	#FF0000
+t649989989	ring_height	3	1.01
+t649989989	ring_alpha	3	0.579710144928
+t649989989	ring_color	4	#800000
+t649989989	ring_height	4	1.01
+t649989989	ring_alpha	4	1.0
+t649989989	ring_color	5	#006400
+t649989989	ring_height	5	1.01
+t649989989	ring_alpha	5	0.0
+t649989989	ring_color	6	#800080
+t649989989	ring_height	6	1.01
+t649989989	ring_alpha	6	0.0
+t649989989	ring_color	7	#696969
+t649989989	ring_height	7	1.01
+t649989989	ring_alpha	7	0.111111111111
+t649989988	ring_color	1	#0000FF
+t649989988	ring_height	1	1.01
+t649989988	ring_alpha	1	0.0121951219512
+t649989988	ring_color	2	#FFA500
+t649989988	ring_height	2	1.01
+t649989988	ring_alpha	2	0.142857142857
+t649989988	ring_color	3	#FF0000
+t649989988	ring_height	3	1.01
+t649989988	ring_alpha	3	0.333333333333
+t649989988	ring_color	4	#800000
+t649989988	ring_height	4	1.01
+t649989988	ring_alpha	4	0.185714285714
+t649989988	ring_color	5	#006400
+t649989988	ring_height	5	1.01
+t649989988	ring_alpha	5	0.0
+t649989988	ring_color	6	#800080
+t649989988	ring_height	6	1.01
+t649989988	ring_alpha	6	0.0
+t649989988	ring_color	7	#696969
+t649989988	ring_height	7	1.01
+t649989988	ring_alpha	7	0.0
+t643886200	ring_color	1	#0000FF
+t643886200	ring_height	1	1.01
+t643886200	ring_alpha	1	0.19512195122
+t643886200	ring_color	2	#FFA500
+t643886200	ring_height	2	1.01
+t643886200	ring_alpha	2	0.047619047619
+t643886200	ring_color	3	#FF0000
+t643886200	ring_height	3	1.01
+t643886200	ring_alpha	3	0.0724637681159
+t643886200	ring_color	4	#800000
+t643886200	ring_height	4	1.01
+t643886200	ring_alpha	4	0.0428571428571
+t643886200	ring_color	5	#006400
+t643886200	ring_height	5	1.01
+t643886200	ring_alpha	5	0.0185185185185
+t643886200	ring_color	6	#800080
+t643886200	ring_height	6	1.01
+t643886200	ring_alpha	6	0.1
+t643886200	ring_color	7	#696969
+t643886200	ring_height	7	1.01
+t643886200	ring_alpha	7	0.111111111111
+t647000295	ring_color	1	#0000FF
+t647000295	ring_height	1	1.01
+t647000295	ring_alpha	1	0.0731707317073
+t647000295	ring_color	2	#FFA500
+t647000295	ring_height	2	1.01
+t647000295	ring_alpha	2	0.0
+t647000295	ring_color	3	#FF0000
+t647000295	ring_height	3	1.01
+t647000295	ring_alpha	3	0.0
+t647000295	ring_color	4	#800000
+t647000295	ring_height	4	1.01
+t647000295	ring_alpha	4	0.0571428571429
+t647000295	ring_color	5	#006400
+t647000295	ring_height	5	1.01
+t647000295	ring_alpha	5	0.037037037037
+t647000295	ring_color	6	#800080
+t647000295	ring_height	6	1.01
+t647000295	ring_alpha	6	0.233333333333
+t647000295	ring_color	7	#696969
+t647000295	ring_height	7	1.01
+t647000295	ring_alpha	7	0.0
+t648276716	ring_color	1	#0000FF
+t648276716	ring_height	1	1.01
+t648276716	ring_alpha	1	0.0
+t648276716	ring_color	2	#FFA500
+t648276716	ring_height	2	1.01
+t648276716	ring_alpha	2	0.0952380952381
+t648276716	ring_color	3	#FF0000
+t648276716	ring_height	3	1.01
+t648276716	ring_alpha	3	1.0105797101449
+t648276716	ring_color	4	#800000
+t648276716	ring_height	4	1.01
+t648276716	ring_alpha	4	0.171428571429
+t648276716	ring_color	5	#006400
+t648276716	ring_height	5	1.01
+t648276716	ring_alpha	5	0.0
+t648276716	ring_color	6	#800080
+t648276716	ring_height	6	1.01
+t648276716	ring_alpha	6	0.0
+t648276716	ring_color	7	#696969
+t648276716	ring_height	7	1.01
+t648276716	ring_alpha	7	0.0
+t645951840	ring_color	1	#0000FF
+t645951840	ring_height	1	1.01
+t645951840	ring_alpha	1	0.0
+t645951840	ring_color	2	#FFA500
+t645951840	ring_height	2	1.01
+t645951840	ring_alpha	2	0.380952380952
+t645951840	ring_color	3	#FF0000
+t645951840	ring_height	3	1.01
+t645951840	ring_alpha	3	1.0163768115942
+t645951840	ring_color	4	#800000
+t645951840	ring_height	4	1.01
+t645951840	ring_alpha	4	0.785714285714
+t645951840	ring_color	5	#006400
+t645951840	ring_height	5	1.01
+t645951840	ring_alpha	5	0.0
+t645951840	ring_color	6	#800080
+t645951840	ring_height	6	1.01
+t645951840	ring_alpha	6	0.0
+t645951840	ring_color	7	#696969
+t645951840	ring_height	7	1.01
+t645951840	ring_alpha	7	0.0
+t648276713	ring_color	1	#0000FF
+t648276713	ring_height	1	1.01
+t648276713	ring_alpha	1	0.0121951219512
+t648276713	ring_color	2	#FFA500
+t648276713	ring_height	2	1.01
+t648276713	ring_alpha	2	0.0
+t648276713	ring_color	3	#FF0000
+t648276713	ring_height	3	1.01
+t648276713	ring_alpha	3	0.0
+t648276713	ring_color	4	#800000
+t648276713	ring_height	4	1.01
+t648276713	ring_alpha	4	0.228571428571
+t648276713	ring_color	5	#006400
+t648276713	ring_height	5	1.01
+t648276713	ring_alpha	5	0.0185185185185
+t648276713	ring_color	6	#800080
+t648276713	ring_height	6	1.01
+t648276713	ring_alpha	6	0.0666666666667
+t648276713	ring_color	7	#696969
+t648276713	ring_height	7	1.01
+t648276713	ring_alpha	7	0.111111111111
+t649989986	ring_color	1	#0000FF
+t649989986	ring_height	1	1.01
+t649989986	ring_alpha	1	0.0121951219512
+t649989986	ring_color	2	#FFA500
+t649989986	ring_height	2	1.01
+t649989986	ring_alpha	2	0.111111111111
+t649989986	ring_color	3	#FF0000
+t649989986	ring_height	3	1.01
+t649989986	ring_alpha	3	0.246376811594
+t649989986	ring_color	4	#800000
+t649989986	ring_height	4	1.01
+t649989986	ring_alpha	4	0.214285714286
+t649989986	ring_color	5	#006400
+t649989986	ring_height	5	1.01
+t649989986	ring_alpha	5	0.0
+t649989986	ring_color	6	#800080
+t649989986	ring_height	6	1.01
+t649989986	ring_alpha	6	0.0
+t649989986	ring_color	7	#696969
+t649989986	ring_height	7	1.01
+t649989986	ring_alpha	7	0.0
+t645951836	ring_color	1	#0000FF
+t645951836	ring_height	1	1.01
+t645951836	ring_alpha	1	0.0
+t645951836	ring_color	2	#FFA500
+t645951836	ring_height	2	1.01
+t645951836	ring_alpha	2	0.587301587302
+t645951836	ring_color	3	#FF0000
+t645951836	ring_height	3	1.01
+t645951836	ring_alpha	3	0.710144927536
+t645951836	ring_color	4	#800000
+t645951836	ring_height	4	1.01
+t645951836	ring_alpha	4	0.971428571429
+t645951836	ring_color	5	#006400
+t645951836	ring_height	5	1.01
+t645951836	ring_alpha	5	0.0185185185185
+t645951836	ring_color	6	#800080
+t645951836	ring_height	6	1.01
+t645951836	ring_alpha	6	0.0
+t645951836	ring_color	7	#696969
+t645951836	ring_height	7	1.01
+t645951836	ring_alpha	7	0.111111111111
+t648861012	ring_color	1	#0000FF
+t648861012	ring_height	1	1.01
+t648861012	ring_alpha	1	0.0
+t648861012	ring_color	2	#FFA500
+t648861012	ring_height	2	1.01
+t648861012	ring_alpha	2	0.730158730159
+t648861012	ring_color	3	#FF0000
+t648861012	ring_height	3	1.01
+t648861012	ring_alpha	3	0.927536231884
+t648861012	ring_color	4	#800000
+t648861012	ring_height	4	1.01
+t648861012	ring_alpha	4	0.971428571429
+t648861012	ring_color	5	#006400
+t648861012	ring_height	5	1.01
+t648861012	ring_alpha	5	0.0
+t648861012	ring_color	6	#800080
+t648861012	ring_height	6	1.01
+t648861012	ring_alpha	6	0.0
+t648861012	ring_color	7	#696969
+t648861012	ring_height	7	1.01
+t648861012	ring_alpha	7	0.0
+t645951825	ring_color	1	#0000FF
+t645951825	ring_height	1	1.01
+t645951825	ring_alpha	1	0.0243902439024
+t645951825	ring_color	2	#FFA500
+t645951825	ring_height	2	1.01
+t645951825	ring_alpha	2	0.0
+t645951825	ring_color	3	#FF0000
+t645951825	ring_height	3	1.01
+t645951825	ring_alpha	3	0.0
+t645951825	ring_color	4	#800000
+t645951825	ring_height	4	1.01
+t645951825	ring_alpha	4	0.0
+t645951825	ring_color	5	#006400
+t645951825	ring_height	5	1.01
+t645951825	ring_alpha	5	0.0
+t645951825	ring_color	6	#800080
+t645951825	ring_height	6	1.01
+t645951825	ring_alpha	6	0.0
+t645951825	ring_color	7	#696969
+t645951825	ring_height	7	1.01
+t645951825	ring_alpha	7	0.0
+t647000292	ring_color	1	#0000FF
+t647000292	ring_height	1	1.01
+t647000292	ring_alpha	1	0.134146341463
+t647000292	ring_color	2	#FFA500
+t647000292	ring_height	2	1.01
+t647000292	ring_alpha	2	0.0
+t647000292	ring_color	3	#FF0000
+t647000292	ring_height	3	1.01
+t647000292	ring_alpha	3	0.0
+t647000292	ring_color	4	#800000
+t647000292	ring_height	4	1.01
+t647000292	ring_alpha	4	0.228571428571
+t647000292	ring_color	5	#006400
+t647000292	ring_height	5	1.01
+t647000292	ring_alpha	5	0.0185185185185
+t647000292	ring_color	6	#800080
+t647000292	ring_height	6	1.01
+t647000292	ring_alpha	6	0.2
+t647000292	ring_color	7	#696969
+t647000292	ring_height	7	1.01
+t647000292	ring_alpha	7	0.0
+t647000293	ring_color	1	#0000FF
+t647000293	ring_height	1	1.01
+t647000293	ring_alpha	1	0.19512195122
+t647000293	ring_color	2	#FFA500
+t647000293	ring_height	2	1.01
+t647000293	ring_alpha	2	0.0
+t647000293	ring_color	3	#FF0000
+t647000293	ring_height	3	1.01
+t647000293	ring_alpha	3	0.0144927536232
+t647000293	ring_color	4	#800000
+t647000293	ring_height	4	1.01
+t647000293	ring_alpha	4	0.0
+t647000293	ring_color	5	#006400
+t647000293	ring_height	5	1.01
+t647000293	ring_alpha	5	0.0925925925926
+t647000293	ring_color	6	#800080
+t647000293	ring_height	6	1.01
+t647000293	ring_alpha	6	0.0666666666667
+t647000293	ring_color	7	#696969
+t647000293	ring_height	7	1.01
+t647000293	ring_alpha	7	0.111111111111
+t648028051	ring_color	1	#0000FF
+t648028051	ring_height	1	1.01
+t648028051	ring_alpha	1	0.0365853658537
+t648028051	ring_color	2	#FFA500
+t648028051	ring_height	2	1.01
+t648028051	ring_alpha	2	0.984126984127
+t648028051	ring_color	3	#FF0000
+t648028051	ring_height	3	1.01
+t648028051	ring_alpha	3	0.95652173913
+t648028051	ring_color	4	#800000
+t648028051	ring_height	4	1.01
+t648028051	ring_alpha	4	1.0
+t648028051	ring_color	5	#006400
+t648028051	ring_height	5	1.01
+t648028051	ring_alpha	5	0.0740740740741
+t648028051	ring_color	6	#800080
+t648028051	ring_height	6	1.01
+t648028051	ring_alpha	6	0.0
+t648028051	ring_color	7	#696969
+t648028051	ring_height	7	1.01
+t648028051	ring_alpha	7	0.555555555556
+t648276715	ring_color	1	#0000FF
+t648276715	ring_height	1	1.01
+t648276715	ring_alpha	1	0.109756097561
+t648276715	ring_color	2	#FFA500
+t648276715	ring_height	2	1.01
+t648276715	ring_alpha	2	0.15873015873
+t648276715	ring_color	3	#FF0000
+t648276715	ring_height	3	1.01
+t648276715	ring_alpha	3	1.0192753623188
+t648276715	ring_color	4	#800000
+t648276715	ring_height	4	1.01
+t648276715	ring_alpha	4	0.957142857143
+t648276715	ring_color	5	#006400
+t648276715	ring_height	5	1.01
+t648276715	ring_alpha	5	0.0
+t648276715	ring_color	6	#800080
+t648276715	ring_height	6	1.01
+t648276715	ring_alpha	6	0.133333333333
+t648276715	ring_color	7	#696969
+t648276715	ring_height	7	1.01
+t648276715	ring_alpha	7	0.0
+t649989987	ring_color	1	#0000FF
+t649989987	ring_height	1	1.01
+t649989987	ring_alpha	1	0.0
+t649989987	ring_color	2	#FFA500
+t649989987	ring_height	2	1.01
+t649989987	ring_alpha	2	1.0160317460317
+t649989987	ring_color	3	#FF0000
+t649989987	ring_height	3	1.01
+t649989987	ring_alpha	3	0.507246376812
+t649989987	ring_color	4	#800000
+t649989987	ring_height	4	1.01
+t649989987	ring_alpha	4	0.914285714286
+t649989987	ring_color	5	#006400
+t649989987	ring_height	5	1.01
+t649989987	ring_alpha	5	0.0
+t649989987	ring_color	6	#800080
+t649989987	ring_height	6	1.01
+t649989987	ring_alpha	6	0.0
+t649989987	ring_color	7	#696969
+t649989987	ring_height	7	1.01
+t649989987	ring_alpha	7	0.111111111111
+t643886197	ring_color	8	#0000FF
+t643886197	ring_height	8	0.07
+t643886197	ring_width	8	0.7
+t645058788	ring_color	8	#0000FF
+t645058788	ring_height	8	0.07
+t645058788	ring_width	8	0.7
+t649989912	ring_color	8	#0000FF
+t649989912	ring_height	8	0.60093665
+t649989912	ring_width	8	0.7
+t641736196	ring_color	8	#0000FF
+t641736196	ring_height	8	1.4204345
+t641736196	ring_width	8	0.7
+t643886111	ring_color	8	#0000FF
+t643886111	ring_height	8	0.61685255
+t643886111	ring_width	8	0.7
+t642791613	ring_color	8	#0000FF
+t642791613	ring_height	8	0.16686685
+t642791613	ring_width	8	0.7
+t647000215	ring_color	8	#0000FF
+t647000215	ring_height	8	0.849099
+t647000215	ring_width	8	0.7
+t641380447	ring_color	8	#0000FF
+t641380447	ring_height	8	0.41505365
+t641380447	ring_width	8	0.7
+t642979370	ring_color	8	#0000FF
+t642979370	ring_height	8	0.0855955
+t642979370	ring_width	8	0.7
+t640753008	ring_color	8	#0000FF
+t640753008	ring_height	8	2.61244295
+t640753008	ring_width	8	0.7
+t651324012	ring_color	8	#0000FF
+t651324012	ring_height	8	2.22855925
+t651324012	ring_width	8	0.7
+t640963023	ring_color	8	#0000FF
+t640963023	ring_height	8	1.1207622
+t640963023	ring_width	8	0.7
+t649633012	ring_color	8	#0000FF
+t649633012	ring_height	8	0.07
+t649633012	ring_width	8	0.7
+t637000026	ring_color	8	#0000FF
+t637000026	ring_height	8	0.2622531
+t637000026	ring_width	8	0.7
+t642979319	ring_color	8	#0000FF
+t642979319	ring_height	8	0.762326
+t642979319	ring_width	8	0.7
+t642979351	ring_color	8	#0000FF
+t642979351	ring_height	8	0.3213409
+t642979351	ring_width	8	0.7
+t642791621	ring_color	8	#0000FF
+t642791621	ring_height	8	0.1275612
+t642791621	ring_width	8	0.7
+t649633013	ring_color	8	#0000FF
+t649633013	ring_height	8	0.07
+t649633013	ring_width	8	0.7
+t640963023	clade_marker_color	#87CEFA
+t649989912	clade_marker_color	#87CEFA
+t642979351	clade_marker_color	#87CEFA
+t641380447	clade_marker_color	#87CEFA
+t647000215	clade_marker_color	#87CEFA
+t651324012	clade_marker_color	#87CEFA
+t642979370	clade_marker_color	#87CEFA
+t641736196	clade_marker_color	#87CEFA
+t640753008	clade_marker_color	#87CEFA
+t642791621	clade_marker_color	#87CEFA
+t637000026	clade_marker_color	#87CEFA
+t649633012	clade_marker_color	#87CEFA
+t649633013	clade_marker_color	#87CEFA
+t642791613	clade_marker_color	#87CEFA
+t643886111	clade_marker_color	#87CEFA
+t643886197	clade_marker_color	#87CEFA
+t642979319	clade_marker_color	#87CEFA
+t645058788	clade_marker_color	#87CEFA
+t643886197	clade_marker_size	20.0
+t645058788	clade_marker_shape	*
+t645058788	clade_marker_size	428.024390244
+t649989912	clade_marker_size	140.5121951219
+t641736196	clade_marker_size	199.7804878049
+t643886111	clade_marker_size	182.4634146341
+t642791613	clade_marker_size	42.9512195123
+t647000215	clade_marker_size	284.682926829
+t641380447	clade_marker_size	248.390243902
+t642979370	clade_marker_size	214.926829268
+t640753008	clade_marker_shape	*
+t640753008	clade_marker_size	790.12195122
+t651324012	clade_marker_size	275.195121951
+t640963023	clade_marker_shape	*
+t640963023	clade_marker_size	624.804878049
+t649633012	clade_marker_size	40.0
+t637000026	clade_marker_shape	*
+t637000026	clade_marker_size	624.804878049
+t642979319	clade_marker_size	212.097560976
+t642979351	clade_marker_size	40.1219512195
+t642791621	clade_marker_size	148.0243902439
+t649633013	clade_marker_size	40.0
+t643886197	ring_color	1	#0000FF
+t643886197	ring_height	1	1.01
+t643886197	ring_alpha	1	0.0487804878049
+t643886197	ring_color	2	#FFA500
+t643886197	ring_height	2	1.01
+t643886197	ring_alpha	2	0.0
+t643886197	ring_color	3	#FF0000
+t643886197	ring_height	3	1.01
+t643886197	ring_alpha	3	0.0
+t643886197	ring_color	4	#800000
+t643886197	ring_height	4	1.01
+t643886197	ring_alpha	4	0.0
+t643886197	ring_color	5	#006400
+t643886197	ring_height	5	1.01
+t643886197	ring_alpha	5	0.0
+t643886197	ring_color	6	#800080
+t643886197	ring_height	6	1.01
+t643886197	ring_alpha	6	0.0
+t643886197	ring_color	7	#696969
+t643886197	ring_height	7	1.01
+t643886197	ring_alpha	7	0.111111111111
+t645058788	ring_color	1	#0000FF
+t645058788	ring_height	1	1.01
+t645058788	ring_alpha	1	1.0175609756098
+t645058788	ring_color	2	#FFA500
+t645058788	ring_height	2	1.01
+t645058788	ring_alpha	2	0.0
+t645058788	ring_color	3	#FF0000
+t645058788	ring_height	3	1.01
+t645058788	ring_alpha	3	0.0
+t645058788	ring_color	4	#800000
+t645058788	ring_height	4	1.01
+t645058788	ring_alpha	4	0.0
+t645058788	ring_color	5	#006400
+t645058788	ring_height	5	1.01
+t645058788	ring_alpha	5	0.0
+t645058788	ring_color	6	#800080
+t645058788	ring_height	6	1.01
+t645058788	ring_alpha	6	0.0
+t645058788	ring_color	7	#696969
+t645058788	ring_height	7	1.01
+t645058788	ring_alpha	7	0.0
+t649989912	ring_color	1	#0000FF
+t649989912	ring_height	1	1.01
+t649989912	ring_alpha	1	1.0163414634146
+t649989912	ring_color	2	#FFA500
+t649989912	ring_height	2	1.01
+t649989912	ring_alpha	2	0.0
+t649989912	ring_color	3	#FF0000
+t649989912	ring_height	3	1.01
+t649989912	ring_alpha	3	0.0
+t649989912	ring_color	4	#800000
+t649989912	ring_height	4	1.01
+t649989912	ring_alpha	4	0.0142857142857
+t649989912	ring_color	5	#006400
+t649989912	ring_height	5	1.01
+t649989912	ring_alpha	5	0.0
+t649989912	ring_color	6	#800080
+t649989912	ring_height	6	1.01
+t649989912	ring_alpha	6	0.0
+t649989912	ring_color	7	#696969
+t649989912	ring_height	7	1.01
+t649989912	ring_alpha	7	0.333333333333
+t641736196	ring_color	1	#0000FF
+t641736196	ring_height	1	1.01
+t641736196	ring_alpha	1	0.658536585366
+t641736196	ring_color	2	#FFA500
+t641736196	ring_height	2	1.01
+t641736196	ring_alpha	2	0.047619047619
+t641736196	ring_color	3	#FF0000
+t641736196	ring_height	3	1.01
+t641736196	ring_alpha	3	0.0144927536232
+t641736196	ring_color	4	#800000
+t641736196	ring_height	4	1.01
+t641736196	ring_alpha	4	0.0428571428571
+t641736196	ring_color	5	#006400
+t641736196	ring_height	5	1.01
+t641736196	ring_alpha	5	0.0
+t641736196	ring_color	6	#800080
+t641736196	ring_height	6	1.01
+t641736196	ring_alpha	6	0.0
+t641736196	ring_color	7	#696969
+t641736196	ring_height	7	1.01
+t641736196	ring_alpha	7	0.222222222222
+t643886111	ring_color	1	#0000FF
+t643886111	ring_height	1	1.01
+t643886111	ring_alpha	1	0.609756097561
+t643886111	ring_color	2	#FFA500
+t643886111	ring_height	2	1.01
+t643886111	ring_alpha	2	0.031746031746
+t643886111	ring_color	3	#FF0000
+t643886111	ring_height	3	1.01
+t643886111	ring_alpha	3	0.0144927536232
+t643886111	ring_color	4	#800000
+t643886111	ring_height	4	1.01
+t643886111	ring_alpha	4	0.0428571428571
+t643886111	ring_color	5	#006400
+t643886111	ring_height	5	1.01
+t643886111	ring_alpha	5	0.0
+t643886111	ring_color	6	#800080
+t643886111	ring_height	6	1.01
+t643886111	ring_alpha	6	0.0333333333333
+t643886111	ring_color	7	#696969
+t643886111	ring_height	7	1.01
+t643886111	ring_alpha	7	0.111111111111
+t642791613	ring_color	1	#0000FF
+t642791613	ring_height	1	1.01
+t642791613	ring_alpha	1	0.146341463415
+t642791613	ring_color	2	#FFA500
+t642791613	ring_height	2	1.01
+t642791613	ring_alpha	2	0.0
+t642791613	ring_color	3	#FF0000
+t642791613	ring_height	3	1.01
+t642791613	ring_alpha	3	0.0
+t642791613	ring_color	4	#800000
+t642791613	ring_height	4	1.01
+t642791613	ring_alpha	4	0.0285714285714
+t642791613	ring_color	5	#006400
+t642791613	ring_height	5	1.01
+t642791613	ring_alpha	5	0.0
+t642791613	ring_color	6	#800080
+t642791613	ring_height	6	1.01
+t642791613	ring_alpha	6	0.0
+t642791613	ring_color	7	#696969
+t642791613	ring_height	7	1.01
+t642791613	ring_alpha	7	0.111111111111
+t647000215	ring_color	1	#0000FF
+t647000215	ring_height	1	1.01
+t647000215	ring_alpha	1	0.951219512195
+t647000215	ring_color	2	#FFA500
+t647000215	ring_height	2	1.01
+t647000215	ring_alpha	2	0.047619047619
+t647000215	ring_color	3	#FF0000
+t647000215	ring_height	3	1.01
+t647000215	ring_alpha	3	0.0289855072464
+t647000215	ring_color	4	#800000
+t647000215	ring_height	4	1.01
+t647000215	ring_alpha	4	0.0285714285714
+t647000215	ring_color	5	#006400
+t647000215	ring_height	5	1.01
+t647000215	ring_alpha	5	0.0
+t647000215	ring_color	6	#800080
+t647000215	ring_height	6	1.01
+t647000215	ring_alpha	6	0.0333333333333
+t647000215	ring_color	7	#696969
+t647000215	ring_height	7	1.01
+t647000215	ring_alpha	7	0.111111111111
+t641380447	ring_color	1	#0000FF
+t641380447	ring_height	1	1.01
+t641380447	ring_alpha	1	0.829268292683
+t641380447	ring_color	2	#FFA500
+t641380447	ring_height	2	1.01
+t641380447	ring_alpha	2	0.0
+t641380447	ring_color	3	#FF0000
+t641380447	ring_height	3	1.01
+t641380447	ring_alpha	3	0.0144927536232
+t641380447	ring_color	4	#800000
+t641380447	ring_height	4	1.01
+t641380447	ring_alpha	4	0.0428571428571
+t641380447	ring_color	5	#006400
+t641380447	ring_height	5	1.01
+t641380447	ring_alpha	5	0.0
+t641380447	ring_color	6	#800080
+t641380447	ring_height	6	1.01
+t641380447	ring_alpha	6	0.0333333333333
+t641380447	ring_color	7	#696969
+t641380447	ring_height	7	1.01
+t641380447	ring_alpha	7	0.222222222222
+t642979370	ring_color	1	#0000FF
+t642979370	ring_height	1	1.01
+t642979370	ring_alpha	1	0.719512195122
+t642979370	ring_color	2	#FFA500
+t642979370	ring_height	2	1.01
+t642979370	ring_alpha	2	0.0
+t642979370	ring_color	3	#FF0000
+t642979370	ring_height	3	1.01
+t642979370	ring_alpha	3	0.0
+t642979370	ring_color	4	#800000
+t642979370	ring_height	4	1.01
+t642979370	ring_alpha	4	0.0
+t642979370	ring_color	5	#006400
+t642979370	ring_height	5	1.01
+t642979370	ring_alpha	5	0.0
+t642979370	ring_color	6	#800080
+t642979370	ring_height	6	1.01
+t642979370	ring_alpha	6	0.0
+t642979370	ring_color	7	#696969
+t642979370	ring_height	7	1.01
+t642979370	ring_alpha	7	0.111111111111
+t640753008	ring_color	1	#0000FF
+t640753008	ring_height	1	1.01
+t640753008	ring_alpha	1	0.878048780488
+t640753008	ring_color	2	#FFA500
+t640753008	ring_height	2	1.01
+t640753008	ring_alpha	2	0.126984126984
+t640753008	ring_color	3	#FF0000
+t640753008	ring_height	3	1.01
+t640753008	ring_alpha	3	0.115942028986
+t640753008	ring_color	4	#800000
+t640753008	ring_height	4	1.01
+t640753008	ring_alpha	4	0.185714285714
+t640753008	ring_color	5	#006400
+t640753008	ring_height	5	1.01
+t640753008	ring_alpha	5	0.0
+t640753008	ring_color	6	#800080
+t640753008	ring_height	6	1.01
+t640753008	ring_alpha	6	0.0666666666667
+t640753008	ring_color	7	#696969
+t640753008	ring_height	7	1.01
+t640753008	ring_alpha	7	1.0144444444444
+t651324012	ring_color	1	#0000FF
+t651324012	ring_height	1	1.01
+t651324012	ring_alpha	1	0.914634146341
+t651324012	ring_color	2	#FFA500
+t651324012	ring_height	2	1.01
+t651324012	ring_alpha	2	0.047619047619
+t651324012	ring_color	3	#FF0000
+t651324012	ring_height	3	1.01
+t651324012	ring_alpha	3	0.101449275362
+t651324012	ring_color	4	#800000
+t651324012	ring_height	4	1.01
+t651324012	ring_alpha	4	0.0714285714286
+t651324012	ring_color	5	#006400
+t651324012	ring_height	5	1.01
+t651324012	ring_alpha	5	0.0
+t651324012	ring_color	6	#800080
+t651324012	ring_height	6	1.01
+t651324012	ring_alpha	6	0.0333333333333
+t651324012	ring_color	7	#696969
+t651324012	ring_height	7	1.01
+t651324012	ring_alpha	7	0.333333333333
+t640963023	ring_color	1	#0000FF
+t640963023	ring_height	1	1.01
+t640963023	ring_alpha	1	0.69512195122
+t640963023	ring_color	2	#FFA500
+t640963023	ring_height	2	1.01
+t640963023	ring_alpha	2	0.047619047619
+t640963023	ring_color	3	#FF0000
+t640963023	ring_height	3	1.01
+t640963023	ring_alpha	3	0.0289855072464
+t640963023	ring_color	4	#800000
+t640963023	ring_height	4	1.01
+t640963023	ring_alpha	4	0.0285714285714
+t640963023	ring_color	5	#006400
+t640963023	ring_height	5	1.01
+t640963023	ring_alpha	5	0.0
+t640963023	ring_color	6	#800080
+t640963023	ring_height	6	1.01
+t640963023	ring_alpha	6	0.0333333333333
+t640963023	ring_color	7	#696969
+t640963023	ring_height	7	1.01
+t640963023	ring_alpha	7	0.222222222222
+t649633012	ring_color	1	#0000FF
+t649633012	ring_height	1	1.01
+t649633012	ring_alpha	1	0.0853658536585
+t649633012	ring_color	2	#FFA500
+t649633012	ring_height	2	1.01
+t649633012	ring_alpha	2	0.0
+t649633012	ring_color	3	#FF0000
+t649633012	ring_height	3	1.01
+t649633012	ring_alpha	3	0.0
+t649633012	ring_color	4	#800000
+t649633012	ring_height	4	1.01
+t649633012	ring_alpha	4	0.0
+t649633012	ring_color	5	#006400
+t649633012	ring_height	5	1.01
+t649633012	ring_alpha	5	0.0
+t649633012	ring_color	6	#800080
+t649633012	ring_height	6	1.01
+t649633012	ring_alpha	6	0.0
+t649633012	ring_color	7	#696969
+t649633012	ring_height	7	1.01
+t649633012	ring_alpha	7	0.0
+t637000026	ring_color	1	#0000FF
+t637000026	ring_height	1	1.01
+t637000026	ring_alpha	1	0.69512195122
+t637000026	ring_color	2	#FFA500
+t637000026	ring_height	2	1.01
+t637000026	ring_alpha	2	0.015873015873
+t637000026	ring_color	3	#FF0000
+t637000026	ring_height	3	1.01
+t637000026	ring_alpha	3	0.0
+t637000026	ring_color	4	#800000
+t637000026	ring_height	4	1.01
+t637000026	ring_alpha	4	0.0
+t637000026	ring_color	5	#006400
+t637000026	ring_height	5	1.01
+t637000026	ring_alpha	5	0.0
+t637000026	ring_color	6	#800080
+t637000026	ring_height	6	1.01
+t637000026	ring_alpha	6	0.0
+t637000026	ring_color	7	#696969
+t637000026	ring_height	7	1.01
+t637000026	ring_alpha	7	0.111111111111
+t642979319	ring_color	1	#0000FF
+t642979319	ring_height	1	1.01
+t642979319	ring_alpha	1	0.707317073171
+t642979319	ring_color	2	#FFA500
+t642979319	ring_height	2	1.01
+t642979319	ring_alpha	2	0.0634920634921
+t642979319	ring_color	3	#FF0000
+t642979319	ring_height	3	1.01
+t642979319	ring_alpha	3	0.0
+t642979319	ring_color	4	#800000
+t642979319	ring_height	4	1.01
+t642979319	ring_alpha	4	0.0428571428571
+t642979319	ring_color	5	#006400
+t642979319	ring_height	5	1.01
+t642979319	ring_alpha	5	0.0
+t642979319	ring_color	6	#800080
+t642979319	ring_height	6	1.01
+t642979319	ring_alpha	6	0.0
+t642979319	ring_color	7	#696969
+t642979319	ring_height	7	1.01
+t642979319	ring_alpha	7	0.222222222222
+t642979351	ring_color	1	#0000FF
+t642979351	ring_height	1	1.01
+t642979351	ring_alpha	1	0.134146341463
+t642979351	ring_color	2	#FFA500
+t642979351	ring_height	2	1.01
+t642979351	ring_alpha	2	0.015873015873
+t642979351	ring_color	3	#FF0000
+t642979351	ring_height	3	1.01
+t642979351	ring_alpha	3	0.0289855072464
+t642979351	ring_color	4	#800000
+t642979351	ring_height	4	1.01
+t642979351	ring_alpha	4	0.0714285714286
+t642979351	ring_color	5	#006400
+t642979351	ring_height	5	1.01
+t642979351	ring_alpha	5	0.0
+t642979351	ring_color	6	#800080
+t642979351	ring_height	6	1.01
+t642979351	ring_alpha	6	0.0
+t642979351	ring_color	7	#696969
+t642979351	ring_height	7	1.01
+t642979351	ring_alpha	7	0.111111111111
+t642791621	ring_color	1	#0000FF
+t642791621	ring_height	1	1.01
+t642791621	ring_alpha	1	1.0126829268293
+t642791621	ring_color	2	#FFA500
+t642791621	ring_height	2	1.01
+t642791621	ring_alpha	2	0.015873015873
+t642791621	ring_color	3	#FF0000
+t642791621	ring_height	3	1.01
+t642791621	ring_alpha	3	0.0
+t642791621	ring_color	4	#800000
+t642791621	ring_height	4	1.01
+t642791621	ring_alpha	4	0.0
+t642791621	ring_color	5	#006400
+t642791621	ring_height	5	1.01
+t642791621	ring_alpha	5	0.0
+t642791621	ring_color	6	#800080
+t642791621	ring_height	6	1.01
+t642791621	ring_alpha	6	0.0
+t642791621	ring_color	7	#696969
+t642791621	ring_height	7	1.01
+t642791621	ring_alpha	7	0.0
+t649633013	ring_color	1	#0000FF
+t649633013	ring_height	1	1.01
+t649633013	ring_alpha	1	0.109756097561
+t649633013	ring_color	2	#FFA500
+t649633013	ring_height	2	1.01
+t649633013	ring_alpha	2	0.0
+t649633013	ring_color	3	#FF0000
+t649633013	ring_height	3	1.01
+t649633013	ring_alpha	3	0.0
+t649633013	ring_color	4	#800000
+t649633013	ring_height	4	1.01
+t649633013	ring_alpha	4	0.0
+t649633013	ring_color	5	#006400
+t649633013	ring_height	5	1.01
+t649633013	ring_alpha	5	0.0
+t649633013	ring_color	6	#800080
+t649633013	ring_height	6	1.01
+t649633013	ring_alpha	6	0.0
+t649633013	ring_color	7	#696969
+t649633013	ring_height	7	1.01
+t649633013	ring_alpha	7	0.0

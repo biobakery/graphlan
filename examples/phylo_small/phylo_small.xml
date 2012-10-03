@@ -1,0 +1,274 @@
+<phy:phyloxml xmlns:phy="http://www.phyloxml.org">
+  <phy:phylogeny rooted="false">
+      <phy:clade>
+	      
+	      
+                              <phy:clade>
+                                <phy:name>Prevotella</phy:name>
+                                <phy:branch_length>0.24393</phy:branch_length>
+                                <phy:confidence type="unknown">1.0</phy:confidence>
+                                <phy:clade>
+                                  <phy:name>t645951840</phy:name>
+                                  <phy:branch_length>0.63372</phy:branch_length>
+                                </phy:clade>
+                                <phy:clade>
+                                  <phy:branch_length>0.26393</phy:branch_length>
+                                  <phy:confidence type="unknown">1.0</phy:confidence>
+                                  <phy:clade>
+                                    <phy:name>t648276716</phy:name>
+                                    <phy:branch_length>0.30892</phy:branch_length>
+                                  </phy:clade>
+                                  <phy:clade>
+                                    <phy:branch_length>0.08817</phy:branch_length>
+                                    <phy:confidence type="unknown">1.0</phy:confidence>
+                                    <phy:clade>
+                                      <phy:branch_length>0.06497</phy:branch_length>
+                                      <phy:confidence type="unknown">1.0</phy:confidence>
+                                      <phy:clade>
+                                        <phy:branch_length>0.05732</phy:branch_length>
+                                        <phy:confidence type="unknown">0.98</phy:confidence>
+                                        <phy:clade>
+                                          <phy:name>t649989986</phy:name>
+                                          <phy:branch_length>0.19496</phy:branch_length>
+                                        </phy:clade>
+                                        <phy:clade>
+                                          <phy:name>t643886200</phy:name>
+                                          <phy:branch_length>0.25794</phy:branch_length>
+                                        </phy:clade>
+                                      </phy:clade>
+                                      <phy:clade>
+                                        <phy:branch_length>0.0437</phy:branch_length>
+                                        <phy:confidence type="unknown">0.16</phy:confidence>
+                                        <phy:clade>
+                                          <phy:branch_length>0.18949</phy:branch_length>
+                                          <phy:confidence type="unknown">1.0</phy:confidence>
+                                          <phy:clade>
+                                            <phy:name>t648861012</phy:name>
+                                            <phy:branch_length>0.07642</phy:branch_length>
+                                          </phy:clade>
+                                          <phy:clade>
+                                            <phy:name>t649989989</phy:name>
+                                            <phy:branch_length>0.10016</phy:branch_length>
+                                          </phy:clade>
+                                        </phy:clade>
+                                        <phy:clade>
+                                          <phy:branch_length>0.05663</phy:branch_length>
+                                          <phy:confidence type="unknown">0.99</phy:confidence>
+                                          <phy:clade>
+                                            <phy:name>t645951825</phy:name>
+                                            <phy:branch_length>0.33423</phy:branch_length>
+                                          </phy:clade>
+                                          <phy:clade>
+                                            <phy:branch_length>0.13555</phy:branch_length>
+                                            <phy:confidence type="unknown">1.0</phy:confidence>
+                                            <phy:clade>
+                                              <phy:branch_length>0.07452</phy:branch_length>
+                                              <phy:confidence type="unknown">1.0</phy:confidence>
+                                              <phy:clade>
+                                                <phy:name>t649989987</phy:name>
+                                                <phy:branch_length>0.10015</phy:branch_length>
+                                              </phy:clade>
+                                              <phy:clade>
+                                                <phy:branch_length>0.01992</phy:branch_length>
+                                                <phy:confidence type="unknown">0.71</phy:confidence>
+                                                <phy:clade>
+                                                  <phy:name>t648028051</phy:name>
+                                                  <phy:branch_length>0.08147</phy:branch_length>
+                                                </phy:clade>
+                                                <phy:clade>
+                                                  <phy:name>t645951836</phy:name>
+                                                  <phy:branch_length>0.10696</phy:branch_length>
+                                                </phy:clade>
+                                              </phy:clade>
+                                            </phy:clade>
+                                            <phy:clade>
+                                              <phy:branch_length>0.06486</phy:branch_length>
+                                              <phy:confidence type="unknown">0.99</phy:confidence>
+                                              <phy:clade>
+                                                <phy:name>t648276715</phy:name>
+                                                <phy:branch_length>0.2381</phy:branch_length>
+                                              </phy:clade>
+                                              <phy:clade>
+                                                <phy:branch_length>0.16206</phy:branch_length>
+                                                <phy:confidence type="unknown">1.0</phy:confidence>
+                                                <phy:clade>
+                                                  <phy:name>t648276713</phy:name>
+                                                  <phy:branch_length>0.17513</phy:branch_length>
+                                                </phy:clade>
+                                                <phy:clade>
+                                                  <phy:name>t647000292</phy:name>
+                                                  <phy:branch_length>0.08733</phy:branch_length>
+                                                </phy:clade>
+                                              </phy:clade>
+                                            </phy:clade>
+                                          </phy:clade>
+                                        </phy:clade>
+                                      </phy:clade>
+                                    </phy:clade>
+                                    <phy:clade>
+                                      <phy:branch_length>0.0498</phy:branch_length>
+                                      <phy:confidence type="unknown">0.78</phy:confidence>
+                                      <phy:clade>
+                                        <phy:name>t649989988</phy:name>
+                                        <phy:branch_length>0.19822</phy:branch_length>
+                                      </phy:clade>
+                                      <phy:clade>
+                                        <phy:branch_length>0.17101</phy:branch_length>
+                                        <phy:confidence type="unknown">1.0</phy:confidence>
+                                        <phy:clade>
+                                          <phy:name>t647000293</phy:name>
+                                          <phy:branch_length>0.12894</phy:branch_length>
+                                        </phy:clade>
+                                        <phy:clade>
+                                          <phy:name>t647000295</phy:name>
+                                          <phy:branch_length>0.14334</phy:branch_length>
+                                        </phy:clade>
+                                      </phy:clade>
+                                    </phy:clade>
+                                  </phy:clade>
+                                </phy:clade>
+                              </phy:clade>
+                              <phy:clade>
+                                <phy:name>Bacteroides</phy:name>
+                                <phy:branch_length>0.51562</phy:branch_length>
+                                <phy:confidence type="unknown">1.0</phy:confidence>
+                                <phy:clade>
+                                  <phy:branch_length>0.11533</phy:branch_length>
+                                  <phy:confidence type="unknown">1.0</phy:confidence>
+                                  <phy:clade>
+                                    <phy:branch_length>0.04571</phy:branch_length>
+                                    <phy:confidence type="unknown">1.0</phy:confidence>
+                                    <phy:clade>
+                                      <phy:name>t645058788</phy:name>
+                                      <phy:branch_length>0.12426</phy:branch_length>
+                                    </phy:clade>
+                                    <phy:clade>
+                                      <phy:branch_length>0.07121</phy:branch_length>
+                                      <phy:confidence type="unknown">1.0</phy:confidence>
+                                      <phy:clade>
+                                        <phy:branch_length>0.01819</phy:branch_length>
+                                        <phy:confidence type="unknown">0.98</phy:confidence>
+                                        <phy:clade>
+                                          <phy:name>t640963023</phy:name>
+                                          <phy:branch_length>0.04145</phy:branch_length>
+                                        </phy:clade>
+                                        <phy:clade>
+                                          <phy:branch_length>0.01776</phy:branch_length>
+                                          <phy:confidence type="unknown">1.0</phy:confidence>
+                                          <phy:clade>
+                                            <phy:name>t642979319</phy:name>
+                                            <phy:branch_length>0.05529</phy:branch_length>
+                                          </phy:clade>
+                                          <phy:clade>
+                                            <phy:branch_length>0.02808</phy:branch_length>
+                                            <phy:confidence type="unknown">1.0</phy:confidence>
+                                            <phy:clade>
+                                              <phy:name>t647000215</phy:name>
+                                              <phy:branch_length>0.03155</phy:branch_length>
+                                            </phy:clade>
+                                            <phy:clade>
+                                              <phy:name>t651324012</phy:name>
+                                              <phy:branch_length>0.01315</phy:branch_length>
+                                            </phy:clade>
+                                          </phy:clade>
+                                        </phy:clade>
+                                      </phy:clade>
+                                      <phy:clade>
+                                        <phy:name>t637000026</phy:name>
+                                        <phy:branch_length>0.04422</phy:branch_length>
+                                      </phy:clade>
+                                    </phy:clade>
+                                  </phy:clade>
+                                  <phy:clade>
+                                    <phy:branch_length>0.05907</phy:branch_length>
+                                    <phy:confidence type="unknown">1.0</phy:confidence>
+                                    <phy:clade>
+                                      <phy:branch_length>0.07882</phy:branch_length>
+                                      <phy:confidence type="unknown">1.0</phy:confidence>
+                                      <phy:clade>
+                                        <phy:name>t643886111</phy:name>
+                                        <phy:branch_length>0.03342</phy:branch_length>
+                                      </phy:clade>
+                                      <phy:clade>
+                                        <phy:name>t642791621</phy:name>
+                                        <phy:branch_length>0.03498</phy:branch_length>
+                                      </phy:clade>
+                                    </phy:clade>
+                                    <phy:clade>
+                                      <phy:branch_length>0.05685</phy:branch_length>
+                                      <phy:confidence type="unknown">1.0</phy:confidence>
+                                      <phy:clade>
+                                        <phy:branch_length>0.05264</phy:branch_length>
+                                        <phy:confidence type="unknown">1.0</phy:confidence>
+                                        <phy:clade>
+                                          <phy:name>t649989912</phy:name>
+                                          <phy:branch_length>0.03891</phy:branch_length>
+                                        </phy:clade>
+                                        <phy:clade>
+                                          <phy:name>t641736196</phy:name>
+                                          <phy:branch_length>0.037</phy:branch_length>
+                                        </phy:clade>
+                                      </phy:clade>
+                                      <phy:clade>
+                                        <phy:branch_length>0.02194</phy:branch_length>
+                                        <phy:confidence type="unknown">0.99</phy:confidence>
+                                        <phy:clade>
+                                          <phy:name>t641380447</phy:name>
+                                          <phy:branch_length>0.06685</phy:branch_length>
+                                        </phy:clade>
+                                        <phy:clade>
+                                          <phy:name>t649633012</phy:name>
+                                          <phy:branch_length>0.11346</phy:branch_length>
+                                        </phy:clade>
+                                      </phy:clade>
+                                    </phy:clade>
+                                  </phy:clade>
+                                </phy:clade>
+                                <phy:clade>
+                                  <phy:branch_length>0.09617</phy:branch_length>
+                                  <phy:confidence type="unknown">1.0</phy:confidence>
+                                  <phy:clade>
+                                    <phy:branch_length>0.14185</phy:branch_length>
+                                    <phy:confidence type="unknown">1.0</phy:confidence>
+                                    <phy:clade>
+                                      <phy:name>t642979370</phy:name>
+                                      <phy:branch_length>0.00899</phy:branch_length>
+                                    </phy:clade>
+                                    <phy:clade>
+                                      <phy:name>t640753008</phy:name>
+                                      <phy:branch_length>0.01095</phy:branch_length>
+                                    </phy:clade>
+                                  </phy:clade>
+                                  <phy:clade>
+                                    <phy:branch_length>0.11861</phy:branch_length>
+                                    <phy:confidence type="unknown">1.0</phy:confidence>
+                                    <phy:clade>
+                                      <phy:name>t643886197</phy:name>
+                                      <phy:branch_length>0.11996</phy:branch_length>
+                                    </phy:clade>
+                                    <phy:clade>
+                                      <phy:branch_length>0.0292</phy:branch_length>
+                                      <phy:confidence type="unknown">0.94</phy:confidence>
+                                      <phy:clade>
+                                        <phy:name>t642979351</phy:name>
+                                        <phy:branch_length>0.13831</phy:branch_length>
+                                      </phy:clade>
+                                      <phy:clade>
+                                        <phy:branch_length>0.02952</phy:branch_length>
+                                        <phy:confidence type="unknown">0.2</phy:confidence>
+                                        <phy:clade>
+                                          <phy:name>t649633013</phy:name>
+                                          <phy:branch_length>0.16743</phy:branch_length>
+                                        </phy:clade>
+                                        <phy:clade>
+                                          <phy:name>t642791613</phy:name>
+                                          <phy:branch_length>0.09293</phy:branch_length>
+                                        </phy:clade>
+                                      </phy:clade>
+                                    </phy:clade>
+                                  </phy:clade>
+                                </phy:clade>
+                              </phy:clade>
+      </phy:clade>
+  </phy:phylogeny>
+</phy:phyloxml>
