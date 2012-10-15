@@ -18,7 +18,6 @@ import matplotlib.lines as lines
 
 import matplotlib
 from pylab import *
-import scipy.stats as st
 
 from pyphlan.pyphlan import PpaTree  
 
