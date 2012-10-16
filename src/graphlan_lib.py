@@ -443,8 +443,8 @@ class CircTree(PpaTree):
                     if fr_theta > to_theta:
                         fr_theta -= rpi
                 else:
-                    fr_theta = ( clade.fc.theta + clade.fc.pc.theta ) * 0.5
-                    to_theta = ( clade.lc.theta + clade.lc.nc.theta ) * 0.5
+                    fr_theta = ( clade.fc.theta + clade.fc.pc.theta ) * 0.5 if clade.fc.pc else  clade.fc.theta - abs( clade.fc.theta - clade.fc.nc.theta ) * 0.5
+                    to_theta = ( clade.lc.theta + clade.lc.nc.theta ) * 0.5 if clade.lc.nc else  clade.lc.theta + abs( clade.lc.theta - clade.lc.pc.theta ) * 0.5
                     if fr_theta > to_theta:
                         fr_theta -= rpi
                 for lev in clade.ext:
