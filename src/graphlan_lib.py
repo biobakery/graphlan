@@ -15,7 +15,6 @@ import collections as colls
 from matplotlib import collections
 import matplotlib.patches as mpatches
 import matplotlib.lines as lines
-
 import matplotlib
 from pylab import *
 
@@ -399,7 +398,9 @@ class CircTree(PpaTree):
             else:
                 self._r.append( clade.r )
                 self._t.append( clade.theta )
- 
+            if hasattr( self, "positions" ) and self.positions:
+                sys.stdout.write( "\t".join( [clade.name,str(clade.r),str(clade.theta)] ) + "\n" )
+
             if self.ignore_branch_len:
                 lev = int(self._depths[clade.name])
                 if ( hasattr(clade,'annotation_background_color') or hasattr(clade,'annotation') ) and not lev in self._wing_levs:

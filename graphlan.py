@@ -39,6 +39,9 @@ def read_params(args):
                "the format is guessed from the output file extension)")
     arg('--warnings', default=1, type=int,
         help = "set whether warning messages should be reported or not (default 1)")
+    arg('--positions', default=0, type=int,
+        help = "set whether the absolute position of the points should be reported on "
+               "the standard output. The two cohordinates are r and theta")
     arg('--dpi', default=72, type=int, metavar='image_dpi',
         help = "the dpi of the output image for non vectorial formats")
     arg('--size', default=7.0, type=float, metavar='image size',
@@ -56,11 +59,12 @@ if __name__ == "__main__":
         sys.stdout.write("GraPhlAn version "+__version__+"\t("+__date__+")"+"\n")
         sys.exit(0)
     ctree = CTree( args['intree'], args['warnings'] )
+    ctree.positions = args['positions']
     ctree.draw( args['outimg'], 
                 out_format = args['format'], 
                 out_dpi = args['dpi'],
                 out_size = args['size'],
-                out_pad = args['pad'])
+                out_pad = args['pad'] )
 
 
 
