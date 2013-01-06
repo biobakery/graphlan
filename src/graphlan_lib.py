@@ -52,6 +52,12 @@ ext_attr = ( ( 'ring_color',                        str,    '#000000'   ),
            )
 ext_attr_d = dict([(p,(t,d)) for p,t,d in ext_attr])
 
+int_attr = ( 
+             ( 'internal_label',                    str,     None       ),
+             ( 'internal_label_font_size',          int,     8       ),
+           )
+int_attr_d = dict([(p,(t,d)) for p,t,d in int_attr])
+
 structural_attr = ( ( 'ignore_branch_len',              int,    0       ), 
                     ( 'total_plotted_degrees',          float,  360.0   ),
                     ( 'start_rotation',                 float,  180.0   ),
@@ -88,7 +94,7 @@ leg_attr    = ( ( 'annotation_background_color',        str,    "w"         ),
 
 lev_sep = '.'
 
-legal_options = set(zip(*clade_attr+ext_attr+structural_attr+global_graphical_attr+branch_attr+leg_attr)[0]) | set(['class'])
+legal_options = set(zip(*clade_attr+ext_attr+int_attr+structural_attr+global_graphical_attr+branch_attr+leg_attr)[0]) | set(['class'])
 
 def random_keys(used_keys):
     n = 1
@@ -154,6 +160,13 @@ class CircTree(PpaTree):
                         gprops[prop] = {}
                     if ilev not in gprops[prop]:
                         gprops[prop][ilev] = val
+                elif clade in int_attr_d:
+                    prop,lev = clade,prop
+                    legal( prop )
+                    flev = float(lev)
+                    if prop not in gprops:
+                        gprops[prop] = {}
+                    gprops[prop][flev] = val
                 elif clade[-1] in ['*','+','^']:
                     legal( prop )
                     cl = list(self.tree.find_clades( {"name": clade[:-1]} ))
@@ -251,7 +264,10 @@ class CircTree(PpaTree):
         for k,v in gprops.items():
             if type(v) == dict:
                 for kk,vv in v.items():
-                    pn = "__".join(['ext',str(kk),k])
+                    if k in int_attr_d:
+                        pn = "__".join(['int',str(kk),k])
+                    else:
+                        pn = "__".join(['ext',str(kk),k])
                     tgprop += [Prop(   value=vv, id_ref=pn,
                                        ref='A:1', applies_to='phylogeny',
                                        datatype='xsd:string' )]
@@ -538,6 +554,8 @@ class CircTree(PpaTree):
         
         eggrops = [( int(p.id_ref.split('__')[1]),p.id_ref.split('__')[2], p.value)
                         for p in self.tree.properties if p.id_ref.startswith("ext__")] 
+        iggrops = [( float(p.id_ref.split('__')[1]),p.id_ref.split('__')[2], p.value)
+                        for p in self.tree.properties if p.id_ref.startswith("int__")] 
 
         for att,typ,default in clade_attr: 
             val = typ( gprops[att] ) if att in gprops else default
@@ -548,6 +566,11 @@ class CircTree(PpaTree):
             if not l in self.ext_levs:
                 self.ext_levs[l] = {}
             self.ext_levs[l][k] = v
+        self.int_levs = {}
+        for l,k,v in iggrops:
+            if not l in self.int_levs:
+                self.int_levs[l] = {}
+            self.int_levs[l][k] = v
         for k,v in self.ext_levs.items():
             for att,typ,default in ext_attr:
                 if att in v:
@@ -761,6 +784,8 @@ class CircTree(PpaTree):
         self._depths = dict([(c.name,dist) for c,dist in 
             self.tree.depths(self.ignore_branch_len).items()])
         self._max_depth = max(self._depths.values())
+        if not self._max_depth:
+            self._max_depth = 1.0
         self._r, self._t = arr.array('f'), arr.array('f')
         for att,typ,default in clade_attr:
             setattr( self, att, [] )
@@ -814,7 +839,7 @@ class CircTree(PpaTree):
         ax = fig.add_subplot( 111, polar=True, frame_on=False )
         xticks([])
         yticks([])
-       
+    
 
         if len(self._t) > 0 and len(self._r) > 0:
             ax.scatter( self._t, self._r,
@@ -847,6 +872,16 @@ class CircTree(PpaTree):
                        color = self._wing_colors,
                        edgecolor = self._wing_colors,
                        )
+
+        for lev,d in self.int_levs.items():
+            self._label_r.append( 1.0/self._max_depth*lev )
+            self._label_theta.append( self.start_rotation )
+            self._label.append( d['internal_label'] )
+            self._label_rot.append( 0 )
+            self._annotation_font_size.append( d['internal_label_font_size'] 
+                                                    if 'internal_label_font_size' in d 
+                                                        else int_attr_d['internal_label_font_size'][1] )
+            self._annotation_font_stretch.append( 100 )
 
         for x,y,s,r,f,fs in zip( self._label_r, self._label_theta,
                                  self._label, self._label_rot,

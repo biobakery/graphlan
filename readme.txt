@@ -260,7 +260,7 @@ annotation_font_size [def. 7] : the font size of the annotation label
 
 annotation_font_stretch [def. 0] : horizontal font compactness (0 is minimal)
 
-annotation_rotation [def 0] : the rotation of the label. As default the rotation
+annotation_rotation [def. 0] : the rotation of the label. As default the rotation
     is perpendicular to the radial position of the label. It can be changed to 
     90 so that the labels are less likely to overlap
 
@@ -269,6 +269,21 @@ annotation_background_color [def. grey] : the color of the annotation background
 annotation_background_edge_color [def annotation_background_color] : the color 
     of the edge for the annotation background
 
+
+------------------------------------------------------------------------------
+    INTERNAL ANNOTATION OPTIONS
+------------------------------------------------------------------------------
+
+annotation_option	annotation_r	annotation_value
+
+Internal annotations are used to label the levels in a tree (e.g. specify the
+level of bacterial species in a taxonomic tree). annotation_r specifies the
+radial distance from the center (i.e. the number of levels). Currently,
+annotation_option can be:
+
+annotation_label : the label to be displayed
+
+annotation_label_font_size [def. 8] : the font
 
 ------------------------------------------------------------------------------
     RING OPTIONS
