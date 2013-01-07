@@ -874,14 +874,15 @@ class CircTree(PpaTree):
                        )
 
         for lev,d in self.int_levs.items():
-            self._label_r.append( 1.0/self._max_depth*lev )
-            self._label_theta.append( self.start_rotation )
-            self._label.append( d['internal_label'] )
-            self._label_rot.append( 0 )
-            self._annotation_font_size.append( d['internal_label_font_size'] 
-                                                    if 'internal_label_font_size' in d 
-                                                        else int_attr_d['internal_label_font_size'][1] )
-            self._annotation_font_stretch.append( 100 )
+            if 'internal_label' in d:
+                self._label_r.append( 1.0/self._max_depth*lev )
+                self._label_theta.append( self.start_rotation )
+                self._label.append( d['internal_label'] )
+                self._label_rot.append( 0 )
+                self._annotation_font_size.append( d['internal_label_font_size'] 
+                                                        if 'internal_label_font_size' in d 
+                                                            else int_attr_d['internal_label_font_size'][1] )
+                self._annotation_font_stretch.append( 100 )
 
         for x,y,s,r,f,fs in zip( self._label_r, self._label_theta,
                                  self._label, self._label_rot,
