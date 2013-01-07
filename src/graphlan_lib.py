@@ -142,7 +142,7 @@ class CircTree(PpaTree):
                 sys.exit(0)
         
         self._tmp_levs = set()
-        for line in (l.strip().split('\t') for l in lines if l[0] != '#'):
+        for line in (l.strip().split() for l in lines if l[0] != '#'):
             ll = len(line)
             if ll == 2:
                 legal( line[0] ) #  in legal_options, "%s is not a valid option" % line[1]
