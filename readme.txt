@@ -191,6 +191,13 @@ branch_color [def black] : the global thickness of the lines connecting taxa
 branch_color_from_ancestor [def 1] : whether to use the color of the closest
     ancestor colored taxa for the downstream branches
 
+
+------------------------------------------------------------------------------
+    GLOBAL GRAPHICAL OPTIONS:
+------------------------------------------------------------------------------
+
+TBA!!
+
 ------------------------------------------------------------------------------
     GRAPHICAL TREE OPTIONS:
 ------------------------------------------------------------------------------
@@ -284,6 +291,9 @@ annotation_option can be:
 annotation_label : the label to be displayed
 
 annotation_label_font_size [def. 8] : the font
+
+The rotational position of the labels can be specified with the 
+internal_labels_rotation parameter (see GLOBAL GRAPHICAL OPTIONS) 
 
 ------------------------------------------------------------------------------
     RING OPTIONS

@@ -54,7 +54,7 @@ ext_attr_d = dict([(p,(t,d)) for p,t,d in ext_attr])
 
 int_attr = ( 
              ( 'internal_label',                    str,     None       ),
-             ( 'internal_label_font_size',          int,     8       ),
+             ( 'internal_label_font_size',          int,     8          ),
            )
 int_attr_d = dict([(p,(t,d)) for p,t,d in int_attr])
 
@@ -75,6 +75,7 @@ global_graphical_attr = ( ( 'annotation_background_width',       float,  0.1    
                           ( 'title_font_size',                   int,    15     ), 
                           ( 'class_legend_marker_size',          float,  1.0    ),
                           ( 'annotation_legend_font_size',       int,    7      ), 
+                          ( 'internal_labels_rotation',          float,   None       ),
                         )
 
 branch_attr = ( ( 'branch_thickness',           float,  0.75        ),
@@ -142,7 +143,7 @@ class CircTree(PpaTree):
                 sys.exit(0)
         
         self._tmp_levs = set()
-        for line in (l.strip().split() for l in lines if l[0] != '#'):
+        for line in (l.strip().split('\t') for l in lines if l[0] != '#'):
             ll = len(line)
             if ll == 2:
                 legal( line[0] ) #  in legal_options, "%s is not a valid option" % line[1]
@@ -875,10 +876,15 @@ class CircTree(PpaTree):
 
         for lev,d in self.int_levs.items():
             if 'internal_label' in d:
+                start_rot = ( self.internal_labels_rotation 
+                                 if self.internal_labels_rotation 
+                                     else self.start_rotation )
                 self._label_r.append( 1.0/self._max_depth*lev )
-                self._label_theta.append( self.start_rotation )
+                self._label_theta.append( start_rot*rpi/180.0 ) 
                 self._label.append( d['internal_label'] )
-                self._label_rot.append( 0 )
+                rot = start_rot+90 if 180.0 < start_rot%360.0 < 360.0 else start_rot-90
+                rot = (rot + 360.0) % 360.0
+                self._label_rot.append( rot )
                 self._annotation_font_size.append( d['internal_label_font_size'] 
                                                         if 'internal_label_font_size' in d 
                                                             else int_attr_d['internal_label_font_size'][1] )
