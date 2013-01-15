@@ -16,6 +16,7 @@ from matplotlib import collections
 import matplotlib.patches as mpatches
 import matplotlib.lines as lines
 import matplotlib
+matplotlib.use('Agg')
 from pylab import *
 
 from pyphlan.pyphlan import PpaTree  
