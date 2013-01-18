@@ -250,7 +250,7 @@ class CircTree(PpaTree):
 
                     clade.properties = [p for p in clade.properties 
                                                     if p.id_ref != k] + cp
-                    break
+                    #break
             for c in clade.clades:
                 _rec_annotate_( c, rkeys_gen,  npath )
 
