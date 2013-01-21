@@ -16,6 +16,7 @@ from matplotlib import collections
 import matplotlib.patches as mpatches
 import matplotlib.lines as lines
 import matplotlib
+matplotlib.use('Agg')
 from pylab import *
 
 from pyphlan.pyphlan import PpaTree  
@@ -249,7 +250,7 @@ class CircTree(PpaTree):
 
                     clade.properties = [p for p in clade.properties 
                                                     if p.id_ref != k] + cp
-                    break
+                    #break
             for c in clade.clades:
                 _rec_annotate_( c, rkeys_gen,  npath )
 
