@@ -1,15 +1,21 @@
 branch_thickness	2
 clade_marker_edge_width	1
 clade_marker_size	15
-Sigmoid colon and rectum	clade_marker_color	#000080
-Transverse colon	clade_marker_color	r
-Cecum	clade_marker_color	#9400d3
-Terminal ileum	clade_marker_color	#008000
-Right colon	clade_marker_color	#d2691e
-Left colon	clade_marker_color	#20b2aa
+6. Sigmoid colon / rectum	clade_marker_color	#000080
+6. Sigmoid colon / rectum	clade_marker_size	35
+4. Transverse colon	clade_marker_color	r
+4. Transverse colon	clade_marker_size	35
+2. Cecum	clade_marker_color	#9400d3
+2. Cecum	clade_marker_size	35
+1. Terminal ileum	clade_marker_color	#008000
+1. Terminal ileum	clade_marker_size	35
+3. Right colon	clade_marker_color	#d2691e
+3. Right colon	clade_marker_size	35
+5. Left colon	clade_marker_color	#20b2aa
+5. Left colon	clade_marker_size	35
 annotation_legend_font_size	11
 class_legend_marker_size	2
-class_legend_font_size	12
+class_legend_font_size	13
 internal_label	1	Ph.
 internal_label	2	Classes
 internal_label	3	Orders

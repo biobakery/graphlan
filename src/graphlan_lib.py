@@ -482,6 +482,7 @@ class CircTree(PpaTree):
                     if bottom + height > self._tot_offset:
                         self._tot_offset = bottom + height
 
+                    art = None
                     if 'ring_shape' not in el or el['ring_shape'] in ['R','r']:
                         
                         art = mpatches.Rectangle(   (theta,bottom),
@@ -541,8 +542,8 @@ class CircTree(PpaTree):
                                                      zorder = 15,
                                                     )
                             self._ext_patches.append( arb )
-                        
-                    self._ext_patches.append( art )
+                    if art:
+                        self._ext_patches.append( art )
             for c in clade.clades:
                 rec_set_exts(c)
 
