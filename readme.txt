@@ -288,9 +288,9 @@ level of bacterial species in a taxonomic tree). annotation_r specifies the
 radial distance from the center (i.e. the number of levels). Currently,
 annotation_option can be:
 
-annotation_label : the label to be displayed
+internal_label : the label to be displayed
 
-annotation_label_font_size [def. 8] : the font
+internal_label_font_size [def. 8] : the font
 
 The rotational position of the labels can be specified with the 
 internal_labels_rotation parameter (see GLOBAL GRAPHICAL OPTIONS) 
