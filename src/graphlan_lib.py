@@ -216,6 +216,7 @@ class CircTree(PpaTree):
             name = clade.name if clade.name else ""
             npath = lev_sep.join( ([path] if path else []) + [name] )
 
+            fn = None
             for n in [npath,name]:
                 if n in props:
                     lprop = {}
@@ -239,7 +240,11 @@ class CircTree(PpaTree):
                             if v.count(":"):
                                 kkk,vvv = v.split(":")
                                 if kkk == '*':
-                                    kkk = rkeys_gen.next()
+                                    if fn is None:
+                                        kkk = rkeys_gen.next()
+                                    else:
+                                        kkk = fn
+                                    fn = kkk
                                 if vvv == '*':
                                     vvv = clade.name
                                 value = kkk + ":" + vvv
