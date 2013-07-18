@@ -27,6 +27,9 @@ clade_attr = ( ( 'clade_marker_size',               float,  20.0        ),
                ( 'clade_marker_edge_width',         float,  0.5         ),  
                ( 'clade_marker_shape',              str,    'o'         ),  
                ( 'clade_marker_edge_color',         str,    '#000000'   ),  
+               ( 'clade_marker_label',              str,    ''          ),  
+               ( 'clade_marker_font_size',          str,    '7'         ),  
+               ( 'clade_marker_font_color',         str,    'k'         ),  
                ( 'class_label',                     str,    ""          ),  # to rem
                ( 'annotation_font_size',            int,    7           ),  
                ( 'annotation_font_stretch',         int,    0           ),  
@@ -857,7 +860,9 @@ class CircTree(PpaTree):
                         lw = self.default_clade_marker_edge_width, 
                         s = self.default_clade_marker_size,
                         zorder=12)
-        
+            #for x,y,l in zip(self._t,self._r,self.clade_marker_label):
+            #    ax.text( x, y, "A", va = 'center', ha = 'center' )
+
         if self._tl:
             mrkrs = set(self.clade_marker_shape)
             # this needs to be greatly optimized
@@ -870,6 +875,8 @@ class CircTree(PpaTree):
                             lw = [t for i,t in enumerate(self.clade_marker_edge_width) if self.clade_marker_shape[i] == m],
                             s = [t for i,t in enumerate(self.clade_marker_size) if self.clade_marker_shape[i] == m],
                             zorder=12)
+            for x,y,l,s,c in zip(self._tl,self._rl,self.clade_marker_label,self.clade_marker_font_size,self.clade_marker_font_color):
+                ax.text( x, y, l, va = 'center', ha = 'center', fontstretch = 30, fontsize = s, zorder = 35, color = c )
         bcoll = collections.LineCollection( self._branches, 
                                             color=self._br_colors,
                                             linewidth= self.branch_thickness ) 
