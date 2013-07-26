@@ -1,0 +1,36 @@
+#to set the the thickness of the border of the clade
+clade_marker_edge_width	0.5	
+
+#to annotate a label (here we annote to each phylum its name)
+p__Euryarchaeota	annotation	Euryarchaeota
+p__Crenarchaeota	annotation	Crenarchaeota
+p__Korarchaeota	annotation	Korarchaeota
+p__Nanoarchaeota	annotation	Nanoarchaeota
+p__Thaumarchaeota	annotation	Thaumarchaeota
+p__Archaea_noname	annotation	Archaea noname
+
+#a general option for the size of the label 
+annotation_font_size	5
+p__Euryarchaeota	annotation_font_size	10
+p__Crenarchaeota	annotation_font_size	10
+p__Korarchaeota	annotation_font_size	7
+p__Nanoarchaeota	annotation_font_size	7
+p__Thaumarchaeota	annotation_font_size	8
+p__Archaea_noname	annotation_font_size	7
+
+#to set the background's colour for each phylum
+p__Euryarchaeota	annotation_background_color	INDIGO
+p__Crenarchaeota	annotation_background_color	BLUE
+p__Korarchaeota	annotation_background_color	ROYALBLUE
+p__Nanoarchaeota	annotation_background_color	DODGERBLUE
+p__Thaumarchaeota	annotation_background_color	TEAL
+p__Archaea_noname	annotation_background_color	LIGHTSEAGREEN
+
+# to set the color for the clades of each phylum
+p__Euryarchaeota	clade_marker_color	INDIGO
+p__Crenarchaeota	clade_marker_color	BLUE
+p__Korarchaeota	clade_marker_color	ROYALBLUE
+p__Nanoarchaeota	clade_marker_color	DODGERBLUE
+p__Thaumarchaeota	clade_marker_color	TEAL
+p__Archaea_noname	clade_marker_color	LIGHTSEAGREEN
+

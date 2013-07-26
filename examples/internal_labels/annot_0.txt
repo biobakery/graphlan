@@ -1,0 +1,22 @@
+
+#this is the first annotation text file and it shows the main characteristics of our tree. ALL OF THEESE OPTIONS ARE GLOBAL EVENTHOUGH YOU DON'T SPECIFY WHOM ARE REFERRED TO!
+
+#clade_separation is used to specify the distace between the clades
+clade_separation	0.7
+
+#branch_thickness is used to set the thickness of branch 
+branch_thickness	1.50
+
+# this is the position of the branch
+branch_bracket_depth	0.8
+
+
+#to specify the size of the clade
+clade_marker_size	40
+
+#you can choose the colour of the clade's edge line
+clade_marker_edge_color	#555555
+clade_marker_edge_width	0.5
+
+#the width of the branch bracket
+branch_bracket_width	0.5
