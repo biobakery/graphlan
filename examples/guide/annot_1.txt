@@ -27,10 +27,12 @@ Bcereus	clade_marker_size	3
 Scarnosus	clade_marker_size	75
 Plarvae	clade_marker_size	89
 Bpumilus	clade_marker_size	50
+Bsubtilis	clade_marker_size	65
 Bthuringiensis	clade_marker_size	10
 Cthermarum	clade_marker_size	15
 Bmegaterium	clade_marker_size	12
-Lfusiformis	clade_marker_size	54
+Lfusiformis	clade_marker_size	174
+Oiheyensis	clade_marker_size	95
 Scapitis	clade_marker_size	36
 Shaemolyticus	clade_marker_size	64
 Ppolymyxa	clade_marker_size	20
