@@ -232,6 +232,11 @@ clade_marker_edge_width [def. 0.5] : the thickness of the border for clade
 clade_marker_edge_color [def. #000000, i.e. black] : the color of the markers' 
     border
 
+clade_marker_label : TBA
+
+clade_marker_font_size : TBA
+
+clade_marker_font_color [def 'k']: TBA
 
 When added after the name of a valid clade, the following three characters can
 be used to apply the same property to multiple parts of the clade' subtree
