@@ -154,7 +154,7 @@ class CircTree(PpaTree):
                 gprops[line[0]] = line[1]
             elif ll == 3:
                 clade,prop,val = line
-                if clade == '*':
+                if clade == '*' and prop != 'annotation':
                     legal( prop )
                     gprops[prop] = val
                 elif clade in ext_attr_d:
@@ -174,9 +174,12 @@ class CircTree(PpaTree):
                     gprops[prop][flev] = val
                 elif clade[-1] in ['*','+','^']:
                     legal( prop )
-                    cl = list(self.tree.find_clades( {"name": clade[:-1]} ))
-                    if cl != 1: #??
-                        cl = list(self.tree.find_clades( {"name": clade[:-1].split(lev_sep)[-1]} ))
+                    if len(clade) == 1:
+                        cl = self.tree.root
+                    else: 
+                        cl = list(self.tree.find_clades( {"name": clade[:-1]} ))
+                        if cl != 1: #??
+                            cl = list(self.tree.find_clades( {"name": clade[:-1].split(lev_sep)[-1]} ))
                     for ccl in cl:
                         if clade[-1] in ['*']:
                             for nt in ccl.get_nonterminals():
