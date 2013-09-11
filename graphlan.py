@@ -14,8 +14,8 @@
 #------------------------------------------------------------------------------
 
 __author__ = 'Nicola Segata (nsegata@hsph.harvard.edu)'
-__version__ = '0.9'
-__date__ = '22 August 2012'
+__version__ = '0.9.5'
+__date__ = '11 September 201'
 
 import sys 
 import argparse
@@ -27,9 +27,9 @@ def read_params(args):
                                                   "AUTHORS: "+__author__+"\n\n")
     arg = parser.add_argument
 
-    arg('intree', type=str, metavar='input_tree',
+    arg('intree', type=str, default = None, metavar='input_tree',
         help = "the input tree in PhyloXML format " )
-    arg('outimg', type=str, metavar='output_image',
+    arg('outimg', type=str, default = None, metavar='output_image',
         help = "the output image (the format is guessed from the extension "
                "unless --format is given. (png, pdf, ps, eps, svg are the "
                "available file formats " )
@@ -49,15 +49,12 @@ def read_params(args):
     arg('--pad', default=0.5, type=float, metavar='pad_in',
         help = "the distance between the most external graphical element and "
                "the border of the image")
-    arg( '-v','--version', action='store_true', 
+    arg( '-v','--version', action='version', version="GraPhlAn version "+__version__+"\t("+__date__+")", 
         help="Prints the current GraPhlAn version and exit\n" )
     return vars(parser.parse_args())
 
 if __name__ == "__main__":
     args = read_params( sys.argv )
-    if args['version']:
-        sys.stdout.write("GraPhlAn version "+__version__+"\t("+__date__+")"+"\n")
-        sys.exit(0)
     ctree = CTree( args['intree'], args['warnings'] )
     ctree.positions = args['positions']
     ctree.draw( args['outimg'], 
