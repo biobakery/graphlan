@@ -186,7 +186,7 @@ class CircTree(PpaTree):
                                 props[nt.full_name][prop] = val
                         for t in ccl.get_terminals():
                             props[t.full_name][prop] = val
-                    if clade[-1] not in ['^']:
+                    if not ( clade[-1] in ['^'] or clade[-1] in ['+'] or clade[-1] in ['*']):
                         props[clade[:-1]][prop] = val
                 elif clade.split(lev_sep)[-1] in clade_names:
                     legal( prop )
