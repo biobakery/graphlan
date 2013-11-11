@@ -883,6 +883,13 @@ class CircTree(PpaTree):
         bcoll = collections.LineCollection( self._branches, 
                                             color=self._br_colors,
                                             linewidth= self.branch_thickness ) 
+        
+        
+        if len( self._wing_thetas ) < 2:
+            self._wing_thetas.append(0)
+            self._wing_radii.append(0)
+            self._wing_widths.append(0)
+            self._wing_bottoms.append(0)
         wbar = ax.bar( self._wing_thetas, self._wing_radii,
                        width = self._wing_widths,
                        bottom = self._wing_bottoms,
