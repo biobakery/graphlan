@@ -48,7 +48,7 @@ top right corner).
 
 You need to have the following programs and libraries installed:
 - python 2.7 or higher ( http://www.python.org/ )
-- the biopython python library 1.6 or higher ( http://biopython.org )
+- the biopython python library 1.59 or higher ( http://biopython.org )
 - the matplotlib python library 1.1 or higher 
   ( http://matplotlib.sourceforge.net )
 
@@ -80,27 +80,31 @@ usage: graphlan.py [-h] [--format ['output_image_format']]
                    [--pad pad_in] [-v]
                    input_tree output_image
 
-GraPhlAn 0.9 (22 August 2012)
+GraPhlAn 0.9.5 (11 September 201)
 AUTHORS: Nicola Segata (nsegata@hsph.harvard.edu)
 
 positional arguments:
   input_tree            the input tree in PhyloXML format
   output_image          the output image (the format is guessed from the
-                        extension unless --format is given. (png, pdf, ps,
-                        eps, svg are the available file formats
+                        extension unless --format is given) 
 
 optional arguments:
   -h, --help            show this help message and exit
   --format ['output_image_format']
-                        set the format of the output image (default none
+                        set the format of the output image: (png, pdf, ps,
+                        eps, svg are the available file formats. Default none
                         meaning that the format is guessed from the output
-                        file extension)
+                        file extension
   --warnings WARNINGS   set whether warning messages should be reported or not
                         (default 1)
+  --positions POSITIONS set whether the absolute position of the points should
+                        be reported on the standard output (default 0). The two
+                        cohordinates are r and theta
   --dpi image_dpi       the dpi of the output image for non vectorial formats
+                        (default 72)
   --size image size     the size of the output image (in inches, default 7.0)
   --pad pad_in          the distance between the most external graphical
-                        element and the border of the image
+                        element and the border of the image (defaul 0.5)
   -v, --version         Prints the current GraPhlAn version and exit
 
 				...........
@@ -116,8 +120,8 @@ command line invocation syntax.
 usage: graphlan_annotate.py [-h] [--annot the annotation file] [-v]
                             input_tree [output_tree]
 
-GraPhlAn annotate module 0.9 (22 August 2012) AUTHORS: Nicola Segata
-(nsegata@hsph.harvard.edu)
+GraPhlAn annotate module 0.9 (22 August 2012)
+AUTHORS: Nicola Segata (nsegata@hsph.harvard.edu)
 
 positional arguments:
   input_tree            the input tree (in Newick, Nexus, PhyloXML or plain
