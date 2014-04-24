@@ -260,7 +260,7 @@ subtree. Annotations can be colored, their alpha-channel can be globally
 regulated, and have a label associated with them. Specifically, the options
 available for annotations are:
 
-annotation [def. no annotation] : the label the be associated and displayed for
+annotation [def. no annotation] : the label to be associated and displayed for
     the annotation. This can assume several formats:
       1. str (a string not containing ':'): the string to be displayed entirely 
          (an only) on the shading
@@ -331,7 +331,7 @@ ring_width [def. 1.0] : the width of the ring segment a fraction of the total
     circular width available for the specific clade
 
 ring_height [def. highest height for the rings in the same level, or 0.1 if no
-    heights are specific] : the height of the circular segment. If not specific 
+    heights are specify] : the height of the circular segment. If not specify 
     the same default height (0.1*size of the tree) is applied for all ring 
     segment in the level, otherwise the height is equal to the biggest height 
     value in the level.
