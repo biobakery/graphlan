@@ -18,7 +18,6 @@ import matplotlib.lines as lines
 import matplotlib
 matplotlib.use('Agg')
 from pylab import *
-
 from pyphlan.pyphlan import PpaTree  
 
 
@@ -47,7 +46,7 @@ ext_attr = ( ( 'ring_color',                        str,    '#000000'   ),
              ( 'ring_shape',                        str,     "R"        ),
              ( 'ring_label',                        str,     None       ),
              ( 'ring_label_font_size',              int,     11         ),
-             ( 'ring_label_color',                  str,     'k'         ),
+             ( 'ring_label_color',                  str,     'k'        ),
              ( 'ring_edge_width',                   float,   0.1        ), 
              ( 'ring_edge_color',                   str,     None       ),
              ( 'ring_internal_separator_thickness', float,   0.0        ),
@@ -79,7 +78,7 @@ global_graphical_attr = ( ( 'annotation_background_width',       float,  0.1    
                           ( 'title_font_size',                   int,    15     ), 
                           ( 'class_legend_marker_size',          float,  1.0    ),
                           ( 'annotation_legend_font_size',       int,    7      ), 
-                          ( 'internal_labels_rotation',          float,   None       ),
+                          ( 'internal_labels_rotation',          float,   None  ),
                         )
 
 branch_attr = ( ( 'branch_thickness',           float,  0.75        ),
