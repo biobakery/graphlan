@@ -14,47 +14,49 @@
 #------------------------------------------------------------------------------
 
 __author__ = 'Nicola Segata (nsegata@hsph.harvard.edu)'
-__version__ = '0.9.5'
-__date__ = '15 September 2013'
+__version__ = '0.9.6'
+__date__ = '16 April 2014'
 
-import sys 
-import argparse
-import os
+
+from sys import argv
+from argparse import ArgumentParser
 from src.graphlan_lib import CircTree as CTree
 
+
 def read_params(args):
-    parser = argparse.ArgumentParser(description= "GraPhlAn "+__version__+" ("+__date__+")\n"
-                                                  "AUTHORS: "+__author__+"\n\n")
+    parser = ArgumentParser(description= "GraPhlAn "+__version__+" ("+__date__+") "
+                                         "AUTHORS: "+__author__)
     arg = parser.add_argument
 
     arg('intree', type=str, default = None, metavar='input_tree',
         help = "the input tree in PhyloXML format " )
     arg('outimg', type=str, default = None, metavar='output_image',
-        help = "the output image (the format is guessed from the extension "
-               "unless --format is given)" )
+        help = "the output image, the format is guessed from the extension "
+               "unless --format is given. Available file formats are: png, "
+               "pdf, ps, eps, svg" )
     arg('--format', choices=['png','pdf','ps','eps','svg'], default=None, 
         type = str, metavar=['output_image_format'],
-        help = "set the format of the output image: png, pdf, ps, eps and svg are the "
-               "available file formats. Default none meaning that the format is "
-               "guessed from the output file extension)")
+        help = "set the format of the output image (default none meaning that "
+               "the format is guessed from the output file extension)")
     arg('--warnings', default=1, type=int,
         help = "set whether warning messages should be reported or not (default 1)")
     arg('--positions', default=0, type=int,
         help = "set whether the absolute position of the points should be reported on "
-               "the standard output (default 0). The two cohordinates are r and theta")
+               "the standard output. The two cohordinates are r and theta")
     arg('--dpi', default=72, type=int, metavar='image_dpi',
-        help = "the dpi of the output image for non vectorial formats (default 72)")
-    arg('--size', default=7.0, type=float, metavar='image size',
+        help = "the dpi of the output image for non vectorial formats")
+    arg('--size', default=7.0, type=float, metavar='image_size',
         help = "the size of the output image (in inches, default 7.0)")
     arg('--pad', default=0.5, type=float, metavar='pad_in',
         help = "the distance between the most external graphical element and "
-               "the border of the image (default 0.5)")
-    arg( '-v','--version', action='version', version="GraPhlAn version "+__version__+"\t("+__date__+")", 
-        help="Prints the current GraPhlAn version and exit\n" )
+               "the border of the image")
+    arg( '-v','--version', action='version', version="GraPhlAn version "+__version__+" ("+__date__+")", 
+        help="Prints the current GraPhlAn version and exit" )
     return vars(parser.parse_args())
 
+
 if __name__ == "__main__":
-    args = read_params( sys.argv )
+    args = read_params( argv )
     ctree = CTree( args['intree'], args['warnings'] )
     ctree.positions = args['positions']
     ctree.draw( args['outimg'], 
@@ -62,6 +64,3 @@ if __name__ == "__main__":
                 out_dpi = args['dpi'],
                 out_size = args['size'],
                 out_pad = args['pad'] )
-
-
-
