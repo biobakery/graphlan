@@ -828,7 +828,7 @@ class CircTree(PpaTree):
         self._ext_patches = []
         self._ext_lines = []
 
-    def draw( self, out_img, out_format = None, out_dpi = 72, out_size = 7.0, out_pad = 0.5 ):
+    def draw( self, out_img, out_format = None, out_dpi = 72, out_size = 7.0, out_pad = 0.5, external_legends = False ):
 
         self.reorder_tree()
         #self.tree.ladderize()
@@ -997,7 +997,6 @@ class CircTree(PpaTree):
         #for t in self._ext_key:
         #ax.text( 0, 1, t )
 
-
         if self._ext_key:
             #a = ax.legend( bbox_to_anchor=(.0, 1), loc = 'upper left', shadow=False, frameon = False, 
             #           scatterpoints = 1, borderpad = 0, handlelength = 0, 
@@ -1005,19 +1004,53 @@ class CircTree(PpaTree):
             #           labelspacing = 0.05,
             #           prop = {'size':self.annotation_legend_font_size}
             #        )
-            ll = [ax.scatter( 0.0, 0.0, s = 0)]*len(self._ext_key)
-            plt.figlegend( ll, sorted(self._ext_key), 'upper left',
-                           frameon = False, shadow=False, 
-                           scatterpoints = 1, #borderpad = 0, 
-                           handlelength = 0, markerscale = 0.0,
-                           handletextpad = 0.2, ncol = 1,
-                           labelspacing = 0.1,
-                           prop = {'size':self.annotation_legend_font_size}) 
-        plt.figlegend(  handles, labels, loc,
-                        labelspacing = 0.1,
-                        frameon = False, markerscale = self.class_legend_marker_size,
-                        scatterpoints = 1,  handletextpad = 0.2,
-                        prop = {'size':self.class_legend_font_size})
+
+            if external_legends :
+                lengths = [len(s) for s in self._ext_key]
+                charsize = self.annotation_legend_font_size * 0.0138889
+                width = round(max(lengths) * charsize * 10.) / 10.
+                height = round(self._tot_offset * len(self._ext_key) * charsize * 10.) / 10.
+                fig_annot = plt.figure(figsize=(width, height))
+                ax = fig_annot.add_subplot(111, frame_on=False, xticks=[], yticks=[])
+
+            ll = [ax.scatter(0.0, 0.0, s=0.0)] * len(self._ext_key)
+            plt.figlegend(ll, sorted(self._ext_key), 'upper left',
+                                frameon=False, shadow=False, scatterpoints=1,
+                                handlelength=0, markerscale=0.0, handletextpad=0.2,
+                                ncol=1, labelspacing=0.1, prop={'size':self.annotation_legend_font_size})
+
+            if external_legends :
+                # add '_annot' to the filename
+                if out_format :
+                    img_name = out_img + "_annot"
+                else :
+                    img_name = out_img[:out_img.rfind('.')] + "_annot" + out_img[out_img.rfind('.'):]
+
+                plt.savefig(img_name, dpi=out_dpi, bbox_inches='tight',
+                            bbox_extra_artists=handles, pad_inches=out_pad, format=out_format)
+                plt.close()
+
+        if external_legends :
+            charsize = self.class_legend_font_size * 0.0138889
+            lengths = [len(s) for s in labels]
+            width = round(max(lengths) * charsize * 10.) / 10.
+            height = round(self._tot_offset * len(labels) * charsize * self.class_legend_marker_size * 10.) / 10.
+            plt.figure(figsize=(width, height))
+
+        plt.figlegend(handles, labels, loc, labelspacing=0.1, frameon=False,
+                            markerscale=self.class_legend_marker_size, scatterpoints=1,
+                            handletextpad=0.2, prop={'size':self.class_legend_font_size})
+
+        if external_legends :
+            # add '_legend' to the filename
+            if out_format :
+                img_name = out_img + "_legend"
+            else :
+                img_name = out_img[:out_img.rfind('.')] + "_legend" + out_img[out_img.rfind('.'):]
+
+            plt.savefig(img_name, dpi=out_dpi, pad_inches=out_pad, 
+                        bbox_extra_artists=handles, format=out_format)
+            plt.close()
 
         if True: #
             plt.savefig(    out_img,
@@ -1033,6 +1066,3 @@ class CircTree(PpaTree):
             plt.close()
         else:
             plt.show()
- 
-
-
