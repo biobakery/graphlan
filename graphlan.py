@@ -14,8 +14,8 @@
 #------------------------------------------------------------------------------
 
 __author__ = 'Nicola Segata (nsegata@hsph.harvard.edu)'
-__version__ = '0.9.6'
-__date__ = '16 April 2014'
+__version__ = '0.9.7'
+__date__ = '21 July 2014'
 
 
 from sys import argv
@@ -50,6 +50,9 @@ def read_params(args):
     arg('--pad', default=0.5, type=float, metavar='pad_in',
         help = "the distance between the most external graphical element and "
                "the border of the image")
+    arg('--external_legends', default=False, action='store_true',
+        help = "specify whether the two external legends should be put in separate file or keep them "
+               "along with the image (default behavior)")
     arg( '-v','--version', action='version', version="GraPhlAn version "+__version__+" ("+__date__+")", 
         help="Prints the current GraPhlAn version and exit" )
     return vars(parser.parse_args())
@@ -63,4 +66,5 @@ if __name__ == "__main__":
                 out_format = args['format'], 
                 out_dpi = args['dpi'],
                 out_size = args['size'],
-                out_pad = args['pad'] )
+                out_pad = args['pad'],
+                external_legends = args['external_legends'])
