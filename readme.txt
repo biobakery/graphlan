@@ -21,8 +21,7 @@ GraPhlAn is available in bitbucket and should be obtained using Mercurial
 (http://mercurial.selenic.com/) at https://bitbucket.org/nsegata/graphlan/
 
 
-In a Unix environment, this means you have
-to type:
+In a Unix environment, this means you have to type:
 $ hg clone ssh://hg@bitbucket.org/nsegata/graphlan
 or
 $ hg clone https://hg@bitbucket.org/nsegata/graphlan
