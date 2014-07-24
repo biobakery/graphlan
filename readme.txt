@@ -1,4 +1,3 @@
-
 GraPhlAn is a software tool for producing high-quality circular 
 representations of taxonomic and phylogenetic trees. GraPhlAn focuses on 
 concise, integrative, informative, and publication-ready representations of 
@@ -76,10 +75,11 @@ More specifically, here are all the options one can set for graphlan.py:
 
 usage: graphlan.py [-h] [--format ['output_image_format']]
                    [--warnings WARNINGS] [--positions POSITIONS]
-                   [--dpi image_dpi] [--size image_size] [--pad pad_in] [-v]
+                   [--dpi image_dpi] [--size image_size] [--pad pad_in]
+                   [--external_legends] [-v]
                    input_tree output_image
 
-GraPhlAn 0.9.6 (16 April 2014) AUTHORS: Nicola Segata
+GraPhlAn 0.9.7 (21 July 2014) AUTHORS: Nicola Segata
 (nsegata@hsph.harvard.edu)
 
 positional arguments:
@@ -104,6 +104,9 @@ optional arguments:
   --size image_size     the size of the output image (in inches, default 7.0)
   --pad pad_in          the distance between the most external graphical
                         element and the border of the image
+  --external_legends    specify whether the two external legends should be put
+                        in separate file or keep them along with the image
+                        (default behavior)
   -v, --version         Prints the current GraPhlAn version and exit
 
 				...........
