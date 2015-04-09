@@ -1,0 +1,344 @@
+Organismal_Systems.Circulatory_System	2.66634597459			1.01399630094e-29
+Cellular_Processes.Transport_and_Catabolism.Endocytosis	2.15260097434			1.60878253448e-25
+Metabolism.Carbohydrate_Metabolism.C5_Branched_dibasic_acid_metabolism	4.18933830903			0.00224158902734
+Human_Diseases.Infectious_Diseases	3.73052171401	HMP	3.29103614367	5.42505669802e-39
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Glycosphingolipid_biosynthesis_lacto_and_neolacto_series	1.87586996401			9.54333994613e-11
+Metabolism.Amino_Acid_Metabolism.Cysteine_and_methionine_metabolism	4.14698806401	MetaHIT	3.18901981082	1.00115666923e-34
+Genetic_Information_Processing.Replication_and_Repair.Non_homologous_end_joining	2.54169384447			5.60048715073e-17
+Metabolism.Carbohydrate_Metabolism.Glyoxylate_and_dicarboxylate_metabolism	3.86388106284	MetaHIT	3.06512009741	1.27213826377e-33
+Human_Diseases.Neurodegenerative_Diseases.Huntington_s_disease	2.81844674013			1.62552789764e-38
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Zeatin_biosynthesis	3.92022463848	MetaHIT	3.16821139393	1.10290086896e-33
+Human_Diseases.Cancers.Acute_myeloid_leukemia	1.87050205774			7.69229307951e-38
+Organismal_Systems.Environmental_Adaptation	3.31264762546			5.42505669802e-39
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Biosynthesis_of_type_II_polyketide_products	0.0748614664942			-
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Biosynthesis_of_type_II_polyketide_backbone	2.02188313557			-
+Human_Diseases.Infectious_Diseases.Shigellosis	2.34906828433			2.9947521894e-40
+Organismal_Systems.Digestive_System.Gastric_acid_secretion	1.72969066887			4.81099475604e-42
+Metabolism.Lipid_Metabolism.alpha_Linolenic_acid_metabolism	2.72521939496			5.35361979877e-20
+Metabolism.Carbohydrate_Metabolism.Inositol_phosphate_metabolism	3.45942324289			-
+Human_Diseases.Infectious_Diseases.Toxoplasmosis	1.8305305899			6.84666235183e-36
+Metabolism.Lipid_Metabolism.Fatty_acid_elongation_in_mitochondria	2.23747924459			8.14427555363e-20
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Tetracycline_biosynthesis	3.6370250907	HMP	3.32696180866	1.67349840143e-41
+Metabolism.Energy_Metabolism.Carbon_fixation_pathways_in_prokaryotes	4.02748918414			-
+Organismal_Systems.Development	2.38550152313			3.96665559103e-22
+Metabolism.Amino_Acid_Metabolism.Histidine_metabolism	4.24366661207	MetaHIT	3.47780972971	2.38763808448e-35
+Genetic_Information_Processing.Translation	4.71183862415	MetaHIT	3.79686528937	1.14498311315e-24
+Human_Diseases.Cardiovascular_Diseases.Viral_myocarditis	1.9946616671			1.17895111863e-34
+Organismal_Systems.Digestive_System.Salivary_secretion	1.84406309394			2.66536973736e-22
+Organismal_Systems.Excretory_System.Collecting_duct_acid_secretion	2.49095176726			2.08432155626e-41
+Human_Diseases.Immune_System_Diseases.Allograft_rejection	1.94641337008			4.81099475604e-42
+Human_Diseases.Infectious_Diseases.Epithelial_cell_signaling_in_Helicobacter_pylori_infection	2.95496121206			0.00510936156212
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Other_types_of_O_glycan_biosynthesis	1.97542770181			3.94887349025e-07
+Organismal_Systems.Immune_System.Hematopoietic_cell_lineage	1.36348932778			3.1142422155e-40
+Organismal_Systems.Digestive_System.Pancreatic_secretion	1.74202478305			4.81099475604e-42
+Genetic_Information_Processing.Translation.mRNA_surveillance_pathway	2.31272084524			2.76363204413e-22
+Cellular_Processes.Cell_Growth_and_Death.Meiosis_yeast	3.08474892529			5.67320462358e-39
+Cellular_Processes.Cell_Motility	4.26987523148	MetaHIT	3.8180142684	1.73791451462e-35
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.beta_Lactam_resistance	3.2877017497			6.13856293675e-15
+Environmental_Information_Processing.Signal_Transduction.Wnt_signaling_pathway	2.11294419841			1.97941713466e-34
+Metabolism.Energy_Metabolism.Oxidative_phosphorylation	3.8119827008			1.01404713519e-24
+Cellular_Processes	4.52495293405	MetaHIT	3.42060185842	3.32970774663e-11
+Metabolism.Carbohydrate_Metabolism.Propanoate_metabolism	3.82686324063			8.53123612659e-10
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Indole_alkaloid_biosynthesis	1.56739702043			6.25909829951e-30
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Atrazine_degradation	3.37239099694			3.45860404395e-05
+Genetic_Information_Processing.Translation.Ribosome	4.49752990663	MetaHIT	3.75146163825	1.97567282813e-30
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Glycosaminoglycan_biosynthesis_chondroitin_sulfate	1.73114717874			3.94510453565e-12
+Organismal_Systems.Development.Osteoclast_differentiation	1.65672814794			4.81099475604e-42
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Xylene_degradation	3.05483514043			2.22355129571e-17
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Chlorocyclohexane_and_chlorobenzene_degradation	2.8020530907			1.3394940864e-11
+Organismal_Systems.Endocrine_System.Melanogenesis	1.90156232137			4.81099475604e-42
+Organismal_Systems.Endocrine_System.Adipocytokine_signaling_pathway	3.20273561626			1.83999714563e-37
+Human_Diseases.Cancers.Melanoma	1.86913149916			4.81099475604e-42
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Diterpenoid_biosynthesis	0.411555653982			4.85236712076e-12
+Organismal_Systems.Excretory_System.Aldosterone_regulated_sodium_reabsorption	1.9782918194			1.45898570585e-25
+Human_Diseases.Cardiovascular_Diseases.Arrhythmogenic_right_ventricular_cardiomyopathy_ARVC_	1.3797731761			2.10965443197e-36
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Stilbenoid_diarylheptanoid_and_gingerol_biosynthesis	2.75889689058			1.50396690651e-41
+Organismal_Systems.Digestive_System.Carbohydrate_digestion_and_absorption	2.95034558313			4.41480872837e-39
+Organismal_Systems.Environmental_Adaptation.Circadian_rhythm_plant	1.9119234926			1.79840935194e-22
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Novobiocin_biosynthesis	3.37284898779	HMP	3.0722687543	4.81099475604e-42
+Genetic_Information_Processing.Replication_and_Repair.DNA_replication	4.18810454337	MetaHIT	3.28426761554	2.59702820898e-26
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites	4.47955183953	HMP	3.58951135784	4.58210860394e-24
+Metabolism.Carbohydrate_Metabolism.Amino_sugar_and_nucleotide_sugar_metabolism	4.14749253888			1.47390934949e-17
+Human_Diseases.Immune_System_Diseases.Primary_immunodeficiency	3.21040845876			4.81099475604e-42
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Butirosin_and_neomycin_biosynthesis	3.20754167296			4.81099475604e-42
+Human_Diseases.Cancers	3.36148806509	HMP	3.06035419302	5.42287732182e-39
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Glycosaminoglycan_degradation	3.58375231633			-
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Sesquiterpenoid_biosynthesis	0.0			4.16081527633e-05
+Cellular_Processes.Cell_Communication.Gap_junction	2.03887423086			3.50403669977e-41
+Genetic_Information_Processing.Folding_Sorting_and_Degradation.Protein_processing_in_endoplasmic_reticulum	2.5651346859			3.80523935681e-14
+Cellular_Processes.Transport_and_Catabolism	3.59410763614	HMP	3.20796699959	3.70256262825e-35
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides	4.54090023147	HMP	3.53435438141	1.29921455159e-26
+Environmental_Information_Processing.Signaling_Molecules_and_Interaction.Cell_adhesion_molecules_CAMs_	1.43175418305			1.47731619999e-35
+Metabolism.Nucleotide_Metabolism	4.42964856765	MetaHIT	3.48211908701	3.14796116564e-28
+Metabolism.Amino_Acid_Metabolism.Valine_leucine_and_isoleucine_degradation	3.65803120656			6.96322077926e-24
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Isoquinoline_alkaloid_biosynthesis	3.01053075348			4.81099475604e-42
+Organismal_Systems.Endocrine_System.GnRH_signaling_pathway	1.98838368379			7.74910268239e-42
+Human_Diseases.Neurodegenerative_Diseases.Alzheimer_s_disease	2.90057363359			5.4241848449e-39
+Environmental_Information_Processing	4.52409383092	HMP	3.28529718346	3.07544110188e-09
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Other_glycan_degradation	4.0326256179			0.000164814166184
+Environmental_Information_Processing.Signal_Transduction.Hedgehog_signaling_pathway	1.7894263983			4.15806851481e-41
+Organismal_Systems.Sensory_System.Taste_transduction	1.76808436653			1.7827402106e-21
+Organismal_Systems.Immune_System	3.31323139077			1.17014695415e-38
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Glycosaminoglycan_biosynthesis_heparan_sulfate	1.36920019285			5.43116406847e-33
+Environmental_Information_Processing.Signaling_Molecules_and_Interaction.Neuroactive_ligand_receptor_interaction	1.26158141573			1.14762951601e-23
+Human_Diseases.Metabolic_Diseases.Maturity_onset_diabetes_of_the_young	1.68249641377			6.10939848596e-38
+Environmental_Information_Processing.Signaling_Molecules_and_Interaction.ECM_receptor_interaction	1.97869574917			1.24519821335e-08
+Genetic_Information_Processing.Folding_Sorting_and_Degradation.Protein_export	4.37019726224	MetaHIT	3.65029722761	4.39918563788e-38
+Organismal_Systems.Immune_System.Natural_killer_cell_mediated_cytotoxicity	1.90288183275			1.05722987831e-40
+Metabolism.Amino_Acid_Metabolism	5.13762916611	MetaHIT	4.00929357294	1.61336329555e-33
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Vitamin_B6_metabolism	4.14853257859	MetaHIT	3.22577504195	1.12576833317e-27
+Organismal_Systems.Immune_System.Antigen_processing_and_presentation	2.66349568251			8.67976284583e-40
+Genetic_Information_Processing.Replication_and_Repair.Mismatch_repair	4.30205065987	MetaHIT	3.44179448592	1.42610452961e-25
+Organismal_Systems.Sensory_System.Phototransduction	1.80465128771			7.2479220405e-38
+Metabolism.Energy_Metabolism.Carbon_fixation_in_photosynthetic_organisms	4.16616731713	HMP	3.86126366614	5.42505669802e-39
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Streptomycin_biosynthesis	4.30708246451	MetaHIT	3.45692679324	1.02492759512e-25
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Terpenoid_backbone_biosynthesis	4.21420849947	MetaHIT	3.40304613398	5.42505669802e-39
+Organismal_Systems.Immune_System.Fc_gamma_R_mediated_phagocytosis	2.52845118506			7.6554463925e-34
+Organismal_Systems.Nervous_System.Long_term_potentiation	2.09326066793			4.81099475604e-42
+Environmental_Information_Processing.Signal_Transduction	3.86480795661			0.000351429353482
+Organismal_Systems.Immune_System.T_cell_receptor_signaling_pathway	1.89490537664			1.17273247487e-41
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.1_1_1_Trichloro_2_2_bis_4_chlorophenyl_ethane_DDT_degradation	2.03226318486			1.83967496421e-35
+Environmental_Information_Processing.Signal_Transduction.MAPK_signaling_pathway_fly	2.0478890252			8.41957826786e-42
+Metabolism.Carbohydrate_Metabolism.Pentose_and_glucuronate_interconversions	4.0177607906	MetaHIT	3.40480678777	2.24295845112e-26
+Human_Diseases.Infectious_Diseases.Amoebiasis	2.06232102239			5.96374978002e-25
+Cellular_Processes.Cell_Growth_and_Death.Cell_cycle_yeast	2.9784174313			8.63675810202e-10
+Organismal_Systems.Excretory_System.Vasopressin_regulated_water_reabsorption	2.19924741477			0.0320896943848
+Genetic_Information_Processing.Replication_and_Repair.Nucleotide_excision_repair	3.89842380758			9.45873070779e-14
+Metabolism.Lipid_Metabolism.Fatty_acid_metabolism	3.60457758532			6.4666653719e-22
+Human_Diseases.Cancers.Colorectal_cancer	2.00985951944			4.81099475604e-42
+Metabolism.Amino_Acid_Metabolism.Tryptophan_metabolism	3.38641891278			2.8087445837e-16
+Environmental_Information_Processing.Signal_Transduction.Notch_signaling_pathway	2.21054060578			3.34924767614e-21
+Human_Diseases.Cancers.Pathways_in_cancer	2.41046300701			5.25000343313e-39
+Genetic_Information_Processing.Transcription	3.94744544111			3.27382397767e-10
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Mucin_type_O_glycan_biosynthesis	1.2593580782			-
+Cellular_Processes.Cell_Growth_and_Death	4.26299461769	HMP	3.31590135841	5.18153599822e-06
+Cellular_Processes.Cell_Communication	2.76126166902			8.11829912682e-30
+Genetic_Information_Processing.Folding_Sorting_and_Degradation.Ubiquitin_mediated_proteolysis	2.9633786026			-
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Glycosaminoglycan_biosynthesis_keratan_sulfate	1.30486761934			1.93883300653e-32
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Dioxin_degradation	3.45965145519	HMP	3.07382673071	4.08733045097e-27
+Organismal_Systems.Immune_System.Cytosolic_DNA_sensing_pathway	2.00258781808			4.6417578224e-40
+Organismal_Systems.Endocrine_System.Progesterone_mediated_oocyte_maturation	3.29113027314			9.36066815196e-42
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Phenylpropanoid_biosynthesis	3.31939146069	HMP	3.02781193691	4.26275524469e-39
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Limonene_and_pinene_degradation	3.70243795341	HMP	3.29715617123	7.07086955538e-33
+Genetic_Information_Processing.Translation.Ribosome_biogenesis_in_eukaryotes	2.94641802689			2.39045803424e-38
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Metabolism_of_xenobiotics_by_cytochrome_P450	3.34471027859	HMP	3.03904303698	2.54976201155e-41
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Various_types_of_N_glycan_biosynthesis	1.98120927262			2.76506574666e-26
+Metabolism.Energy_Metabolism.Nitrogen_metabolism	3.76725297777			0.0031320123541
+Human_Diseases.Infectious_Diseases.Chagas_disease_American_trypanosomiasis_	2.27121114204			9.91494639924e-27
+Organismal_Systems.Digestive_System.Vitamin_digestion_and_absorption	1.28251785245			1.64781421194e-17
+Metabolism.Metabolism_of_Other_Amino_Acids.D_Glutamine_and_D_glutamate_metabolism	4.43054857976	MetaHIT	3.37781022749	3.20900942348e-21
+Metabolism.Amino_Acid_Metabolism.Lysine_degradation	3.40101039063			1.94735452371e-07
+Environmental_Information_Processing.Signal_Transduction.Phosphatidylinositol_signaling_system	3.34423026436	HMP	3.04450249521	4.81099475604e-42
+Metabolism.Amino_Acid_Metabolism.Arginine_and_proline_metabolism	3.93520416495	MetaHIT	3.12706190897	1.85643852365e-37
+Organismal_Systems.Immune_System.Chemokine_signaling_pathway	1.9379401101			4.81099475604e-42
+Organismal_Systems.Nervous_System.Long_term_depression	1.97313218514			6.73038274054e-39
+Human_Diseases.Infectious_Diseases.Malaria	1.31129377355			3.41922193742e-38
+Organismal_Systems.Excretory_System.Proximal_tubule_bicarbonate_reclamation	3.35661300208	HMP	3.05901132265	2.29737920769e-40
+Environmental_Information_Processing.Signal_Transduction.VEGF_signaling_pathway	2.21392861347			4.6593226396e-41
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Lipoic_acid_metabolism	4.13695603114	HMP	3.36887578458	3.47661808613e-14
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Lipopolysaccharide_biosynthesis	4.06729155963	MetaHIT	3.31526924309	5.30393210647e-08
+Metabolism.Lipid_Metabolism	4.67561972971	HMP	3.36944972354	2.24247539028e-15
+Organismal_Systems.Environmental_Adaptation.Circadian_rhythm_mammal	2.04167446992			4.90895297207e-28
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Styrene_degradation	2.77569321094			1.09982712106e-08
+Organismal_Systems.Development.Axon_guidance	1.88680746525			5.64571295223e-32
+Environmental_Information_Processing.Signaling_Molecules_and_Interaction	2.20169482041			2.29058222595e-21
+Human_Diseases.Immune_System_Diseases.Autoimmune_thyroid_disease	1.91637777597			1.41630968971e-40
+Human_Diseases.Neurodegenerative_Diseases.Prion_diseases	2.38019128454			2.50019543343e-11
+Cellular_Processes.Cell_Growth_and_Death.Oocyte_meiosis	3.15604301025			4.05762642878e-41
+Genetic_Information_Processing.Translation.RNA_transport	3.00122828308			4.94885326494e-31
+Metabolism.Carbohydrate_Metabolism.Butanoate_metabolism	3.86708493296			2.31851672181e-13
+Metabolism.Amino_Acid_Metabolism.Phenylalanine_metabolism	3.57224144964			4.18152135203e-38
+Metabolism.Glycan_Biosynthesis_and_Metabolism.N_Glycan_biosynthesis	3.33844792037			7.93042210812e-36
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Biosynthesis_of_12_14_and_16_membered_macrolides	1.19309112649			0.011873952385
+Metabolism.Amino_Acid_Metabolism.Phenylalanine_tyrosine_and_tryptophan_biosynthesis	4.17314672587	MetaHIT	3.46914343698	2.33036189489e-38
+Environmental_Information_Processing.Membrane_Transport.Bacterial_secretion_system	4.07422882719	MetaHIT	3.36660416475	2.15893820148e-38
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Thiamine_metabolism	4.3475999423	MetaHIT	3.59546251523	5.12208294043e-38
+Organismal_Systems.Immune_System.Toll_like_receptor_signaling_pathway	1.69489352258			2.09212644641e-35
+Organismal_Systems.Immune_System.Intestinal_immune_network_for_IgA_production	1.29671665479			4.35345984486e-40
+Cellular_Processes.Transport_and_Catabolism.Lysosome	2.98382165621			7.16351138967e-28
+Metabolism.Metabolism_of_Other_Amino_Acids.Taurine_and_hypotaurine_metabolism	3.85628297213	HMP	3.45747131716	8.40356271651e-26
+Metabolism.Energy_Metabolism.Photosynthesis_antenna_proteins	0.43912549557			3.67134372001e-11
+Human_Diseases.Infectious_Diseases.Hepatitis_C	1.94299089101			1.87287916379e-41
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Ubiquinone_and_other_terpenoid_quinone_biosynthesis	3.62399102677			-
+Metabolism.Lipid_Metabolism.Arachidonic_acid_metabolism	2.97424122041			8.8191784148e-15
+Human_Diseases.Infectious_Diseases.Staphylococcus_aureus_infection	3.06319814787			7.76534927886e-29
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Anthocyanin_biosynthesis	0.0			3.56169355019e-07
+Metabolism.Nucleotide_Metabolism.Pyrimidine_metabolism	4.20613105967	MetaHIT	3.34179907388	7.62823648118e-31
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Isoflavonoid_biosynthesis	0.750531148379			3.62183205025e-09
+Genetic_Information_Processing.Replication_and_Repair.Homologous_recombination	4.29848641376	MetaHIT	3.4887213463	6.7958938103e-35
+Human_Diseases.Immune_System_Diseases.Graft_versus_host_disease	2.02390904875			4.81099475604e-42
+Cellular_Processes.Transport_and_Catabolism.Peroxisome	3.39803097769			1.12426053603e-36
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Insect_hormone_biosynthesis	0.714600762144			1.08547747291e-09
+Metabolism.Lipid_Metabolism.Synthesis_and_degradation_of_ketone_bodies	3.67478201915	HMP	3.20304576833	4.49193495288e-16
+Genetic_Information_Processing.Translation.Aminoacyl_tRNA_biosynthesis	4.2588773303			-
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Glucosinolate_biosynthesis	0.451686731839			4.76505997445e-19
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Caprolactam_degradation	3.25235716626			2.6077286659e-08
+Human_Diseases.Neurodegenerative_Diseases.Amyotrophic_lateral_sclerosis_ALS_	2.73153315864			8.1624665263e-26
+Metabolism.Lipid_Metabolism.Biosynthesis_of_unsaturated_fatty_acids	3.51622434851			7.22762284368e-23
+Metabolism.Nucleotide_Metabolism.Purine_metabolism	4.03419973502			3.90515763833e-24
+Genetic_Information_Processing.Transcription.Spliceosome	2.66265917507			1.04522674656e-14
+Organismal_Systems.Circulatory_System.Cardiac_muscle_contraction	2.60581202122			1.74764078957e-29
+Metabolism.Metabolism_of_Other_Amino_Acids	4.94347854793	HMP	3.77681974326	4.10227308822e-14
+Genetic_Information_Processing.Replication_and_Repair.Base_excision_repair	4.08774371199	MetaHIT	3.13226361153	2.14462822438e-33
+Cellular_Processes.Transport_and_Catabolism.Regulation_of_autophagy	2.1720912709			6.99377376961e-32
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Aminobenzoate_degradation	3.44550890867			3.34927432832e-07
+Genetic_Information_Processing.Folding_Sorting_and_Degradation.Sulfur_relay_system	4.24100717631	MetaHIT	3.56105623304	2.85653273757e-38
+Metabolism.Metabolism_of_Other_Amino_Acids.beta_Alanine_metabolism	3.61427244093			4.29729100572e-07
+Metabolism.Amino_Acid_Metabolism.Tyrosine_metabolism	3.76375939444			-
+Organismal_Systems.Endocrine_System	3.83040307137	HMP	3.51182828829	5.42505669802e-39
+Human_Diseases.Neurodegenerative_Diseases	3.43123784083	HMP	3.09938412506	5.85942114914e-39
+Organismal_Systems.Environmental_Adaptation.Plant_pathogen_interaction	3.23733965211			5.42505669802e-39
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Drug_metabolism_other_enzymes	4.12482663063	HMP	3.81039561715	5.42505669802e-39
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Toluene_degradation	3.68411922014	HMP	3.31488426301	1.29192604202e-36
+Genetic_Information_Processing.Transcription.Basal_transcription_factors	2.54813758175			8.52037343708e-17
+Metabolism.Metabolism_of_Other_Amino_Acids.Cyanoamino_acid_metabolism	3.76973108275			-
+Metabolism.Lipid_Metabolism.Sphingolipid_metabolism	3.55696624177			2.76117797826e-13
+Metabolism.Carbohydrate_Metabolism.Pyruvate_metabolism	4.10328951353			0.000392935024023
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Glycosphingolipid_biosynthesis_ganglio_series	3.44057400437	HMP	3.15461651875	1.98873162687e-41
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Biotin_metabolism	4.21190928975	MetaHIT	3.33941415226	6.8648291154e-18
+Metabolism.Carbohydrate_Metabolism.Fructose_and_mannose_metabolism	4.12720958765			0.00286521145603
+Human_Diseases.Cardiovascular_Diseases.Dilated_cardiomyopathy_DCM_	1.56827322183			6.04002103639e-42
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Naphthalene_degradation	3.74727332074	HMP	3.42620729673	5.66658885883e-40
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Clavulanic_acid_biosynthesis	0.108899001718			1.03173316451e-05
+Metabolism	5.88457007878	HMP	3.8906659544	1.52849777619e-10
+Organismal_Systems.Excretory_System	3.45272426929	HMP	3.13800479641	3.22498474918e-37
+Environmental_Information_Processing.Signal_Transduction.Calcium_signaling_pathway	1.74203761897			-
+Environmental_Information_Processing.Signal_Transduction.TGF_beta_signaling_pathway	2.10450077876			4.81099475604e-42
+Environmental_Information_Processing.Membrane_Transport	4.41491835078	HMP	3.27570249621	5.17283274153e-09
+Cellular_Processes.Cell_Communication.Adherens_junction	2.34447902301			7.63315694121e-40
+Human_Diseases.Immune_System_Diseases.Asthma	1.4018167174			1.39956631742e-34
+Human_Diseases.Cardiovascular_Diseases	2.27742140832			9.79028563603e-35
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Porphyrin_and_chlorophyll_metabolism	3.89444593987	MetaHIT	3.12680254264	1.19224700335e-24
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Tropane_piperidine_and_pyridine_alkaloid_biosynthesis	3.56684258186	HMP	3.25187762916	5.82073461749e-39
+Organismal_Systems.Digestive_System.Bile_secretion	1.86131150091			1.11774534853e-10
+Human_Diseases.Cancers.Basal_cell_carcinoma	1.60511506218			4.81099475604e-42
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Benzoate_degradation	3.45047641561			6.28477858348e-19
+Cellular_Processes.Cell_Motility.Bacterial_chemotaxis	3.96284705744	MetaHIT	3.40693398763	6.35373771801e-33
+Cellular_Processes.Cell_Growth_and_Death.Cell_cycle	3.02808274654			4.19581127765e-39
+Human_Diseases.Cancers.Endometrial_cancer	1.92335048368			4.81099475604e-42
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Brassinosteroid_biosynthesis	0.486901858472			5.85581109736e-08
+Metabolism.Carbohydrate_Metabolism.Glycolysis_Gluconeogenesis	4.1505960792	HMP	3.17762873565	2.76641633342e-27
+Metabolism.Lipid_Metabolism.Linoleic_acid_metabolism	3.635707095	HMP	3.33655889175	7.54012336111e-42
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Riboflavin_metabolism	3.97342591883			2.20891183205e-07
+Organismal_Systems.Endocrine_System.Insulin_signaling_pathway	2.98801841028			4.11160862501e-26
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Bisphenol_degradation	3.77885850463	HMP	3.48006050774	6.04002103639e-42
+Human_Diseases.Infectious_Diseases.Vibrio_cholerae_infection	2.35121904429			6.75824216612e-19
+Metabolism.Carbohydrate_Metabolism.Pentose_phosphate_pathway	4.26116538725	MetaHIT	3.14766200079	1.16352942406e-21
+Environmental_Information_Processing.Signal_Transduction.Plant_hormone_signal_transduction	1.59723250271			3.23762953573e-38
+Metabolism.Carbohydrate_Metabolism.Ascorbate_and_aldarate_metabolism	3.43219064376			0.00134301008897
+Metabolism.Amino_Acid_Metabolism.Glycine_serine_and_threonine_metabolism	4.06212384309			2.20671613683e-21
+Environmental_Information_Processing.Membrane_Transport.ABC_transporters	3.89484632404			2.57029154988e-14
+Human_Diseases.Cancers.Prostate_cancer	2.48787444223			4.81099475604e-42
+Organismal_Systems.Digestive_System.Protein_digestion_and_absorption	2.60278511368			0.0160767174092
+Organismal_Systems.Sensory_System	2.62595079895			1.31598245052e-32
+Organismal_Systems.Endocrine_System.Renin_angiotensin_system	1.71355128158			1.83801777013e-19
+Human_Diseases.Cancers.Non_small_cell_lung_cancer	1.8783445091			1.50396690651e-41
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Polyketide_sugar_unit_biosynthesis	3.66488047816	HMP	3.35934537034	4.81099475604e-42
+Human_Diseases.Immune_System_Diseases	3.33364218763	HMP	3.03033667252	6.90111262694e-40
+Human_Diseases.Cancers.Renal_cell_carcinoma	2.83838515056			4.81099475604e-42
+Organismal_Systems.Development.Dorso_ventral_axis_formation	2.08105718617			3.85796887794e-14
+Genetic_Information_Processing	5.26100143093	MetaHIT	4.35198909602	2.96113131501e-34
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Benzoxazinoid_biosynthesis	1.13230596653			-
+Human_Diseases.Cancers.Pancreatic_cancer	1.81375183943			4.04559096838e-28
+Environmental_Information_Processing.Signal_Transduction.MAPK_signaling_pathway	1.89881272578			1.46824867718e-29
+Environmental_Information_Processing.Signal_Transduction.Two_component_system	3.84340552133	MetaHIT	3.31340878183	5.42505669802e-39
+Metabolism.Amino_Acid_Metabolism.Valine_leucine_and_isoleucine_biosynthesis	4.39218895042	HMP	3.33414012771	9.38577929973e-15
+Human_Diseases.Metabolic_Diseases	3.64154657242	HMP	3.3409365057	1.73428971511e-41
+Organismal_Systems.Nervous_System.Neurotrophin_signaling_pathway	2.00709677884			1.43430303526e-37
+Human_Diseases.Cancers.Bladder_cancer	2.37331718565			4.81099475604e-42
+Metabolism.Lipid_Metabolism.Steroid_hormone_biosynthesis	2.83859666207			2.77224301672e-14
+Metabolism.Metabolism_of_Other_Amino_Acids.Selenocompound_metabolism	4.17354833943	HMP	3.19100368403	2.9256829467e-31
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Nitrotoluene_degradation	3.58578384397	MetaHIT	3.10604404467	4.18151529557e-35
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Folate_biosynthesis	4.23734890319	MetaHIT	3.49281649977	6.76750541587e-38
+Metabolism.Carbohydrate_Metabolism.Citrate_cycle_TCA_cycle_	4.06560516851	HMP	3.03113487194	6.28293990042e-15
+Environmental_Information_Processing.Signal_Transduction.MAPK_signaling_pathway_yeast	3.01054451962			2.69035495007e-19
+Metabolism.Energy_Metabolism	4.72005627212	HMP	3.85701853106	2.10463049325e-38
+Metabolism.Carbohydrate_Metabolism.Galactose_metabolism	4.00085698557			0.0179755541005
+Metabolism.Energy_Metabolism.Methane_metabolism	3.76144067433			5.46347159706e-27
+Organismal_Systems	4.22290929513	HMP	3.88712460488	5.42505669802e-39
+Environmental_Information_Processing.Signaling_Molecules_and_Interaction.Cytokine_cytokine_receptor_interaction	1.26971049621			4.81099475604e-42
+Human_Diseases.Cancers.Thyroid_cancer	1.88456832894			1.50396690651e-41
+Human_Diseases.Infectious_Diseases.Pathogenic_Escherichia_coli_infection	2.53279620292			1.62734785895e-12
+Cellular_Processes.Cell_Motility.Flagellar_assembly	3.97468821157	MetaHIT	3.61265895747	1.99045212898e-36
+Genetic_Information_Processing.Folding_Sorting_and_Degradation	4.67720312981	MetaHIT	3.8648562206	8.17777204861e-39
+Genetic_Information_Processing.Transcription.RNA_polymerase	3.94014224165			1.30501295476e-16
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Drug_metabolism_cytochrome_P450	3.38558755326	HMP	3.08014205978	4.81099475604e-42
+Metabolism.Glycan_Biosynthesis_and_Metabolism	4.68516173139			3.21358073938e-07
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Glycosphingolipid_biosynthesis_globo_series	3.60209534704	HMP	3.30681504647	2.01998533328e-38
+Organismal_Systems.Sensory_System.Olfactory_transduction	2.29306300531			4.14320084047e-29
+Organismal_Systems.Immune_System.Fc_epsilon_RI_signaling_pathway	1.90927909493			4.81099475604e-42
+Metabolism.Metabolism_of_Other_Amino_Acids.Phosphonate_and_phosphinate_metabolism	3.56557663304			1.1243029183e-36
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Ethylbenzene_degradation	3.72060795715	HMP	3.41849679261	6.04002103639e-42
+Human_Diseases.Infectious_Diseases.Bacterial_invasion_of_epithelial_cells	2.30420958142			1.91038027645e-28
+Human_Diseases.Immune_System_Diseases.Rheumatoid_arthritis	0.103209246763			-
+Organismal_Systems.Environmental_Adaptation.Circadian_rhythm_fly	2.131361258			1.50396690651e-41
+Organismal_Systems.Digestive_System	3.18864750885			2.82440624774e-29
+Metabolism.Energy_Metabolism.Sulfur_metabolism	3.96736663135	MetaHIT	3.08257116234	2.53208159088e-30
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Geraniol_degradation	3.42367143249			8.86743095259e-26
+Metabolism.Metabolism_of_Cofactors_and_Vitamins	5.20439291867	MetaHIT	4.28778810585	3.24373589204e-38
+Metabolism.Amino_Acid_Metabolism.Lysine_biosynthesis	4.24391457534	MetaHIT	3.39118001739	5.5970678302e-35
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Flavonoid_biosynthesis	2.57619480741			4.64727546655e-10
+Metabolism.Lipid_Metabolism.Ether_lipid_metabolism	2.77159217883			2.21815943421e-07
+Metabolism.Lipid_Metabolism.Primary_bile_acid_biosynthesis	2.92076641011			6.91717318191e-36
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism	4.80464603217	HMP	4.3303791167	5.42505669802e-39
+Human_Diseases.Metabolic_Diseases.Type_II_diabetes_mellitus	3.18175342831			4.81099475604e-42
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Carotenoid_biosynthesis	2.43471260349			4.59702898456e-08
+Human_Diseases.Infectious_Diseases.Leishmaniasis	1.69043398612			1.36618952229e-40
+Organismal_Systems.Immune_System.B_cell_receptor_signaling_pathway	1.91383697468			1.57116446237e-37
+Environmental_Information_Processing.Signal_Transduction.ErbB_signaling_pathway	1.90217354522			4.81099475604e-42
+Organismal_Systems.Immune_System.Complement_and_coagulation_cascades	1.419672461			0.000238844694587
+Organismal_Systems.Circulatory_System.Vascular_smooth_muscle_contraction	1.78064523008			9.29932545717e-14
+Metabolism.Lipid_Metabolism.Glycerolipid_metabolism	3.78693124373			1.00022334499e-21
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Monoterpenoid_biosynthesis	1.18080369081			5.34065601164e-08
+Metabolism.Lipid_Metabolism.Glycerophospholipid_metabolism	3.92733700408	MetaHIT	3.13582668336	9.78313676729e-39
+Metabolism.Lipid_Metabolism.Steroid_biosynthesis	2.22837268059			1.12558022438e-15
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Flavone_and_flavonol_biosynthesis	2.66899716189			4.35345984486e-40
+Cellular_Processes.Transport_and_Catabolism.Phagosome	2.23738923826			2.7403891616e-29
+Organismal_Systems.Nervous_System	2.50461015473			2.69119618998e-38
+Metabolism.Lipid_Metabolism.Fatty_acid_biosynthesis	4.20023201841			-
+Metabolism.Metabolism_of_Terpenoids_and_Polyketides.Biosynthesis_of_siderophore_group_nonribosomal_peptides	3.03137620312			8.43570246251e-21
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Peptidoglycan_biosynthesis	4.34623103511	MetaHIT	3.40596404113	6.3640602351e-26
+Organismal_Systems.Immune_System.Leukocyte_transendothelial_migration	2.01000823485			4.81099475604e-42
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Penicillin_and_cephalosporin_biosynthesis	3.17040311154			2.08254654234e-08
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Polycyclic_aromatic_hydrocarbon_degradation	3.6040542135	HMP	3.1784204126	1.67991864088e-29
+Metabolism.Carbohydrate_Metabolism	5.17999556239	MetaHIT	3.54410529149	1.58485151822e-13
+Human_Diseases	4.23301737417	HMP	3.88713477341	5.42505669802e-39
+Metabolism.Carbohydrate_Metabolism.Starch_and_sucrose_metabolism	4.10423558974	MetaHIT	3.2017784458	9.56744107417e-24
+Human_Diseases.Metabolic_Diseases.Type_I_diabetes_mellitus	3.44915544399	HMP	3.14932799135	7.54012336111e-42
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.One_carbon_pool_by_folate	4.36429451392	MetaHIT	3.56634459191	5.42505669802e-39
+Organismal_Systems.Immune_System.RIG_I_like_receptor_signaling_pathway	2.19232528523			8.8046390465e-16
+Environmental_Information_Processing.Signal_Transduction.mTOR_signaling_pathway	2.28459730334			5.19870362068e-38
+Genetic_Information_Processing.Folding_Sorting_and_Degradation.RNA_degradation	3.80644492346			0.000343636409579
+Metabolism.Amino_Acid_Metabolism.Alanine_aspartate_and_glutamate_metabolism	4.22795104872	MetaHIT	3.00775967343	3.21283134429e-19
+Cellular_Processes.Cell_Growth_and_Death.Apoptosis	2.47060084404			0.00189035328064
+Human_Diseases.Neurodegenerative_Diseases.Parkinson_s_disease	2.66893029739			1.66274063009e-36
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Retinol_metabolism	3.11130395019			2.85608250416e-38
+Human_Diseases.Cardiovascular_Diseases.Hypertrophic_cardiomyopathy_HCM_	1.47213963043			2.54851060112e-24
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Fluorobenzoate_degradation	2.26998905091			2.23658484516e-39
+Cellular_Processes.Cell_Growth_and_Death.p53_signaling_pathway	1.79707717913			3.94086222728e-21
+Cellular_Processes.Cell_Motility.Regulation_of_actin_cytoskeleton	2.17045441667			6.34493401861e-39
+Organismal_Systems.Endocrine_System.PPAR_signaling_pathway	3.30442551931	HMP	3.00355059512	3.29461464211e-39
+Human_Diseases.Infectious_Diseases.Vibrio_cholerae_pathogenic_cycle	3.17346211924			6.51402512404e-36
+Metabolism.Metabolism_of_Other_Amino_Acids.D_Alanine_metabolism	4.40255351302	HMP	3.51071367099	1.09717946562e-07
+Human_Diseases.Cancers.Small_cell_lung_cancer	1.69016308734			4.81099475604e-42
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Pantothenate_and_CoA_biosynthesis	4.35278683359	MetaHIT	3.60757902537	5.56616499319e-39
+Genetic_Information_Processing.Replication_and_Repair	4.87198397044	MetaHIT	3.92631251391	3.20090773577e-26
+Cellular_Processes.Cell_Growth_and_Death.Cell_cycle_Caulobacter	4.13780640084			-
+Environmental_Information_Processing.Membrane_Transport.Phosphotransferase_system_PTS_	4.03696635538	HMP	3.55762196304	1.44921416966e-17
+Cellular_Processes.Cell_Communication.Tight_junction	2.12930337963			-
+Metabolism.Glycan_Biosynthesis_and_Metabolism.Glycosylphosphatidylinositol_GPI_anchor_biosynthesis	2.16415239428			-
+Cellular_Processes.Cell_Communication.Focal_adhesion	2.04931838273			3.22341654768e-38
+Environmental_Information_Processing.Signal_Transduction.Jak_STAT_signaling_pathway	1.41440541863			7.74910268239e-42
+Metabolism.Metabolism_of_Other_Amino_Acids.Glutathione_metabolism	3.82687776695	HMP	3.20641270831	3.12226221471e-35
+Metabolism.Energy_Metabolism.Photosynthesis	3.70461497091	HMP	3.40062408078	2.45032361236e-39
+Genetic_Information_Processing.Folding_Sorting_and_Degradation.Proteasome	2.71501965226			8.45561756717e-12
+Human_Diseases.Infectious_Diseases.African_trypanosomiasis	2.49170633365			1.60784648364e-39
+Metabolism.Metabolism_of_Cofactors_and_Vitamins.Nicotinate_and_nicotinamide_metabolism	4.17096880963	MetaHIT	3.44746078218	6.01175895203e-39
+Organismal_Systems.Sensory_System.Phototransduction_fly	2.0164311543			2.08061048891e-34
+Human_Diseases.Cancers.Glioma	1.97190867599			1.50396690651e-41
+Genetic_Information_Processing.Folding_Sorting_and_Degradation.SNARE_interactions_in_vesicular_transport	2.06603549646			1.05401432781e-35
+Organismal_Systems.Immune_System.NOD_like_receptor_signaling_pathway	2.58204276261			1.0904638636e-39
+Human_Diseases.Cancers.Chronic_myeloid_leukemia	1.86762173174			4.81099475604e-42
+Human_Diseases.Immune_System_Diseases.Systemic_lupus_erythematosus	2.36336721833			1.11258682159e-36
+Metabolism.Xenobiotics_Biodegradation_and_Metabolism.Chloroalkane_and_chloroalkene_degradation	3.69441390736			-
+Metabolism.Biosynthesis_of_Other_Secondary_Metabolites.Caffeine_metabolism	0.920740000352			3.81321399615e-34
