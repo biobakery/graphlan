@@ -1,0 +1,72 @@
+branch_color_from_ancestor	0
+title	A maximal core gene for clade Y
+title_font_size	11
+annotation_background_offset	-0.26
+annotation_background_separation	0.1
+branch_bracket_width	0.5
+branch_bracket_depth	0.75
+c1	clade_marker_color	#FF0000
+c1	clade_marker_size	35
+c1	class_label	Genomes containing gene X
+c11	clade_marker_color	#00FFFF
+c11	clade_marker_size	35
+c11	class_label	Genomes containing gene X
+c2	clade_marker_color	#009900
+c2	clade_marker_size	35
+c3	clade_marker_color	#009900
+c3	clade_marker_size	35
+#class2	annotation_background_color	#0000FF	
+#class2	class_label	Clades in which X is a core gene
+clade_marker_size	10	
+branch_thickness	0.5
+Bacill.Bacillale	class	c3
+Bacill.Bacillale.Staphylococcaceae.Gemella	class	c1
+Bacill.Bacillale.Staphylococcaceae	class	c1
+Bacill.Bacillale.Staphylococcaceae.Jeotgalicoccus	class	c1
+Bacill.Bacillale.Staphylococcaceae.Macrococcus	class	c1
+Bacill.Bacillale.Staphylococcaceae.Staphylococcus	class	c1
+Bacill.Bacillale.Staphylococcaceae.unclassified	class	c1
+Bacill.Bacillale.Staphylococcaceae.Macrococcus	class	c1
+Bacill.Bacillale.unclassified.AA	class	c1
+Bacill.Bacillale.unclassified	class	c1
+Bacill.Bacillale.Thermoactinomycetaceae.Planifilum	class	c1
+Bacill.Bacillale.Thermoactinomycetaceae.Thermoactinomyces	class	c1
+Bacill.Bacillale.Thermoactinomycetaceae.unclassified	class	c1
+Bacill.Bacillale.Thermoactinomycetaceae	class	c1
+Bacill.Bacillale	annotation	Y
+Bacill.Bacillale.Staphylococcaceae	annotation	Y1
+Bacill.Bacillale.Thermoactinomycetaceae	annotation	Y2	
+Bacill.Bacillale.unclassified	annotation	Y3
+
+Bacill.Bacillale.Staphylococcaceae.Gemella	ring_shape	1	v
+Bacill.Bacillale.Staphylococcaceae.Jeotgalicoccus	ring_shape	1	v
+Bacill.Bacillale.Staphylococcaceae.Macrococcus	ring_shape	1	v
+Bacill.Bacillale.Staphylococcaceae.Staphylococcus	ring_shape	1	v
+Bacill.Bacillale.Staphylococcaceae.unclassified	ring_shape	1	v
+Bacill.Bacillale.Staphylococcaceae.Macrococcus	ring_shape	1	v
+Bacill.Bacillale.unclassified.AA	ring_shape	1	v
+Bacill.Bacillale.Thermoactinomycetaceae.Planifilum	ring_shape	1	v
+Bacill.Bacillale.Thermoactinomycetaceae.Thermoactinomyces	ring_shape	1	v
+Bacill.Bacillale.Thermoactinomycetaceae.unclassified	ring_shape	1	v
+
+Bacill.Bacillale.Staphylococcaceae.Gemella	ring_width	1	0.6
+Bacill.Bacillale.Staphylococcaceae.Jeotgalicoccus	ring_width	1	0.6
+Bacill.Bacillale.Staphylococcaceae.Macrococcus	ring_width	1	0.6
+Bacill.Bacillale.Staphylococcaceae.Staphylococcus	ring_width	1	0.6
+Bacill.Bacillale.Staphylococcaceae.unclassified	ring_width	1	0.6
+Bacill.Bacillale.Staphylococcaceae.Macrococcus	ring_width	1	0.6
+Bacill.Bacillale.unclassified.AA	ring_width	1	0.6
+Bacill.Bacillale.Thermoactinomycetaceae.Planifilum	ring_width	1	0.6
+Bacill.Bacillale.Thermoactinomycetaceae.Thermoactinomyces	ring_width	1	0.6
+Bacill.Bacillale.Thermoactinomycetaceae.unclassified	ring_width	1	0.6
+
+Bacill.Bacillale.Staphylococcaceae.Gemella	ring_height	1	0.6
+Bacill.Bacillale.Staphylococcaceae.Jeotgalicoccus	ring_height	1	0.6
+Bacill.Bacillale.Staphylococcaceae.Macrococcus	ring_height	1	0.6
+Bacill.Bacillale.Staphylococcaceae.Staphylococcus	ring_height	1	0.6
+Bacill.Bacillale.Staphylococcaceae.unclassified	ring_height	1	0.6
+Bacill.Bacillale.Staphylococcaceae.Macrococcus	ring_height	1	0.6
+Bacill.Bacillale.unclassified.AA	ring_height	1	0.6
+Bacill.Bacillale.Thermoactinomycetaceae.Planifilum	ring_height	1	0.6
+Bacill.Bacillale.Thermoactinomycetaceae.Thermoactinomyces	ring_height	1	0.6
+Bacill.Bacillale.Thermoactinomycetaceae.unclassified	ring_height	1	0.6
