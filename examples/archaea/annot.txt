@@ -1,11 +1,11 @@
 title	Archaea taxonomic tree
 title_font_size	25
-ring_internal_separator_thickness	1	1	
-ring_internal_separator_thickness	2	1	
-ring_internal_separator_thickness	3	1	
-ring_internal_separator_thickness	4	1	
+ring_internal_separator_thickness	1	1
+ring_internal_separator_thickness	2	1
+ring_internal_separator_thickness	3	1
+ring_internal_separator_thickness	4	1
 start_rotation	270
-total_plotted_degrees	360	
+total_plotted_degrees	360
 *	ring_width	1	1.0
 *	ring_width	4	0.7
 *	branch_thickness	0.916126068736
@@ -255,23 +255,23 @@ Euryarchaeota.Methanomicrobia.Methanomicrobiales.Methanoregulaceae.Methanoregula
 Crenarchaeota.Thermoprotei.Thermoproteales.Thermoproteaceae.Thermoproteus.neutrophilus.V24Sta	ring_color	4	#00AA00
 Euryarchaeota.Methanomicrobia.Methanocellales.Methanocellaceae.Methanocella.sp_.archaeon_RC_I	ring_color	4	#00AA00
 Euryarchaeota.Halobacteria.Halobacteriales.Haloarculaceae.Haloarcula.marismortui.ATCC_43049	ring_color	4	#00AA00
-Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanosarcina.mazei.Go1	ring_alpha	1	1.28571428571
+Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanosarcina.mazei.Go1	ring_alpha	1	1.0
 Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanothermococcus.okinawensis.IH1	ring_alpha	1	0.857142857143
 Crenarchaeota.Thermoprotei.Thermoproteales.Thermoproteaceae.Vulcanisaeta.moutnovskia.768_28	ring_alpha	1	0.428571428571
-Euryarchaeota.Methanomicrobia.Methanomicrobiales.Methanospirillaceae.Methanospirillum.hungatei.JF_1	ring_alpha	1	1.71428571429
-Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanosarcina.acetivorans.C2A	ring_alpha	1	1.28571428571
+Euryarchaeota.Methanomicrobia.Methanomicrobiales.Methanospirillaceae.Methanospirillum.hungatei.JF_1	ring_alpha	1	1.0
+Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanosarcina.acetivorans.C2A	ring_alpha	1	1.0
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Sulfolobus.islandicus.L_S_2_15	ring_alpha	1	0.428571428571
 Euryarchaeota.Methanobacteria.Methanobacteriales.Methanobacteriaceae.Methanothermobacter.marburgensis.str__Marburg	ring_alpha	1	0.857142857143
 Crenarchaeota.Thaumarchaeota.Nitrosopumilales.Nitrosopumilaceae.Nitrosopumilus.sp_.MY1	ring_alpha	1	0.428571428571
 Euryarchaeota.Thermoplasmata.Thermoplasmatales.Ferroplasmaceae.Ferroplasma.acidarmanus.Fer1	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Metallosphaera.cuprina.Ar_4	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Sulfolobus.islandicus.L_D_8_5	ring_alpha	1	0.428571428571
-Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.vannielii.SB	ring_alpha	1	1.71428571429
-Euryarchaeota.Methanobacteria.Methanobacteriales.Methanobacteriaceae.Methanosphaera.stadtmanae.DSM_3091	ring_alpha	1	1.71428571429
+Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.vannielii.SB	ring_alpha	1	1.0
+Euryarchaeota.Methanobacteria.Methanobacteriales.Methanobacteriaceae.Methanosphaera.stadtmanae.DSM_3091	ring_alpha	1	1.0
 Crenarchaeota.Thermoprotei.Thermoproteales.Thermofilaceae.Thermofilum.pendens.Hrk_5	ring_alpha	1	0.428571428571
 Euryarchaeota.Methanococci.Methanococcales.Methanocaldococcaceae.Methanocaldococcus.sp_.FS406_22	ring_alpha	1	0.857142857143
 Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Haloquadratum.walsbyi.DSM_16790	ring_alpha	1	0.857142857143
-Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanococcoides.burtonii.DSM_6242	ring_alpha	1	1.28571428571
+Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanococcoides.burtonii.DSM_6242	ring_alpha	1	1.0
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Sulfolobus.tokodaii.str__7	ring_alpha	1	0.428571428571
 Euryarchaeota.Thermococci.Thermococcales.Thermococcaceae.Thermococcus.onnurineus.NA1	ring_alpha	1	0.428571428571
 Euryarchaeota.Methanobacteria.Methanobacteriales.Methanobacteriaceae.Methanothermobacter.thermautotrophicus.str__Delta_H	ring_alpha	1	0.857142857143
@@ -288,12 +288,12 @@ Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanohalobi
 Crenarchaeota.Thermoprotei.Thermoproteales.Thermoproteaceae.Pyrobaculum.arsenaticum.DSM_13514	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Acidianus.hospitalis.W1	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Acidilobales.Acidilobaceae.Acidilobus.saccharovorans.345_15	ring_alpha	1	0.428571428571
-Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Halomicrobium.mukohataei.DSM_12286	ring_alpha	1	1.28571428571
+Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Halomicrobium.mukohataei.DSM_12286	ring_alpha	1	1.0
 Euryarchaeota.Methanococci.Methanococcales.Methanocaldococcaceae.Methanocaldococcus.fervens.AG86	ring_alpha	1	0.857142857143
 Euryarchaeota.Methanomicrobia.Methanocellales.Methanocellaceae.Methanocella.paludicola.SANAE	ring_alpha	1	0.857142857143
 Euryarchaeota.Thermoplasmata.Thermoplasmatales.Thermoplasmataceae.Thermoplasma.volcanium.GSS1	ring_alpha	1	0.428571428571
 Euryarchaeota.Methanobacteria.Methanobacteriales.Methanobacteriaceae.Methanobrevibacter.ruminantium.M1	ring_alpha	1	0.857142857143
-Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanohalophilus.mahii.DSM_5219	ring_alpha	1	1.28571428571
+Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanohalophilus.mahii.DSM_5219	ring_alpha	1	1.0
 Euryarchaeota.Archaeoglobi.Archaeoglobales.Archaeoglobaceae.Archaeoglobus.profundus.DSM_5631	ring_alpha	1	0.428571428571
 Euryarchaeota.Thermococci.Thermococcales.Thermococcaceae.Thermococcus.kodakaraensis.KOD1	ring_alpha	1	0.428571428571
 Euryarchaeota.Methanopyri.Methanopyrales.Methanopyraceae.Methanopyrus.kandleri.AV19	ring_alpha	1	0.428571428571
@@ -301,7 +301,7 @@ Euryarchaeota.Archaeoglobi.Archaeoglobales.Archaeoglobaceae.Archaeoglobus.fulgid
 Euryarchaeota.Methanococci.Methanococcales.Methanocaldococcaceae.Methanocaldococcus.infernus.ME	ring_alpha	1	0.857142857143
 Euryarchaeota.Thermoplasmata.Thermoplasmatales.Aciduloprofundaceae.Aciduliprofundum.boonei.T469	ring_alpha	1	0.428571428571
 Euryarchaeota.Methanobacteria.Methanobacteriales.Methanobacteriaceae.Methanobrevibacter.smithii.DSM_2375	ring_alpha	1	0.428571428571
-Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Haladaptatus.paucihalophilus.DX253	ring_alpha	1	1.28571428571
+Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Haladaptatus.paucihalophilus.DX253	ring_alpha	1	1.0
 Euryarchaeota.Methanococci.Methanococcales.Methanocaldococcaceae.Methanocaldococcus.vulcanius.M7	ring_alpha	1	0.857142857143
 Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Halorhabdus.tiamatea.SARL4B	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Sulfolobus.islandicus.Y_N_15_51	ring_alpha	1	0.428571428571
@@ -312,10 +312,10 @@ Crenarchaeota.Thermoprotei.Thermoproteales.Thermoproteaceae.Pyrobaculum.islandic
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Sulfolobus.islandicus.M_14_25	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Desulfurococcales.Desulfurococcaceae.Staphylothermus.marinus.F1	ring_alpha	1	0.428571428571
 Euryarchaeota.Thermococci.Thermococcales.Thermococcaceae.Pyrococcus.furiosus.DSM_3638	ring_alpha	1	0.428571428571
-Nanoarchaeota.Nanoarchaea.Nanoarchales.Nanoarchaceae.Nanoarchaeum.equitans.Kin4_M	ring_alpha	1	3.0
+Nanoarchaeota.Nanoarchaea.Nanoarchales.Nanoarchaceae.Nanoarchaeum.equitans.Kin4_M	ring_alpha	1	1.0
 Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosaetaceae.Methanosaeta.thermophila.PT	ring_alpha	1	0.857142857143
 Euryarchaeota.Thermoplasmata.Thermoplasmatales.Picrophilaceae.Picrophilus.torridus.DSM_9790	ring_alpha	1	0.428571428571
-Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Halorubrum.lacusprofundi.ATCC_49239	ring_alpha	1	1.28571428571
+Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Halorubrum.lacusprofundi.ATCC_49239	ring_alpha	1	1.0
 Crenarchaeota.Thermoprotei.Thermoproteales.Thermoproteaceae.Thermoproteus.uzoniensis.768_20	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Sulfolobus.acidocaldarius.DSM_639	ring_alpha	1	0.428571428571
 Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Haloquadratum.walsbyi.C23	ring_alpha	1	0.857142857143
@@ -324,13 +324,13 @@ Crenarchaeota.Thermoprotei.Desulfurococcales.Desulfurococcaceae.Desulfurococcus.
 Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Halobacterium.sp_.NRC_1	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Sulfolobus.islandicus.Y_G_57_14	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Thermoproteales.Thermoproteaceae.Pyrobaculum.calidifontis.JCM_11548	ring_alpha	1	0.428571428571
-Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Natrialba.magadii.ATCC_43099	ring_alpha	1	1.28571428571
-Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Haloterrigena.turkmenica.DSM_5511	ring_alpha	1	1.28571428571
+Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Natrialba.magadii.ATCC_43099	ring_alpha	1	1.0
+Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Haloterrigena.turkmenica.DSM_5511	ring_alpha	1	1.0
 Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.aeolicus.Nankai_3	ring_alpha	1	0.857142857143
 Euryarchaeota.Thermococci.Thermococcales.Thermococcaceae.Thermococcus.sp_.4557	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Desulfurococcales.Desulfurococcaceae.Staphylothermus.hellenicus.DSM_12710	ring_alpha	1	0.428571428571
-Euryarchaeota.Methanomicrobia.Methanomicrobiales.Methanoregulaceae.Methanosphaerula.Methanosphaerula.palustris_E1_9c	ring_alpha	1	1.28571428571
-Euryarchaeota.Methanomicrobia.Methanomicrobiales.Methanocorpusculaceae.Methanocorpusculum.labreanum.Z	ring_alpha	1	1.28571428571
+Euryarchaeota.Methanomicrobia.Methanomicrobiales.Methanoregulaceae.Methanosphaerula.Methanosphaerula.palustris_E1_9c	ring_alpha	1	1.0
+Euryarchaeota.Methanomicrobia.Methanomicrobiales.Methanocorpusculaceae.Methanocorpusculum.labreanum.Z	ring_alpha	1	1.0
 Crenarchaeota.Thaumarchaeota.Nitrosopumilales.Nitrosopumilaceae.Nitrosopumilus.maritimus.SCM1	ring_alpha	1	0.428571428571
 Euryarchaeota.Methanococci.Methanococcales.Methanocaldococcaceae.Methanocaldococcus.jannaschii.DSM_2661	ring_alpha	1	0.857142857143
 Euryarchaeota.Methanomicrobia.Methanomicrobiales.Methanomicrobiaceae.Methanoplanus.petrolearius.DSM_11571	ring_alpha	1	0.857142857143
@@ -345,7 +345,7 @@ Crenarchaeota.Thermoprotei.Desulfurococcales.Desulfurococcaceae.Ignisphaera.aggr
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Metallosphaera.sedula.DSM_5348	ring_alpha	1	0.428571428571
 Euryarchaeota.Methanococci.Methanococcales.Methanocaldococcaceae.Methanotorris.igneus.Kol_5	ring_alpha	1	0.857142857143
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Sulfolobus.islandicus.HVE10_4	ring_alpha	1	0.428571428571
-Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.maripaludis.S2	ring_alpha	1	1.28571428571
+Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.maripaludis.S2	ring_alpha	1	1.0
 Euryarchaeota.Thermoplasmata.Thermoplasmatales.Thermoplasmataceae.Thermoplasma.acidophilum.DSM_1728	ring_alpha	1	0.428571428571
 Euryarchaeota.Thermococci.Thermococcales.Thermococcaceae.Thermococcus.sibiricus.MM_739	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Sulfolobus.islandicus.M_16_27	ring_alpha	1	0.428571428571
@@ -355,12 +355,12 @@ Euryarchaeota.Thermococci.Thermococcales.Thermococcaceae.Thermococcus.barophilus
 Euryarchaeota.Methanobacteria.Methanobacteriales.Methanobacteriaceae.Methanobrevibacter.smithii.ATCC_35061	ring_alpha	1	0.857142857143
 Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Halalkalicoccus.jeotgali.B3	ring_alpha	1	0.428571428571
 Euryarchaeota.Thermococci.Thermococcales.Thermococcaceae.Pyrococcus.yayanosii.CH1	ring_alpha	1	0.428571428571
-Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.maripaludis.C5	ring_alpha	1	1.28571428571
-Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.maripaludis.C7	ring_alpha	1	1.28571428571
-Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.maripaludis.C6	ring_alpha	1	1.28571428571
+Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.maripaludis.C5	ring_alpha	1	1.0
+Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.maripaludis.C7	ring_alpha	1	1.0
+Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanococcus.maripaludis.C6	ring_alpha	1	1.0
 Crenarchaeota.Thaumarchaeota.Cenarchaeales.Cenarchaeaceae.Cenarchaeum.symbiosum.A	ring_alpha	1	0.428571428571
 Euryarchaeota.Thermococci.Thermococcales.Thermococcaceae.Thermococcus.gammatolerans.EJ3	ring_alpha	1	0.428571428571
-Euryarchaeota.Methanobacteria.Methanobacteriales.Methanobacteriaceae.Methanobacterium.sp_.SWAN_1	ring_alpha	1	1.28571428571
+Euryarchaeota.Methanobacteria.Methanobacteriales.Methanobacteriaceae.Methanobacterium.sp_.SWAN_1	ring_alpha	1	1.0
 Euryarchaeota.Thermococci.Thermococcales.Thermococcaceae.Thermococcus.sp_.AM4	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Sulfolobales.Sulfolobaceae.Sulfolobus.islandicus.REY15A	ring_alpha	1	0.428571428571
 Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Halorhabdus.utahensis.DSM_12940	ring_alpha	1	0.428571428571
@@ -368,11 +368,11 @@ Crenarchaeota.Thermoprotei.Desulfurococcales.Pyrodictiaceae.Hyperthermus.butylic
 Euryarchaeota.Methanomicrobia.Methanomicrobiales.Methanocullaceae.Methanoculleus.marisnigri.JR1	ring_alpha	1	0.428571428571
 Euryarchaeota.Methanobacteria.Methanobacteriales.Methanobacteriaceae.Methanobacterium.sp_.AL_21	ring_alpha	1	0.857142857143
 Euryarchaeota.Halobacteria.Halobacteriales.Halobacteriaceae.Halogeometricum.borinquense.DSM_11551	ring_alpha	1	0.857142857143
-Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanosarcina.barkeri.str__fusaro	ring_alpha	1	1.28571428571
+Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanosarcina.barkeri.str__fusaro	ring_alpha	1	1.0
 Euryarchaeota.Methanomicrobia.Methanomicrobiales.Methanoregulaceae.Methanoregula.boonei.boonei_6A8	ring_alpha	1	0.428571428571
 Crenarchaeota.Thermoprotei.Thermoproteales.Thermoproteaceae.Thermoproteus.neutrophilus.V24Sta	ring_alpha	1	0.428571428571
-Euryarchaeota.Methanomicrobia.Methanocellales.Methanocellaceae.Methanocella.sp_.archaeon_RC_I	ring_alpha	1	1.28571428571
-Euryarchaeota.Halobacteria.Halobacteriales.Haloarculaceae.Haloarcula.marismortui.ATCC_43049	ring_alpha	1	1.28571428571
+Euryarchaeota.Methanomicrobia.Methanocellales.Methanocellaceae.Methanocella.sp_.archaeon_RC_I	ring_alpha	1	1.0
+Euryarchaeota.Halobacteria.Halobacteriales.Haloarculaceae.Haloarcula.marismortui.ATCC_43049	ring_alpha	1	1.0
 Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanosarcina.mazei.Go1	ring_color	1	#0000FF
 Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanothermococcus.okinawensis.IH1	ring_color	1	#0000FF
 Crenarchaeota.Thermoprotei.Thermoproteales.Thermoproteaceae.Vulcanisaeta.moutnovskia.768_28	ring_color	1	#0000FF
