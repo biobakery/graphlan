@@ -1,9 +1,23 @@
 # !/bin/bash
 
+########################################################################################################################
+# The following lines of code contains all the steps for downloading the HMP and MetaHIT data, process it through      #
+# MetaPhlAn2, perform the functional analysis using HUMAnN, merging the functional profiles by means of an ad-hoc      #
+# python script provided inside the hmp_metahit_functional folder, process the merged dataset with LEfSe for           #
+# biomarkers discovery, exploit the export2graphlan framework for generating the tree and the annotation file for      #
+# GraPhlAn, and finally draw the image using GraPhlAn.                                                                 #
+# For time reasons, we provide the two intermediate files: the merge of the two datasets (HMP & MetaHIT) and the       #
+# results of LEfSE.                                                                                                    #
+# If the user wants to test the complete pipeline, it is enough to uncommet all the commented part.                    #
+########################################################################################################################
+
 # # remove the generated files, if any
 # echo "Removing files"
 # rm -f merge.txt stool/* merge-good.txt merge-good-1.txt merge-good-2.txt merge-good-3.txt merge.txt merge.txt.in \
 # merge.txt.out tree.txt annot.txt outtree.txt outimg.png
+
+# # set MetaPhlAn2 directory
+# mpa_dir=`$HOME/metaphlan2`
 
 # # download samples
 # echo "Downloading HMP stool samples"
@@ -25,12 +39,15 @@
 #     SRS019397 SRS021948 SRS022524 SRS023346 SRS023914 SRS024075 SRS042284 SRS043411 SRS043701 SRS045645 SRS049164; do
 
 #     wget ftp://public-ftp.hmpdacc.org/Illumina/stool/${i}.tar.bz2 # download
-#     bzip2 -d ${i} # decompress
+#     bzip2 -d ${i}.tar.bz2 # decompress
+
 #     # MetaPhlAn
+#     metaphlan2.py ${i}.fastq --mpa_pkl ${mpa_dir}/db_v20/mpa_v20_m200.pkl --bowtie2db ${mpa_dir}/db_v20/mpa_v20_m200 \
+#     --input_type fastq > ${i}.profile
 # done
 
 # echo "Downloading MetaHIT healthy stool samples"
-# for i in `cat metahit_download.txt`; do
+# for i in `cat ../metahit_download.txt`; do
 #     s=`echo ${i} | cut -f1`
 #     u=`echo ${i} | cut -f2`
 
@@ -44,6 +61,8 @@
 #     done
 
 #     # MetaPhlAn
+#     metaphlan2.py ../${s}.fastq --mpa_pkl ${mpa_dir}/db_v20/mpa_v20_m200.pkl --bowtie2db ${mpa_dir}/db_v20/mpa_v20_m200 \
+#     --input_type fastq > ../${s}.profile
 # done
 # cd ../
 
