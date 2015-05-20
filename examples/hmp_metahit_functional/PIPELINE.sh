@@ -39,9 +39,8 @@
 #     SRS019397 SRS021948 SRS022524 SRS023346 SRS023914 SRS024075 SRS042284 SRS043411 SRS043701 SRS045645 SRS049164; do
 
 #     wget ftp://public-ftp.hmpdacc.org/Illumina/stool/${i}.tar.bz2 # download
-#     bzip2 -d ${i}.tar.bz2 # decompress
-
-#     # MetaPhlAn
+#     tar jxf -d ${i}.tar.bz2 # decompress
+#     cat ${i}/* > ${i}.fastq
 #     metaphlan2.py ${i}.fastq --mpa_pkl ${mpa_dir}/db_v20/mpa_v20_m200.pkl --bowtie2db ${mpa_dir}/db_v20/mpa_v20_m200 \
 #     --input_type fastq > ${i}.profile
 # done
@@ -60,7 +59,6 @@
 #         cat ${ff} >> ../${s}.fastq # cat forward and reverse
 #     done
 
-#     # MetaPhlAn
 #     metaphlan2.py ../${s}.fastq --mpa_pkl ${mpa_dir}/db_v20/mpa_v20_m200.pkl --bowtie2db ${mpa_dir}/db_v20/mpa_v20_m200 \
 #     --input_type fastq > ../${s}.profile
 # done
