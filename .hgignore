@@ -1,0 +1,5 @@
+syntax: glob
+.hgignore
+*.pyc
+*.DS_Store
+*.log
