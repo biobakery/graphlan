@@ -76,7 +76,7 @@
 # # execute LEfSe
 # echo "Running LEfSe"
 # format_input.py merge-very-good.txt merge-very-good.txt.in -c 1 -o 1000000
-# ~/lefse/run_lefse.py -l 3.0 merge-very-good.txt.in merge-very-good.txt.out
+# run_lefse.py -l 3.0 merge-very-good.txt.in merge-very-good.txt.out
 
 # convert it!
 echo "Converting to GraPhlAn"
