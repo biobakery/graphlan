@@ -320,7 +320,7 @@ annotation_rotation [def. 0] : the rotation of the label. As default the rotatio
 annotation_background_color [def. grey] : the color of the annotation background
 
 annotation_background_edge_color [def annotation_background_color] : the color 
-    of the edge for the annotation background
+    of the edge for the annotation background. NOT IMPLEMENTED YET
 
 
 ------------------------------------------------------------------------------
@@ -465,9 +465,3 @@ markers.
 
 
 ==============================================================================
-
-
-
-
-
-
