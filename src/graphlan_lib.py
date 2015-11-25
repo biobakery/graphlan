@@ -1005,62 +1005,68 @@ class CircTree(PpaTree):
             #           prop = {'size':self.annotation_legend_font_size}
             #        )
 
-            if external_legends :
-                lengths = [len(s) for s in self._ext_key]
-                charsize = self.annotation_legend_font_size * 0.0138889
-                width = round(max(lengths) * charsize * 10.) / 10.
-                height = round(self._tot_offset * len(self._ext_key) * charsize * 10.) / 10.
-                fig_annot = plt.figure(figsize=(width, height))
-                ax = fig_annot.add_subplot(111, frame_on=False, xticks=[], yticks=[])
+            if external_legends:
+                if self._ext_key:
+                    lengths = [len(s) for s in self._ext_key]
+                    charsize = self.annotation_legend_font_size * 0.0138889
+                    width = round(max(lengths) * charsize * 10.) / 10.
+                    height = round(self._tot_offset * len(self._ext_key) * charsize * 10.) / 10.
+                    fig_annot = plt.figure(figsize=(width, height))
+                    ax = fig_annot.add_subplot(111, frame_on=False, xticks=[], yticks=[])
+                else:
+                    print '[W] External annotation not created, no annotated labels!'
 
             ll = [ax.scatter(0.0, 0.0, s=0.0)] * len(self._ext_key)
-            plt.figlegend(ll, sorted(self._ext_key), 'upper left',
-                                frameon=False, shadow=False, scatterpoints=1,
-                                handlelength=0, markerscale=0.0, handletextpad=0.2,
-                                ncol=1, labelspacing=0.1, prop={'size':self.annotation_legend_font_size})
 
-            if external_legends :
-                # add '_annot' to the filename
-                if out_format :
+            if self._ext_key:
+                plt.figlegend(ll, sorted(self._ext_key), 'upper left', frameon=False,
+                    shadow=False, scatterpoints=1, handlelength=0, markerscale=0.0,
+                    handletextpad=0.2, ncol=1, labelspacing=0.1,
+                    prop={'size': self.annotation_legend_font_size})
+
+            if external_legends: # add '_annot' to the filename
+                if out_format:
                     img_name = out_img + "_annot"
-                else :
+                else:
                     img_name = out_img[:out_img.rfind('.')] + "_annot" + out_img[out_img.rfind('.'):]
 
-                plt.savefig(img_name, dpi=out_dpi, bbox_inches='tight',
-                            bbox_extra_artists=handles, pad_inches=out_pad, format=out_format)
-                plt.close()
+                if self._ext_key:
+                    plt.savefig(img_name, dpi=out_dpi, bbox_inches='tight',
+                        bbox_extra_artists=handles, pad_inches=out_pad, format=out_format)
+                    plt.close()
 
-        if external_legends and labels: # need to check if there are annotated labels!
-            charsize = self.class_legend_font_size * 0.0148889
-            width = round(max([len(s) for s in labels]) * charsize * 10.) / 10.
-            height = round(self._tot_offset * len(labels) * charsize * self.class_legend_marker_size * 10.) / 10.
-            plt.figure(figsize=(width, height))
+        if external_legends:
+            if labels: # need to check if there are annotated labels!
+                charsize = self.class_legend_font_size * 0.0148889
+                width = round(max([len(s) for s in labels]) * charsize * 10.) / 10.
+                height = round(self._tot_offset * len(labels) * charsize * self.class_legend_marker_size * 10.) / 10.
+                plt.figure(figsize=(width, height))
+            else:
+                print '[W] External legend not created, no annotated labels!'
 
-        plt.figlegend(handles, labels, loc, labelspacing=0.1, frameon=False,
-                            markerscale=self.class_legend_marker_size, scatterpoints=1,
-                            handletextpad=0.2, prop={'size':self.class_legend_font_size})
+        if labels:
+            plt.figlegend(handles, labels, loc, labelspacing=0.1, frameon=False,
+                markerscale=self.class_legend_marker_size, scatterpoints=1,
+                handletextpad=0.2, prop={'size': self.class_legend_font_size})
 
-        if external_legends :
-            # add '_legend' to the filename
-            if out_format :
+        if external_legends: # add '_legend' to the filename
+            if out_format:
                 img_name = out_img + "_legend"
-            else :
+            else:
                 img_name = out_img[:out_img.rfind('.')] + "_legend" + out_img[out_img.rfind('.'):]
 
-            plt.savefig(img_name, dpi=out_dpi, pad_inches=out_pad,
-                        bbox_extra_artists=handles, format=out_format)
-            plt.close()
+            if labels:
+                plt.savefig(img_name, dpi=out_dpi, pad_inches=out_pad,
+                    bbox_extra_artists=handles, format=out_format)
+                plt.close()
 
         if True: #
-            plt.savefig(    out_img,
-                            dpi=out_dpi,
-                            #facecolor=fc,
-                            bbox_inches='tight',
-                            bbox_extra_artists = handles,
-                            pad_inches=out_pad,
-                            format = out_format,
-                            #edgecolor=fc
-                            )
+            plt.savefig(out_img, dpi=out_dpi,
+                # facecolor=fc,
+                bbox_inches='tight', bbox_extra_artists=handles,
+                pad_inches=out_pad, format=out_format,
+                # edgecolor=fc
+            )
 
             plt.close()
         else:
