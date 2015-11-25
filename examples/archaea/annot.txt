@@ -1,11 +1,14 @@
 title	Archaea taxonomic tree
-title_font_size	25
+title_font_size	25	
+	
 ring_internal_separator_thickness	1	1
 ring_internal_separator_thickness	2	1
 ring_internal_separator_thickness	3	1
 ring_internal_separator_thickness	4	1
+	
 start_rotation	270
 total_plotted_degrees	360
+	
 *	ring_width	1	1.0
 *	ring_width	4	0.7
 *	branch_thickness	0.916126068736
@@ -15,8 +18,10 @@ total_plotted_degrees	360
 *	ring_edge_width	1	0.0
 *	ring_edge_width	2	0.0
 *	ring_edge_width	3	0.0
+
 annotation_font_size	7
 annotation_legend_font_size	10
+
 Euryarchaeota.Methanomicrobia.Methanosarcinales.Methanosarcinaceae.Methanosarcina.mazei.Go1	ring_height	4	1.92812559107
 Euryarchaeota.Methanococci.Methanococcales.Methanococcaceae.Methanothermococcus.okinawensis.IH1	ring_height	4	0.922640438812
 Crenarchaeota.Thermoprotei.Thermoproteales.Thermoproteaceae.Vulcanisaeta.moutnovskia.768_28	ring_height	4	1.31643654246
