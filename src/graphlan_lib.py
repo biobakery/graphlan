@@ -214,8 +214,13 @@ class CircTree(PpaTree):
                     if ilev not in gprops[prop]:
                         gprops[prop][ilev] = ext_attr_d[prop][1]
                 else:
+                    #print clade.split(lev_sep)[-1]
+                    #print clade_names
+                    #print line
                     sys.stderr.write( "Classes not implemented for external "
                                        "annotations\n" )
+                    #exit(1)
+
 
         def _rec_annotate_( clade, rkeys_gen, path ):
             name = clade.name if clade.name else ""
@@ -1038,7 +1043,7 @@ class CircTree(PpaTree):
         if external_legends:
             if labels: # need to check if there are annotated labels!
                 charsize = self.class_legend_font_size * 0.0148889
-                width = round(max([len(s) for s in labels]) * charsize * 10.) / 10.
+                width = round(max([len(s) for s in labels]) * charsize * self.class_legend_marker_size * 10.) / 10.
                 height = round(self._tot_offset * len(labels) * charsize * self.class_legend_marker_size * 10.) / 10.
                 plt.figure(figsize=(width, height))
             else:
