@@ -18,7 +18,7 @@ import matplotlib.lines as lines
 import matplotlib
 matplotlib.use('Agg')
 from pylab import *
-from pyphlan.pyphlan import PpaTree
+from pyphlan import PpaTree
 
 
 clade_attr = ( ( 'clade_marker_size',               float,  20.0        ),
