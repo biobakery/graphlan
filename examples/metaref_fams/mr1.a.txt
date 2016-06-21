@@ -15,9 +15,9 @@ c2	clade_marker_color	#0000FF
 c2	clade_marker_size	35
 c3	clade_marker_color	#00FF00
 c3	clade_marker_size	35
-#class2	annotation_background_color	#0000FF	
+#class2	annotation_background_color	#0000FF
 #class2	class_label	Clades in which X is a core gene
-clade_marker_size	10	
+clade_marker_size	10
 branch_thickness	0.5
 Bacill.Bacillale	class	c3
 Bacill.Bacillale.Staphylococcaceae.Gemella	class	c1
@@ -48,7 +48,7 @@ Clostridia.Thermoanaerobacterales.Thermoanaerobacteraceae.Thermoanaerobacterium	
 #Bacill.Bacillale	class	class2
 Bacill.Bacillale	annotation	Y
 Bacill.Bacillale.Staphylococcaceae	annotation	Y1
-Bacill.Bacillale.Thermoactinomycetaceae	annotation	Y2	
+Bacill.Bacillale.Thermoactinomycetaceae	annotation	Y2
 Bacill.Bacillale.unclassified	annotation	Y3
 Bacilli.Lactobacillales.Aerococcaceae	class	c2
 Bacilli.Lactobacillales.Aerococcaceae.Aerococcus	class	c2
@@ -69,8 +69,6 @@ Bacill.Bacillale.Thermoactinomycetaceae.unclassified	ring_shape	1	v
 Bacilli.Lactobacillales.Aerococcaceae.Eremococcus	ring_shape	1	v
 Bacilli.Lactobacillales.Carnobacteriaceae.Carnobacterium	ring_shape	1	v
 Bacilli.Lactobacillales.Carnobacteriaceae.Desemzia	ring_shape	1	v
-Bacilli.Lactobacillales.Lactobacillaceae.Lactobacillus	ring_shape	1	v
-Bacilli.Lactobacillales.Lactobacillaceae.Pediococcus	ring_shape	1	v
 Clostridia.Clostridiales.Incertae_Sedis_XI.Finegoldia	ring_shape	1	v
 Clostridia.Clostridiales.Incertae_Sedis_XI.Gallicola	ring_shape	1	v
 Clostridia.Clostridiales.Incertae_Sedis_XI.Helcococcus	ring_shape	1	v
@@ -78,7 +76,7 @@ Clostridia.Clostridiales.Incertae_Sedis_XI.Peptoniphilus	ring_shape	1	v
 Clostridi.Clostridiales.Ruminococcaceae.Papillibacter	ring_shape	1	v
 Clostridi.Clostridiale.Veillonellaceae.Selenomonas	ring_shape	1	v
 Clostridia.Thermoanaerobacterales.Thermoanaerobacteraceae.Thermoanaerobacterium	ring_shape	1	v
-Bacilli.Lactobacillales.Aerococcaceae.Aerococcus	ring_shape	1	v	
+Bacilli.Lactobacillales.Aerococcaceae.Aerococcus	ring_shape	1	v
 Bacilli.Lactobacillales.Aerococcaceae.Eremococcus	ring_shape	1	v
 Bacilli.Lactobacillales.Aerococcaceae.unclassified	ring_shape	1	v
 Bacilli.Lactobacillales.Aerococcaceae.Abiotrophia	ring_shape	1	v
@@ -96,8 +94,6 @@ Bacill.Bacillale.Thermoactinomycetaceae.unclassified	ring_width	1	0.6
 Bacilli.Lactobacillales.Aerococcaceae.Eremococcus	ring_width	1	0.6
 Bacilli.Lactobacillales.Carnobacteriaceae.Carnobacterium	ring_width	1	0.6
 Bacilli.Lactobacillales.Carnobacteriaceae.Desemzia	ring_width	1	0.6
-Bacilli.Lactobacillales.Lactobacillaceae.Lactobacillus	ring_width	1	0.6
-Bacilli.Lactobacillales.Lactobacillaceae.Pediococcus	ring_width	1	0.6
 Clostridia.Clostridiales.Incertae_Sedis_XI.Finegoldia	ring_width	1	0.6
 Clostridia.Clostridiales.Incertae_Sedis_XI.Gallicola	ring_width	1	0.6
 Clostridia.Clostridiales.Incertae_Sedis_XI.Helcococcus	ring_width	1	0.6
@@ -105,7 +101,7 @@ Clostridia.Clostridiales.Incertae_Sedis_XI.Peptoniphilus	ring_width	1	0.6
 Clostridi.Clostridiales.Ruminococcaceae.Papillibacter	ring_width	1	0.6
 Clostridi.Clostridiale.Veillonellaceae.Selenomonas	ring_width	1	0.6
 Clostridia.Thermoanaerobacterales.Thermoanaerobacteraceae.Thermoanaerobacterium	ring_width	1	0.6
-Bacilli.Lactobacillales.Aerococcaceae.Aerococcus	ring_width	1	0.6	
+Bacilli.Lactobacillales.Aerococcaceae.Aerococcus	ring_width	1	0.6
 Bacilli.Lactobacillales.Aerococcaceae.Eremococcus	ring_width	1	0.6
 Bacilli.Lactobacillales.Aerococcaceae.unclassified	ring_width	1	0.6
 Bacilli.Lactobacillales.Aerococcaceae.Abiotrophia	ring_width	1	0.6
@@ -123,8 +119,6 @@ Bacill.Bacillale.Thermoactinomycetaceae.unclassified	ring_height	1	0.6
 Bacilli.Lactobacillales.Aerococcaceae.Eremococcus	ring_height	1	0.6
 Bacilli.Lactobacillales.Carnobacteriaceae.Carnobacterium	ring_height	1	0.6
 Bacilli.Lactobacillales.Carnobacteriaceae.Desemzia	ring_height	1	0.6
-Bacilli.Lactobacillales.Lactobacillaceae.Lactobacillus	ring_height	1	0.6
-Bacilli.Lactobacillales.Lactobacillaceae.Pediococcus	ring_height	1	0.6
 Clostridia.Clostridiales.Incertae_Sedis_XI.Finegoldia	ring_height	1	0.6
 Clostridia.Clostridiales.Incertae_Sedis_XI.Gallicola	ring_height	1	0.6
 Clostridia.Clostridiales.Incertae_Sedis_XI.Helcococcus	ring_height	1	0.6
