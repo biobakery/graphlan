@@ -984,9 +984,8 @@ class CircTree(PpaTree):
                             (self._ext_max_height[l]*0.1 if l in self._ext_max_height else 0.1) )
                 off = (rpi2-self.total_plotted_degrees)*0.5
                 b = (bot+bot1)*0.5
-                s = -90 if 0.5*rpi < self.start_rotation < 1.5*rpi else 90
-                #rot = (self.start_rotation*360.0/rpi2 + s + off*360.0/rpi2 )%360.0
-                rot = (self.start_rotation*360.0/rpi2 + s )%360.0
+                s = 180.0 if self.start_rotation == rpi else 0.0
+                rot = (self.start_rotation*360.0/rpi2)%180.0 - 90 + s
                 fs = v['ring_label_font_size']
                 lcol = v['ring_label_color']
                 ax.text( self.start_rotation, b, v['ring_label'], rotation = rot,
