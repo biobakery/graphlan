@@ -418,7 +418,7 @@ Staphylococcaceae.Staphylococcus.Swarneri	ring_height	5	2.39465498028
 
 Bacillaceae.Bacillus.Bsubtilis	clade_marker_label	65
 Staphylococcaceae.Staphylococcus.Saureus	clade_marker_label	17
-Bacillaceae.Bacillus.Banthracis	clade_marker_label	x	
+Bacillaceae.Bacillus.Banthracis	clade_marker_label	x
 Bacillaceae.Bacillus.Banthracis	clade_marker_font_color	w
 Bacillaceae.Bacillus.Banthracis	clade_marker_edge_color	b
 Bacillaceae.Lysinibacillus.Lfusiformis	clade_marker_label	156

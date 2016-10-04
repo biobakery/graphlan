@@ -21,83 +21,74 @@ from pylab import *
 from pyphlan import PpaTree
 
 
-clade_attr = ( ( 'clade_marker_size',               float,  20.0        ),
-               ( 'clade_marker_color',              str,    '#FFFFFF'   ),
-               ( 'clade_marker_edge_width',         float,  0.5         ),
-               ( 'clade_marker_shape',              str,    'o'         ),
-               ( 'clade_marker_edge_color',         str,    '#000000'   ),
-               ( 'clade_marker_label',              str,    ''          ),
-               ( 'clade_marker_font_size',          str,    '7'         ),
-               ( 'clade_marker_font_color',         str,    'k'         ),
-               ( 'class_label',                     str,    ""          ),  # to rem
-               ( 'annotation_font_size',            int,    7           ),
-               ( 'annotation_font_stretch',         int,    0           ),
-               ( 'annotation_background_color',     str,    '#FF0000'   ),
-               ( 'annotation_background_edge_color',str,    '#FF0000'   ),  # not implemented yet
-               ( 'annotation',                      str,    ''          ),
-               ( 'annotation_rotation',             int,    0           ),
-             )
+clade_attr = ( ( 'clade_marker_size',                float, 20.0      ),
+               ( 'clade_marker_color',               str,   '#FFFFFF' ),
+               ( 'clade_marker_edge_width',          float, 0.5       ),
+               ( 'clade_marker_shape',               str,   'o'       ),
+               ( 'clade_marker_edge_color',          str,   '#000000' ),
+               ( 'clade_marker_label',               str,   ''        ),
+               ( 'clade_marker_font_size',           str,   '7'       ),
+               ( 'clade_marker_font_color',          str,   'k'       ),
+               ( 'class_label',                      str,   ""        ),  # to rem
+               ( 'annotation_font_size',             int,   7         ),
+               ( 'annotation_font_stretch',          int,   0         ),
+               ( 'annotation_background_color',      str,   '#FF0000' ),
+               ( 'annotation_background_edge_color', str,   '#FF0000' ),  # not implemented yet
+               ( 'annotation',                       str,   ''        ),
+               ( 'annotation_rotation',              int,   0         ) )
 clade_attr_d = dict([(p,(t,d)) for p,t,d in clade_attr])
 
-ext_attr = ( ( 'ring_color',                        str,    '#000000'   ),
-             ( 'ring_width',                        float,   1.0        ),
-             ( 'ring_height',                       float,   -1.0       ),
-             ( 'ring_alpha',                        float,   1.0        ),
-             ( 'ring_shape',                        str,     "R"        ),
-             ( 'ring_label',                        str,     None       ),
-             ( 'ring_label_font_size',              int,     11         ),
-             ( 'ring_label_color',                  str,     'k'        ),
-             ( 'ring_edge_width',                   float,   0.1        ),
-             ( 'ring_edge_color',                   str,     None       ),
-             ( 'ring_internal_separator_thickness', float,   0.0        ),
-             ( 'ring_separator_color',              str,     'k'        ),
-             ( 'ring_external_separator_thickness', float,   0.0        ),
-           )
+ext_attr = ( ( 'ring_color',                        str,   '#000000' ),
+             ( 'ring_width',                        float, 1.0       ),
+             ( 'ring_height',                       float, -1.0      ),
+             ( 'ring_alpha',                        float, 1.0       ),
+             ( 'ring_shape',                        str,   "R"       ),
+             ( 'ring_label',                        str,   None      ),
+             ( 'ring_label_font_size',              int,   11        ),
+             ( 'ring_label_color',                  str,   'k'       ),
+             ( 'ring_edge_width',                   float, 0.1       ),
+             ( 'ring_edge_color',                   str,   None      ),
+             ( 'ring_internal_separator_thickness', float, 0.0       ),
+             ( 'ring_separator_color',              str,   'k'       ),
+             ( 'ring_external_separator_thickness', float, 0.0       ) )
 ext_attr_d = dict([(p,(t,d)) for p,t,d in ext_attr])
 
-int_attr = (
-             ( 'internal_label',                    str,     None       ),
-             ( 'internal_label_font_size',          int,     8          ),
-           )
+int_attr = ( ( 'internal_label',           str, None ),
+             ( 'internal_label_font_size', int, 8    ) )
 int_attr_d = dict([(p,(t,d)) for p,t,d in int_attr])
 
-structural_attr = ( ( 'ignore_branch_len',              int,    0       ),
-                    ( 'total_plotted_degrees',          float,  360.0   ),
-                    ( 'start_rotation',                 float,  180.0   ),
-                    ( 'clade_separation',               float,  0.0     ),
-                    ( 'branch_bracket_width',           float,  0.25    ),
-                    ( 'branch_bracket_depth',           float,  1.0     ),
-                  )
+structural_attr = ( ( 'ignore_branch_len',     int,   0     ),
+                    ( 'total_plotted_degrees', float, 360.0 ),
+                    ( 'start_rotation',        float, 180.0 ),
+                    ( 'clade_separation',      float, 0.0   ),
+                    ( 'branch_bracket_width',  float, 0.25  ),
+                    ( 'branch_bracket_depth',  float, 1.0   ) )
 
-global_graphical_attr = ( ( 'annotation_background_width',       float,  0.1    ),
-                          ( 'annotation_background_alpha',       float,  0.2    ),
-                          ( 'annotation_background_separation',  float,  0.02   ),
-                          ( 'annotation_background_offset',      float,  0.02   ),
-                          ( 'class_legend_font_size',            int,    7      ),
-                          ( 'title',                             str,    ""     ),
-                          ( 'title_font_size',                   int,    15     ),
-                          ( 'class_legend_marker_size',          float,  1.0    ),
-                          ( 'annotation_legend_font_size',       int,    7      ),
-                          ( 'internal_labels_rotation',          float,   None  ),
-                        )
+global_graphical_attr = ( ( 'annotation_background_width',      float, 0.1   ),
+                          ( 'annotation_background_alpha',      float, 0.2   ),
+                          ( 'annotation_background_separation', float, 0.02  ),
+                          ( 'annotation_background_offset',     float, 0.02  ),
+                          ( 'class_legend_font_size',           int,   7     ),
+                          ( 'title',                            str,   ""    ),
+                          ( 'title_font_size',                  int,   15    ),
+                          ( 'class_legend_marker_size',         float, 1.0   ),
+                          ( 'annotation_legend_font_size',      int,   7     ),
+                          ( 'internal_labels_rotation',         float,  None ) )
 
-branch_attr = ( ( 'branch_thickness',           float,  0.75        ),
-                ( 'branch_color',               str,    '#000000'   ),
-                ( 'branch_color_from_ancestor', int,    1           ),
-              )
-
+branch_attr = ( ( 'branch_thickness',           float, 0.75      ),
+                ( 'branch_color',               str,   '#000000' ),
+                ( 'branch_color_from_ancestor', int,   1         ) )
 
 leg_sep = '_._._'
-leg_attr    = ( ( 'annotation_background_color',        str,    "w"         ),
-                ( 'annotation_background_edge_color',   str,    "k"         ),
-                ( 'clade_marker_color',                 str,    "w"         ),
-                ( 'clade_marker_edge_width',            float,  0.5         ),
-                ( 'clade_marker_size',                  float,  20.0        ),
-                ( 'keys',                               str,    "?"         ),
-              )
+leg_attr = ( ( 'annotation_background_color',      str,   "w"  ),
+             ( 'annotation_background_edge_color', str,   "k"  ),
+             ( 'clade_marker_color',               str,   "w"  ),
+             ( 'clade_marker_edge_width',          float, 0.5  ),
+             ( 'clade_marker_size',                float, 20.0 ),
+             ( 'clade_marker_shape',               str,   'o' ),
+             ( 'keys',                             str,   "?"  ) )
 
 lev_sep = '.'
-
 legal_options = set(zip(*clade_attr+ext_attr+int_attr+structural_attr+global_graphical_attr+branch_attr+leg_attr)[0]) | set(['class'])
 
 def random_keys(used_keys):
@@ -349,8 +340,8 @@ class CircTree(PpaTree):
                 last = t
 
         coffset = self.start_rotation + (rpi2 - self.total_plotted_degrees) * 0.5
-        circ_step = self.total_plotted_degrees*(1.0-self.clade_separation) / self._n_terminals
-        self.circ_pos = coffset+circ_step/2
+        circ_step = self.total_plotted_degrees * (1.0 - self.clade_separation) / self._n_terminals
+        self.circ_pos = coffset - circ_step
         self._last_leaf = self.tree.root
         self._varf = circ_step
 
@@ -776,24 +767,29 @@ class CircTree(PpaTree):
 
     def get_legend( self ):
         ax1 = plt.subplot(111, visible=False)
+        keys = getattr(self, "leg_keys")
 
-        keys = getattr( self, "leg_keys")
-
-        clade_marker_color        = getattr( self, "leg_clade_marker_color")
+        clade_marker_color = getattr(self, "leg_clade_marker_color")
         if not clade_marker_color:
             clade_marker_color = [self.default_clade_marker_color] * len(keys)
-        clade_marker_size              = getattr( self, "leg_clade_marker_size")
+
+        clade_marker_size  = getattr(self, "leg_clade_marker_size")
         if not clade_marker_size:
             clade_marker_size = [self.default_clade_marker_size] * len(keys)
-        clade_marker_edge_width   = getattr( self, "leg_clade_marker_edge_width")
+
+        clade_marker_edge_width = getattr(self, "leg_clade_marker_edge_width")
         if not clade_marker_edge_width:
             clade_marker_edge_width = [self.default_clade_marker_edge_width] * len(keys)
 
+        clade_marker_shape = getattr(self, "leg_clade_marker_shape")
+        if not clade_marker_shape:
+            clade_marker_shape = [self.default_clade_marker_shape] * len(keys)
+
         ll = []
-        for s,c,lw in zip(clade_marker_size,clade_marker_color,clade_marker_edge_width):
-            l = ax1.scatter(   0.0, 0.0, s = s, c = c,
-                                linewidths = lw )
+        for s,c,lw,m in zip(clade_marker_size, clade_marker_color, clade_marker_edge_width, clade_marker_shape):
+            l = ax1.scatter( 0.0, 0.0, s=s, c=c, linewidths=lw, marker=m )
             ll.append(l)
+
         ax1.set_xlim((0,1))
         ax1.set_ylim((0,1))
 
@@ -834,17 +830,12 @@ class CircTree(PpaTree):
         self._ext_patches = []
         self._ext_lines = []
 
-    def draw( self, out_img, out_format = None, out_dpi = 72, out_size = 7.0, out_pad = 0.5, external_legends = False ):
-
+    def draw( self, out_img, out_format=None, out_dpi=72, out_size=7.0, out_pad=0.5, external_legends=False ):
         self.reorder_tree()
         #self.tree.ladderize()
-
         self.load_set_attr()
-
         self.disambiguate_names()
-
         self._init_attr()
-
         self.set_clade_data()
         self.set_branches()
         self.set_wings()
@@ -858,7 +849,6 @@ class CircTree(PpaTree):
         ax = fig.add_subplot( 111, polar=True, frame_on=False )
         xticks([])
         yticks([])
-
 
         if len(self._t) > 0 and len(self._r) > 0:
             ax.scatter( self._t, self._r,
@@ -981,8 +971,9 @@ class CircTree(PpaTree):
             if 'ring_label' in v and v['ring_label']:
                 bot = offset + self._ext_bottoms[l]
                 bot1 = offset + ( self._ext_bottoms[l+1] if l+1 in self._ext_bottoms else self._ext_bottoms[l] +
-                            (self._ext_max_height[l]*0.1 if l in self._ext_max_height else 0.1) )
-                off = (rpi2-self.total_plotted_degrees)*0.5
+                                 (self._ext_max_height[l]*0.1 if l in self._ext_max_height else 0.1) )
+
+                off = self.start_rotation + (rpi2 - self.total_plotted_degrees) * 0.5
                 b = (bot+bot1)*0.5
                 s = 180.0 if self.start_rotation == rpi else 0.0
                 rot = (self.start_rotation*360.0/rpi2)%180.0 - 90 + s
@@ -1003,31 +994,19 @@ class CircTree(PpaTree):
         #ax.text( 0, 1, t )
 
         if self._ext_key:
-            #a = ax.legend( bbox_to_anchor=(.0, 1), loc = 'upper left', shadow=False, frameon = False,
-            #           scatterpoints = 1, borderpad = 0, handlelength = 0,
-            #           handletextpad = 0, markerscale = 0.0, ncol = 1,
-            #           labelspacing = 0.05,
-            #           prop = {'size':self.annotation_legend_font_size}
-            #        )
-
             if external_legends:
-                if self._ext_key:
-                    lengths = [len(s) for s in self._ext_key]
-                    charsize = self.annotation_legend_font_size * 0.0138889
-                    width = round(max(lengths) * charsize * 10.) / 10.
-                    height = round(self._tot_offset * len(self._ext_key) * charsize * 10.) / 10.
-                    fig_annot = plt.figure(figsize=(width, height))
-                    ax = fig_annot.add_subplot(111, frame_on=False, xticks=[], yticks=[])
-                else:
-                    print '[W] External annotation not created, no annotated labels!'
+                lengths = [len(s) for s in self._ext_key]
+                charsize = self.annotation_legend_font_size * 0.0138889
+                width = round(max(lengths) * charsize * 10.) / 10.
+                height = round(self._tot_offset * len(self._ext_key) * charsize * 10.) / 10.
+                fig_annot = plt.figure(figsize=(width, height))
+                ax = fig_annot.add_subplot(111, frame_on=False, xticks=[], yticks=[])
 
             ll = [ax.scatter(0.0, 0.0, s=0.0)] * len(self._ext_key)
-
-            if self._ext_key:
-                plt.figlegend(ll, sorted(self._ext_key), 'upper left', frameon=False,
-                    shadow=False, scatterpoints=1, handlelength=0, markerscale=0.0,
-                    handletextpad=0.2, ncol=1, labelspacing=0.1,
-                    prop={'size': self.annotation_legend_font_size})
+            plt.figlegend(ll, sorted(self._ext_key), 'upper left', frameon=False,
+                shadow=False, scatterpoints=1, handlelength=0, markerscale=0.0,
+                handletextpad=0.2, ncol=1, labelspacing=0.1,
+                prop={'size': self.annotation_legend_font_size})
 
             if external_legends: # add '_annot' to the filename
                 if out_format:
@@ -1035,10 +1014,11 @@ class CircTree(PpaTree):
                 else:
                     img_name = out_img[:out_img.rfind('.')] + "_annot" + out_img[out_img.rfind('.'):]
 
-                if self._ext_key:
-                    plt.savefig(img_name, dpi=out_dpi, bbox_inches='tight',
-                        bbox_extra_artists=handles, pad_inches=out_pad, format=out_format)
-                    plt.close()
+                plt.savefig(img_name, dpi=out_dpi, bbox_inches='tight',
+                    bbox_extra_artists=handles, pad_inches=out_pad, format=out_format)
+                plt.close()
+        # else:
+        #     print '[w] External annotation not created, no annotated labels!'
 
         if external_legends:
             if labels: # need to check if there are annotated labels!
@@ -1047,7 +1027,7 @@ class CircTree(PpaTree):
                 height = round(self._tot_offset * len(labels) * charsize * self.class_legend_marker_size * 10.) / 10.
                 plt.figure(figsize=(width, height))
             else:
-                print '[W] External legend not created, no annotated labels!'
+                print '[w] External legend not created, no annotated labels!'
 
         if labels:
             plt.figlegend(handles, labels, loc, labelspacing=0.1, frameon=False,
