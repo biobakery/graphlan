@@ -209,8 +209,7 @@ class CircTree(PpaTree):
                     print clade.split(lev_sep)[-1]
                     print clade_names
                     print line
-                    sys.stderr.write( "Classes not implemented for external "
-                                       "annotations\n" )
+                    sys.stderr.write( "Classes not implemented for external annotations\n" )
                     exit(1)
 
 
@@ -324,6 +323,8 @@ class CircTree(PpaTree):
         # visual separation between subtrees.
         # This is executed if the user sets clade_separatio > 0.0
         self._ord_leaves = []
+
+
         def compute_tot_add( clade ):
             if clade.is_terminal():
                 self._ord_leaves.append( clade )
@@ -349,6 +350,7 @@ class CircTree(PpaTree):
         self._varf = varf/tot_dist if self.clade_separation > 0.0 else 0.0
         self._ext_levs = set()
         #self._ext_max_height = {}
+
 
         def set_clade_data_rec( clade ):
             if self.ignore_branch_len:
@@ -454,6 +456,7 @@ class CircTree(PpaTree):
                 for att,typ,default in ext_attr:
                     self._ext_levs[l] = default
         self._all_ext_attr = [v[0] for v in ext_attr]
+
 
         def rec_set_exts( clade ):
             if hasattr( clade, "ext" ):
@@ -561,7 +564,6 @@ class CircTree(PpaTree):
         gprops = dict([(p.id_ref,p.value)
                     for p in self.tree.properties if not p.id_ref.startswith("ext__") ])
 
-
         eggrops = [( int(p.id_ref.split('__')[1]),p.id_ref.split('__')[2], p.value)
                         for p in self.tree.properties if p.id_ref.startswith("ext__")]
         iggrops = [( float(p.id_ref.split('__')[1]),p.id_ref.split('__')[2], p.value)
@@ -613,13 +615,13 @@ class CircTree(PpaTree):
             if attr == 'ring_height':
                 self._ext_max_height[int(lev)] = float(val) if float(val) >= 0.0 else 0.0
 
-
         self._n_terminals = self.tree.count_terminals()
         # with few leaves, the total rotation is lowered (unless the user set it)
         if self._n_terminals < 16 and 'total_plotted_degrees' not in gprops:
             self.total_plotted_degrees = self._n_terminals * 10.0
         self.total_plotted_degrees = self.total_plotted_degrees * rpi / 180.0
         self.start_rotation = self.start_rotation * rpi / 180.0
+
 
     def set_branches( self ):
         def set_branches_rec( clade, fcol ):
@@ -665,6 +667,7 @@ class CircTree(PpaTree):
 
         set_branches_rec( self.tree.root, self.branch_color )
 
+
     def set_wings( self ):
         if not self._wing_levs:
             self._wing_tot_offset = 1.0 # self._max_depth
@@ -677,6 +680,7 @@ class CircTree(PpaTree):
         lthetas = [l.theta for l in self.tree.get_terminals()]
         rad_offset = self.annotation_background_separation
         lev_width = self.annotation_background_width
+
 
         def set_wings_rec( clade ):
             if hasattr( clade, 'annotation') and not hasattr( clade, 'annotation_background_color'):
@@ -752,6 +756,7 @@ class CircTree(PpaTree):
 
         set_wings_rec( self.tree.root )
 
+
     def disambiguate_names(self):
         def disambiguate_names_rec( clade, cnames = set() ):
             if not hasattr(clade,'name'):
@@ -762,6 +767,7 @@ class CircTree(PpaTree):
 
             for c in clade.clades:
                 disambiguate_names_rec( c, cnames )
+
         disambiguate_names_rec( self.tree.root )
 
 
@@ -794,6 +800,7 @@ class CircTree(PpaTree):
         ax1.set_ylim((0,1))
 
         return ll , keys, 'upper right'
+
 
     def _init_attr( self ):
         self._depths = dict([(c.name,dist) for c,dist in
@@ -830,8 +837,9 @@ class CircTree(PpaTree):
         self._ext_patches = []
         self._ext_lines = []
 
-    def draw( self, out_img, out_format=None, out_dpi=72, out_size=7.0, out_pad=0.5, external_legends=False ):
-        self.reorder_tree()
+
+    def draw(self, out_img, out_format=None, out_dpi=72, out_size=7.0, out_pad=0.5, external_legends=False, reorder_tree=True):
+        self.reorder_tree(reorder_tree)
         #self.tree.ladderize()
         self.load_set_attr()
         self.disambiguate_names()
