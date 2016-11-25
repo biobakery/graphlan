@@ -9,7 +9,7 @@ from Bio.Phylo.BaseTree import Clade as BClade
 import string
 from numpy import pi as rpi
 rpi2 = 2.0*rpi
-import numpy as np 
+import numpy as np
 import array as arr
 import collections as colls
 import sys
@@ -115,7 +115,7 @@ def reroot_mid_fat_edge( tree, node ):
 def clades2terms( tree, startswith = None ):
     c2t = {}
     def clades2terms_rec( c ):
-        if startswith: 
+        if startswith:
             if c.name and c.name.startswith( startswith ):
                 c2t[c] = c.get_terminals()
         else:
@@ -127,11 +127,11 @@ def clades2terms( tree, startswith = None ):
 
 def dist_matrix( tree ):
     terminals = list(tree.get_terminals())
-    term_names = [t.name for t in terminals] 
+    term_names = [t.name for t in terminals]
     # can be made faster with recursion
     for n in tree.get_nonterminals():
         n.ids = set( [nn.name for nn in n.get_terminals()]  )
-    
+
     dists = dict([(n,dict([(nn,0.0) for nn in term_names])) for n in term_names])
 
     def dist_matrix_rec( clade ):
@@ -160,16 +160,16 @@ class PpaTree:
     def __load_tree_txt__( self, fn ):
         tree = Phylo.BaseTree.Tree()
         try:
-            rows = [l.decode('utf-8').rstrip().split("\t")[0] for l in 
+            rows = [l.decode('utf-8').rstrip().split("\t")[0] for l in
                         open(fn, 'rb')]
         except IOError:
             raise IOError()
-      
+
         clades = [r.split(lev_sep) for r in rows]
 
         tree = BTree()
         tree.root = BClade()
-       
+
         def add_clade_rec( father, txt_tree ):
             fl = set([t[0] for t in txt_tree])
             father.clades = []
@@ -184,7 +184,7 @@ class PpaTree:
         add_clade_rec( tree.root, clades )
         self.ignore_branch_len = 1
         return tree.as_phyloxml()
-        
+
 
     def __read_tree__( self, fn ):
         for ff in ['phyloxml','newick','nexus',"txt"]:
@@ -199,25 +199,25 @@ class PpaTree:
                 continue
             except IOError:
                 sys.stderr.write("Error: No tree file found: "+fn+"\n")
-                raise IOError 
+                raise IOError
             except Exception:
                 continue
             else:
                 return tree.as_phyloxml()
         sys.stderr.write("Error: unrecognized input format "+fn+"\n")
-        raise ValueError 
+        raise ValueError
 
 
     def __init__( self, filename, warnings = False ):
         self.warnings = warnings
         if filename is None:
             self.tree = None
-            return 
+            return
         try:
-            self.tree = self.__read_tree__(filename) 
+            self.tree = self.__read_tree__(filename)
             self.add_full_paths()
         except:
-            sys.exit(0) 
+            sys.exit(0)
 
 
     def core_test( self, ok, tot, pr ):
@@ -242,7 +242,7 @@ class PpaTree:
         add = 0
         for subclade in clade.clades:
             if "?" in subclade.name:
-                out = subclade.imgids - intersection # targs  
+                out = subclade.imgids - intersection # targs
                 add += len(out)
         if add and len_intersection >= add:
             len_intersection += int(round(add/1.99))
@@ -259,10 +259,10 @@ class PpaTree:
                 if len(subclade.imgids & targs) == 0:
                     nsubclades_absent += 1
                 continue
-            
+
             sc_intersection = subclade.imgids & targs
             sc_len_intersection = len(sc_intersection)
-           
+
             sc_add = 0
             for sc_subclade in subclade.clades:
                 if "?" in sc_subclade.name:
@@ -271,7 +271,7 @@ class PpaTree:
             if add and sc_len_intersection >= sc_add:
                 sc_len_intersection += int(round(sc_add/1.99))
 
-            subcore = self.core_test( sc_len_intersection, subclade.nterminals, er )    
+            subcore = self.core_test( sc_len_intersection, subclade.nterminals, er )
             if subcore < 0.05:
                 return False, core, None
         if nsubclades > 0 and nsubclades == nsubclades_absent:
@@ -295,7 +295,7 @@ class PpaTree:
                                 1.0)]
                 return []
             if skip_qm and clade.name and "?" in clade.name:
-                return [] 
+                return []
             if len(clade.imgids) == 1:
                 cimg = list(clade.imgids)[0]
                 if cimg in terminals:
@@ -320,7 +320,7 @@ class PpaTree:
 
 
     def add_full_paths( self ):
-        
+
         def _add_full_paths_( clade, path ):
             lpath = path + ([clade.name] if clade.name else [])
             clade.full_name = ".".join( lpath )
@@ -330,7 +330,7 @@ class PpaTree:
 
     def find_cores( self, cl_taxa_file, min_core_size = 1, error_rate = 0.95, subtree = None, skip_qm = True ):
         if subtree:
-            self.subtree( 'name', subtree ) 
+            self.subtree( 'name', subtree )
         self.ctc = {}
         imgids2terminals = {}
         for t in self.tree.get_terminals():
@@ -343,7 +343,7 @@ class PpaTree:
             n.imgids = set( [nn.imgid for nn in n.get_terminals()]  )
             n.nterminals = len( n.imgids )
 
-        self.add_full_paths() # unnecessary 
+        self.add_full_paths() # unnecessary
 
         ret = {}
         for vec in (l.strip().split('\t') for l in open(cl_taxa_file)):
@@ -357,7 +357,7 @@ class PpaTree:
                 ret[sid] = self._find_core( tgts, er = error_rate, root_name = subtree, skip_qm = skip_qm )
                 #print sid #, ret[sid]
         return ret
-   
+
     def markerness( self, coreness, uniqueness, cn_min, cn_max, cn_avg ):
         return coreness * uniqueness * (1.0 / float(cn_max-cn_min+1)) * 1.0 / cn_avg
 
@@ -376,9 +376,9 @@ class PpaTree:
             n.imgids = set( [nn.imgid for nn in n.get_terminals()]  )
             n.nterminals = len( n.imgids )
 
-        self.add_full_paths() # unnecessary 
-        
-        cus = dict([(int(l[0]),[int(ll) for ll in l[1:]]) for l in 
+        self.add_full_paths() # unnecessary
+
+        cus = dict([(int(l[0]),[int(ll) for ll in l[1:]]) for l in
                         (line.strip().split('\t') for line in open(cu_file))])
         cinfo = dict([(int(v[0]),[v[1]] + [int(vv) for vv in v[2:6]] + [float(vv) for vv in v[6:]])
                         for v in (line.strip().split('\t') for line in open(core_file))])
@@ -390,7 +390,7 @@ class PpaTree:
             lca = self.lca( cus[sid], ids2clades )
             if lca.is_terminal():
                 tin = set([lca.imgid])
-                tout = tgts_l - tin 
+                tout = tgts_l - tin
             else:
                 tout = tgts_l - lca.imgids
                 tin = lca.imgids & tgts_l
@@ -403,15 +403,15 @@ class PpaTree:
             gtax = ci[0]
             cobs, ctot = int(ci[1]), int(ci[2])
             markerness = self.markerness( coreness, uniqueness, cn_min, cp_max, cn_avg )
-            
+
             res_lin = [ gtax, markerness, coreness, uniqueness, cobs, ctot, cn_min, cp_max, cn_avg,
                         ltin, ltout, "|".join([str(s) for s in tin]), "|".join([str(s) for s in tout]) ]
-            ret[sid] = res_lin 
+            ret[sid] = res_lin
         return ret
-       
+
 
     def select_markers( self, marker_file, markerness_th = 0.0, max_markers = 200 ):
-        cl2markers = colls.defaultdict( list ) 
+        cl2markers = colls.defaultdict( list )
         for line in (l.strip().split('\t') for l in open( marker_file )):
             gid = line[1]
             markerness = float(line[2])
@@ -433,7 +433,7 @@ class PpaTree:
             for c in clade.clades:
                 _get_c2t_( c )
         _get_c2t_( self.tree.root )
-        return tc2t 
+        return tc2t
 
     def ltcs( self, terminals, tc2t = None, terminals2clades = None, lca_precomputed = None ):
         set_terminals = set( terminals )
@@ -444,7 +444,7 @@ class PpaTree:
             terms = tc2t[clade] if tc2t else set([cc.name for cc in clade.get_terminals()])
             if len(terms) < cur_max:
                 return None,0
-            if terms <= set_terminals: 
+            if terms <= set_terminals:
                 return clade,len(terms)
             rets = []
             for c in clade.clades:
@@ -456,7 +456,7 @@ class PpaTree:
             if rets:
                 return sorted(rets,key=lambda x:x[1])[-1][0],cur_max
             else:
-                return None,None 
+                return None,None
         return _ltcs_rec_( lca, cur_max = 0 )[0]
 
     def lca( self, terminals, terminals2clades = None ):
@@ -476,7 +476,7 @@ class PpaTree:
         lca = self.tree.common_ancestor( clade_targets )
         return lca
 
-    
+
     def lcca( self, t, t2c ):
         node_path = list(self.tree.get_path(t))
         if not node_path or len(node_path) < 2:
@@ -520,7 +520,7 @@ class PpaTree:
             outs = [c]
             if len(out_terms):
                 diam = sum(sorted(ltcs.depths().values())[-2:])
-                outs += [":".join([t.name,str( self.tree.distance(ltcs,t)/diam )]) 
+                outs += [":".join([t.name,str( self.tree.distance(ltcs,t)/diam )])
                              for t in out_terms]
             res.append( outs )
         return res
@@ -528,7 +528,7 @@ class PpaTree:
     def tax_resolution( self, terminals ):
         pass
 
-    
+
     def prune( self, strategy = 'lca', n = None, fn = None, name = None, newname = None ):
         prune = None
         if strategy == 'root_name':
@@ -557,7 +557,7 @@ class PpaTree:
             toprune = node_path[-n]
             fat = node_path[-n-1]
             fat.clades = [cc for cc in fat.clades if cc != toprune]
-            prune = None 
+            prune = None
         else:
             sys.stderr.write( strategy + " not supported yet." )
             sys.exit(-1)
@@ -620,8 +620,8 @@ class PpaTree:
 
     def reroot( self, strategy = 'lca', tf = None, n = None ):
         if strategy in [ 'lca', 'ltcs' ]:
-            targets = self.read_targets( tf ) 
-          
+            targets = self.read_targets( tf )
+
             lca = self.lca( targets ) if strategy == 'lca' else self.ltcs( targets )
             reroot_mid_fat_edge( self.tree, lca)
 
@@ -641,46 +641,55 @@ class PpaTree:
             #self.tree.reroot_at_midpoint(update_splits=True)
         elif strategy == 'longest_edge':
             nodes = list(self.tree.get_nonterminals()) + list(self.tree.get_terminals())
-            longest = max( nodes, key=lambda x:x.branch_length ) 
+            longest = max( nodes, key=lambda x:x.branch_length )
             reroot_mid_fat_edge( self.tree, longest )
             #longest_edge = max( self.ntree.get_edge_set(),
             #                    key=lambda x:x.length)
             #self.tree.reroot_at_edge(longest_edge, update_splits=True)
         elif strategy == 'longest_internal_edge':
             nodes = list(self.tree.get_nonterminals())
-            longest = max( nodes, key=lambda x:x.branch_length ) 
+            longest = max( nodes, key=lambda x:x.branch_length )
             if self.tree.root != longest:
                 reroot_mid_fat_edge( self.tree, longest )
             #longest = get_lensorted_int_edges( self.tree )
             #self.tree.reroot_at_edge( list(longest)[-1], update_splits=True )
         elif strategy == 'longest_internal_edge_n':
             nodes = list(self.tree.get_nonterminals())
-            longest = max( nodes, key=lambda x:x.branch_length 
-                    if len(x.get_terminals()) >= n else -1.0) 
+            longest = max( nodes, key=lambda x:x.branch_length
+                    if len(x.get_terminals()) >= n else -1.0)
             reroot_mid_fat_edge( self.tree, longest )
             #longest = get_lensorted_int_edges( self.tree, n )
             #self.tree.reroot_at_edge( list(longest)[-1], update_splits=True )
 
 
-    def reorder_tree( self ):
+    def reorder_tree( self, reorder_tree ):
         self._ord_terms = []
-        def reorder_tree_rec( clade ):
+
+
+        def reorder_tree_rec( clade, reorder_tree ):
             if clade.is_terminal():
                 self._ord_terms.append( clade )
                 return clade,clade
-            clade.clades.sort( key=lambda x:len(x.get_terminals()), reverse = True)
+
+            if reorder_tree:
+                clade.clades.sort( key=lambda x:len(x.get_terminals()), reverse = True)
+
             for c in clade.clades:
-                c.fc,c.lc = reorder_tree_rec( c ) 
-            return clade.clades[0].fc,clade.clades[-1].lc 
+                c.fc,c.lc = reorder_tree_rec( c, reorder_tree )
+
+            return clade.clades[0].fc,clade.clades[-1].lc
             #clade.fc, clade.lc = clade.clades[0], clade.clades[-1]
-        
-        reorder_tree_rec( self.tree.root )
+
+
+        reorder_tree_rec( self.tree.root, reorder_tree )
         last = None # self._ord_terms[-1]
+
         for c in self._ord_terms:
             c.pc = last
             if last:
                 last.nc = c
             last = c
+
         c.nc = None
         #self._ord_terms[-1].nc = None # self._ord_terms[0]
 
@@ -696,7 +705,7 @@ class PpaTree:
                 leaves += rec_subtree_leaves( c )
             leaves = [l for l in leaves if l]
             subtrees.append( (clade.name if clade.name else "",leaves)  )
-            return leaves 
+            return leaves
 
         rec_subtree_leaves( self.tree.root )
         return subtrees
@@ -713,14 +722,14 @@ class PpaTree:
                 if not nam and not clade.name:
                     lnam = ""
                 elif not nam:
-                    lnam = clade.name 
+                    lnam = clade.name
                 elif not clade.name:
                     lnam = nam
                 else:
-                    lnam = lev_sep.join( [nam, clade.name if clade.name else ""] ) 
-                ret += [lnam] if lnam else [] 
+                    lnam = lev_sep.join( [nam, clade.name if clade.name else ""] )
+                ret += [lnam] if lnam else []
                 for c in clade.clades:
-                    ret += rec_name(c,lnam) 
+                    ret += rec_name(c,lnam)
                 return ret
             names = set(rec_name(self.tree.root))
         else:

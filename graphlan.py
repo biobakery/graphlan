@@ -2,9 +2,9 @@
 
 #------------------------------------------------------------------------------
 # NAME: graphlan.py
-# DESCRIPTION:  GraPhlAn is a python program for creating images of circular 
-#               cladogram starting from a tree given in PhyloXML format. The 
-#               PhyloXML input tree can be formatted and annotated using the 
+# DESCRIPTION:  GraPhlAn is a python program for creating images of circular
+#               cladogram starting from a tree given in PhyloXML format. The
+#               PhyloXML input tree can be formatted and annotated using the
 #               graphlan_annotate.py script.
 #
 # Author:   Nicola Segata
@@ -34,7 +34,7 @@ def read_params(args):
         help = "the output image, the format is guessed from the extension "
                "unless --format is given. Available file formats are: png, "
                "pdf, ps, eps, svg" )
-    arg('--format', choices=['png','pdf','ps','eps','svg'], default=None, 
+    arg('--format', choices=['png','pdf','ps','eps','svg'], default=None,
         type = str, metavar=['output_image_format'],
         help = "set the format of the output image (default none meaning that "
                "the format is guessed from the output file extension)")
@@ -53,7 +53,9 @@ def read_params(args):
     arg('--external_legends', default=False, action='store_true',
         help = "specify whether the two external legends should be put in separate file or keep them "
                "along with the image (default behavior)")
-    arg( '-v','--version', action='version', version="GraPhlAn version "+__version__+" ("+__date__+")", 
+    arg('--avoid_reordering', default=True, action='store_false',
+        help = "specify whether the tree will be reorder or not (default the tree will be reordered)")
+    arg( '-v','--version', action='version', version="GraPhlAn version "+__version__+" ("+__date__+")",
         help="Prints the current GraPhlAn version and exit" )
     return vars(parser.parse_args())
 
@@ -62,9 +64,10 @@ if __name__ == "__main__":
     args = read_params( argv )
     ctree = CTree( args['intree'], args['warnings'] )
     ctree.positions = args['positions']
-    ctree.draw( args['outimg'], 
-                out_format = args['format'], 
-                out_dpi = args['dpi'],
-                out_size = args['size'],
-                out_pad = args['pad'],
-                external_legends = args['external_legends'])
+    ctree.draw(args['outimg'],
+               out_format=args['format'],
+               out_dpi=args['dpi'],
+               out_size=args['size'],
+               out_pad=args['pad'],
+               external_legends=args['external_legends'],
+               reorder_tree=args['avoid_reordering'])
