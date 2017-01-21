@@ -968,6 +968,10 @@ class CircTree(PpaTree):
         for l,v in self.ext_levs.items():
             for p in ['ring_internal_separator_thickness','ring_external_separator_thickness']:
                 if p in v and float(v[p]) > 0.0:
+                    if l not in self._ext_bottoms.keys():
+                        print '[e] External ring #'+str(l), 'defined, but not used. Please check your annotations file'
+                        continue
+
                     bot = offset + self._ext_bottoms[l]
                     if p == 'ring_external_separator_thickness':
                         bot += self._ext_max_height[l]*0.1 if l in self._ext_max_height else 0.1
