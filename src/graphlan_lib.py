@@ -197,6 +197,13 @@ class CircTree(PpaTree):
                     ilev = int(lev)
                     self._tmp_levs.add( ilev )
                     if prop in props[clade]:
+                        print "clade", clade
+                        print "prop", prop
+                        print "props[clade]", props[clade]
+                        print "val", val
+                        print "ilev", ilev
+                        print
+
                         props[clade][prop][ilev] = val
                     else:
                         props[clade][prop] = {ilev:val}
