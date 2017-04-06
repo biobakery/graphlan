@@ -171,7 +171,10 @@ class PpaTree:
         tree.root = BClade()
 
         def add_clade_rec( father, txt_tree ):
-            fl = set([t[0] for t in txt_tree])
+            fl = []
+            for c in [t[0] for t in txt_tree]:
+                if c in fl: continue
+                else: fl.append(c)
             father.clades = []
             for c in fl:
                 nclade = BClade( branch_length = 1.0,
@@ -672,7 +675,7 @@ class PpaTree:
                 return clade,clade
 
             if reorder_tree:
-                clade.clades.sort( key=lambda x:len(x.get_terminals()), reverse = True)
+                clade.clades.sort(key=lambda x:len(x.get_terminals()), reverse = True)
 
             for c in clade.clades:
                 c.fc,c.lc = reorder_tree_rec( c, reorder_tree )
