@@ -138,9 +138,11 @@ class CircTree(PpaTree):
 
         self._tmp_levs = set()
         for line in (l.strip().split('\t') for l in lines if l[0] != '#'):
+            if not ''.join(line): # skip empty lines
+                continue
             ll = len(line)
             if (ll < 2) or (ll > 4):
-                sys.stderr.write('Unrecognized annotation "{}", maybe spaces instead of tab?\n'.format(line))
+                sys.stderr.write('Unrecognized annotation "{}", maybe spaces instead of tab?\n'.format(''.join(line)))
                 exit(1)
             elif ll == 2:
                 legal( line[0] ) #  in legal_options, "%s is not a valid option" % line[1]
