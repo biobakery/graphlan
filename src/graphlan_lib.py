@@ -202,12 +202,12 @@ class CircTree(PpaTree):
                     ilev = int(lev)
                     self._tmp_levs.add( ilev )
                     if prop in props[clade]:
-                        print "clade", clade
-                        print "prop", prop
-                        print "props[clade]", props[clade]
-                        print "val", val
-                        print "ilev", ilev
-                        print
+                        #print "clade", clade
+                        #print "prop", prop
+                        #print "props[clade]", props[clade]
+                        #print "val", val
+                        #print "ilev", ilev
+                        #print
 
                         props[clade][prop][ilev] = val
                     else:
@@ -217,10 +217,10 @@ class CircTree(PpaTree):
                     if ilev not in gprops[prop]:
                         gprops[prop][ilev] = ext_attr_d[prop][1]
                 else:
-                    print ll
-                    print clade.split(lev_sep)[-1]
-                    print clade_names
-                    print line
+                    #print ll
+                    #print clade.split(lev_sep)[-1]
+                    #print clade_names
+                    #print line
                     sys.stderr.write( "Classes not implemented for external annotations\n" )
                     exit(1)
 
