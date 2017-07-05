@@ -683,81 +683,143 @@ class CircTree(PpaTree):
 
     def set_wings( self ):
         if not self._wing_levs:
+            # print "not self._wing_levs", not self._wing_levs
+
             self._wing_tot_offset = 1.0 # self._max_depth
             self._tot_offset = 1.0
             return
+
         if self.ignore_branch_len:
+            # print "self.ignore_branch_len", self.ignore_branch_len
+
             self._wing_levs.sort(reverse=True)
-            nlevs = len( self._wing_levs )
-            minl, maxl = min(self._wing_levs),max(self._wing_levs)
+            nlevs = len(self._wing_levs)
+            minl, maxl = min(self._wing_levs), max(self._wing_levs)
+
+            # print "nlevs", nlevs
+            # print "minl", minl
+            # print "maxl", maxl
+
         lthetas = [l.theta for l in self.tree.get_terminals()]
         rad_offset = self.annotation_background_separation
         lev_width = self.annotation_background_width
 
+        # print "lthetas", lthetas
+        # print "rad_offset", rad_offset
+        # print "lev_width", lev_width
 
         def set_wings_rec( clade ):
-            if hasattr( clade, 'annotation') and not hasattr( clade, 'annotation_background_color'):
+            if hasattr(clade, 'annotation') and not hasattr(clade, 'annotation_background_color'):
                 if self.warnings:
-                    sys.stderr.write("Warning: label "
-                                     "\""+clade.annotation+"\" has "
-                                     "a default gray background because no color is found for "
-                                     "the corresponding \"annotation\"\n")
-                clade.annotation_background_color = [0.3,0.3,0.3]
-            if hasattr( clade, 'annotation_background_color'):
+                    sys.stderr.write('Warning: label "{}" has a default gray background because no color is found for the corresponding "annotation"\n'.format(clade.annotation))
+
+                clade.annotation_background_color = [0.3, 0.3, 0.3]
+
+            if hasattr(clade, 'annotation_background_color'):
                 if clade.is_terminal(): # same as non-terminal ??
+                    # print "clade.theta", clade.theta
+                    # print ''
+                    # print "clade.pc", clade.pc
+                    # print "clade.nc", clade.nc
+                    # print ''
+                    # print "clade.pc.theta", clade.pc.theta
+                    # print "clade.nc.theta", clade.nc.theta
+
                     cpc = clade.theta + (clade.theta-clade.nc.theta) if clade.pc is None else clade.pc.theta
                     cnc = clade.theta - (clade.pc.theta-clade.theta) if clade.nc is None else clade.nc.theta
+
                     if cpc > clade.theta:
                         cpc -= rpi2
+
                     if cnc < clade.theta:
                         cnc += rpi2
-                    lsm = ( clade.theta + cpc ) * 0.5
-                    lgr = ( clade.theta + cnc ) * 0.5
 
+                    lsm = (clade.theta + cpc) * 0.5
+                    lgr = (clade.theta + cnc) * 0.5
                 else:
-                    f,t = clade.fc.theta, clade.fc.pc.theta if clade.fc.pc else clade.fc.nc.theta
-                    cpc = min(abs(f-t),abs(f+rpi2-t),abs(t+rpi2-f))
-                    f,t = clade.lc.theta, clade.lc.nc.theta if clade.lc.nc else clade.lc.pc.theta
-                    cnc = min(abs(f-t),abs(f+rpi2-t),abs(t+rpi2-f))
+                    # print "clade.fc.pc", clade.fc.pc
+                    # print "clade.lc.nc", clade.lc.nc
+                    # print ''
+                    # print "clade.fc.theta", clade.fc.theta
+                    # print "clade.lc.theta", clade.lc.theta
+                    # print ''
+                    # print "clade.fc.pc.theta", clade.fc.pc.theta
+                    # print "clade.fc.nc.theta", clade.fc.nc.theta
+                    # print ''
+                    # print "clade.lc.pc.theta", clade.lc.pc.theta
+                    # print "clade.lc.nc.theta", clade.lc.nc.theta
+
+                    f, t = clade.fc.theta, clade.fc.pc.theta if clade.fc.pc else clade.fc.nc.theta
+                    cpc = min(abs(f-t), abs(f+rpi2-t), abs(t+rpi2-f))
+                    f, t = clade.lc.theta, clade.lc.nc.theta if clade.lc.nc else clade.lc.pc.theta
+                    cnc = min(abs(f-t), abs(f+rpi2-t), abs(t+rpi2-f))
 
                     lsm = clade.fc.theta - cpc * 0.5
                     lgr = clade.lc.theta + cnc * 0.5
 
-                self._wing_thetas.append( lsm )
+                # print ''
+                # print "cpc", cpc
+                # print "cnc", cnc
+                # print "lsm", lsm
+                # print "lgr", lgr
+
+                self._wing_thetas.append(lsm)
+
                 if self.ignore_branch_len:
-                    rad = 1.0 + lev_width * ( 1 + self._wing_levs.index(int(self._depths[clade.name]))  ) - clade.r
+                    rad = 1.0 + lev_width * ( 1 + self._wing_levs.index(int(self._depths[clade.name])) ) - clade.r
                 else:
                     rad = (1.0 - clade.r) + lev_width
-                self._wing_radii.append( rad + rad_offset )
-                width = abs( lgr - lsm)
-                self._wing_widths.append( width )
-                self._wing_bottoms.append( clade.r )
-                self._wing_colors.append( clade.annotation_background_color )
+
+                # print "rad", rad
+
+                self._wing_radii.append(rad + rad_offset)
+                width = abs(lgr - lsm)
+
+                # print "width", width
+
+                self._wing_widths.append(width)
+                self._wing_bottoms.append(clade.r)
+                self._wing_colors.append(clade.annotation_background_color)
+
                 if clade.r + rad + rad_offset > self._wing_tot_offset:
                     self._wing_tot_offset = clade.r + rad + rad_offset
                     self._tot_offset = self._wing_tot_offset
 
+                    # print ''
+                    # print "self._wing_tot_offset", self._wing_tot_offset
+                    # print "self._tot_offset", self._tot_offset
+
                 if hasattr( clade, 'annotation') and clade.annotation:
                     lab, ext_key = clade.annotation, None
+
                     if lab.count(":"):
                         ext_key, lab = lab, lab.split(":")[0]
-                    self._label.append( lab )
+
+                    self._label.append(lab)
+
                     if ext_key:
                         self._ext_key.append( ext_key )
+
                     avgtheta = (lgr + lsm)*0.5
                     self._label_theta.append( avgtheta )
 
-                    rot90 = hasattr( clade, 'annotation_rotation') and clade.annotation_rotation
+                    rot90 = hasattr(clade, 'annotation_rotation') and clade.annotation_rotation
                     fract = 0.05 if rot90 else 0.5
+
                     if self.ignore_branch_len:
                         rad = 1.0 + lev_width * ( 1 + self._wing_levs.index(int(self._depths[clade.name]))  ) - lev_width * fract
                     else:
                         rad = 1.0 + lev_width * fract
 
+                    # print "rad", rad
+
                     self._label_r.append( rad + rad_offset )
                     rot = avgtheta * 180.0 / rpi + 90.0 if rpi < clade.theta%rpi2 < rpi2 else avgtheta * 180.0 / rpi - 90.0
                     rot = (rot + 360.0) % 360.0 + 1e-10
                     rot = -rot if rot90 else rot
+
+                    # print "rot", rot
+
                     self._label_rot.append( rot )
                     lfs = clade.annotation_font_size if hasattr(clade,"annotation_font_size") else self.default_annotation_font_size
                     self._annotation_font_size.append( lfs )
@@ -900,19 +962,13 @@ class CircTree(PpaTree):
                                             color=self._br_colors,
                                             linewidth= self.branch_thickness )
 
-
         if len( self._wing_thetas ) < 2:
             self._wing_thetas.append(0)
             self._wing_radii.append(0)
             self._wing_widths.append(0)
             self._wing_bottoms.append(0)
-        wbar = ax.bar( self._wing_thetas, self._wing_radii,
-                       width = self._wing_widths,
-                       bottom = self._wing_bottoms,
-                       alpha = self.annotation_background_alpha,
-                       color = self._wing_colors,
-                       edgecolor = self._wing_colors,
-                       )
+
+        wbar = ax.bar(self._wing_thetas, self._wing_radii, width=self._wing_widths, bottom=self._wing_bottoms, alpha=self.annotation_background_alpha, color=self._wing_colors, edgecolor=self._wing_colors, align='edge')
 
         for lev,d in self.int_levs.items():
             if 'internal_label' in d:
@@ -1077,7 +1133,6 @@ class CircTree(PpaTree):
                 pad_inches=out_pad, format=out_format,
                 # edgecolor=fc
             )
-
             plt.close()
         else:
             plt.show()
