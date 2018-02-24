@@ -143,7 +143,8 @@ class CircTree(PpaTree):
                 continue
             ll = len(line)
             if (ll < 2) or (ll > 4):
-                sys.stderr.write('Unrecognized annotation "{}", maybe spaces instead of tab?\n'.format(''.join(line)))
+                sys.stderr.write('Unrecognized annotation "{}", maybe spaces '
+                                 'instead of tabs?\n'.format(line))
                 exit(1)
             elif ll == 2:
                 legal( line[0] ) #  in legal_options, "%s is not a valid option" % line[1]
@@ -261,7 +262,7 @@ class CircTree(PpaTree):
                                     fn = kkk
                                 if vvv == '*':
                                     vvv = clade.name
-                                value = kkk + ":" + vvv
+                                value = kkk + ": " + vvv
                             elif v == '*':
                                 value = clade.name
                         cp.append(  Prop( value=value, ref='A:1', id_ref=k,
