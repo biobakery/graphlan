@@ -107,8 +107,8 @@ class CircTree(PpaTree):
 
     def annotate(   self, inp_file, out_file = None,
                     c = None, p = None, v = None ):
-        term_names = set([t.name for t in self.tree.get_terminals()])
-        nterm_names = set([t.name for t in self.tree.get_nonterminals()])
+        term_names = set([t.name for t in self.tree.get_terminals() if t.name])
+        nterm_names = set([t.name for t in self.tree.get_nonterminals() if t.name])
         clade_names = term_names | nterm_names
         props, gprops, classes = ddict(dict), {}, ddict(dict)
 
@@ -157,7 +157,12 @@ class CircTree(PpaTree):
                 elif clade in ext_attr_d:
                     prop,lev = clade,prop
                     legal( prop )
-                    ilev = int(lev)
+                    try:
+                        ilev = int(lev)
+                    except:
+                        print line
+                        asdasdasd
+
                     if prop not in gprops:
                         gprops[prop] = {}
                     if ilev not in gprops[prop]:
@@ -201,7 +206,12 @@ class CircTree(PpaTree):
                     else:
                         gprops[prop] = {ilev:val}
                 elif clade.split(lev_sep)[-1] in clade_names:
-                    ilev = int(lev)
+                    try:
+                        ilev = int(lev)
+                    except:
+                        print line
+                        asdasdasd
+
                     self._tmp_levs.add( ilev )
                     if prop in props[clade]:
                         # print "clade", clade
@@ -253,7 +263,13 @@ class CircTree(PpaTree):
                         value = v
                         if k == 'annotation':
                             if v.count(":"):
-                                kkk,vvv = v.split(":")
+
+                                try:
+                                    kkk,vvv = v.split(":")
+                                except:
+                                    print v
+                                    asdasdasd
+
                                 if kkk == '*':
                                     if fn is None:
                                         kkk = rkeys_gen.next()

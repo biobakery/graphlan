@@ -3,6 +3,10 @@ syntax: glob
 *.pyc
 *.DS_Store
 *.log
+examples/ade_pcopri
+examples/neisseriaceae/
 examples/caritro_fig6/
 examples/andrew_crc_cutc/
+examples/nic_erectale/
+examples/rand/
 examples/test/
