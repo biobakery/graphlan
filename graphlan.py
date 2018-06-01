@@ -14,8 +14,8 @@
 #------------------------------------------------------------------------------
 
 __author__ = 'Nicola Segata (nsegata@hsph.harvard.edu)'
-__version__ = '0.9.7'
-__date__ = '21 July 2014'
+__version__ = '1.1.2'
+__date__ = '1 June 2018'
 
 
 from sys import argv
