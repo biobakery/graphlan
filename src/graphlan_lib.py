@@ -1,3 +1,9 @@
+import sys
+
+if sys.version_info[0] > 2:
+    raise Exception("GraPhlAn requires Python 2, your current Python version is {}.{}.{}"
+                    .format(sys.version_info[0], sys.version_info[1], sys.version_info[2]))
+
 from Bio import Phylo
 from Bio.Phylo import PhyloXML
 from Bio.Phylo import PhyloXMLIO
@@ -160,7 +166,7 @@ class CircTree(PpaTree):
                     try:
                         ilev = int(lev)
                     except:
-                        print line
+                        print(line)
                         asdasdasd
 
                     if prop not in gprops:
@@ -209,7 +215,7 @@ class CircTree(PpaTree):
                     try:
                         ilev = int(lev)
                     except:
-                        print line
+                        print(line)
                         asdasdasd
 
                     self._tmp_levs.add( ilev )
@@ -267,7 +273,7 @@ class CircTree(PpaTree):
                                 try:
                                     kkk,vvv = v.split(":")
                                 except:
-                                    print v
+                                    print(v)
                                     asdasdasd
 
                                 if kkk == '*':
@@ -1055,7 +1061,7 @@ class CircTree(PpaTree):
             for p in ['ring_internal_separator_thickness','ring_external_separator_thickness']:
                 if p in v and float(v[p]) > 0.0:
                     if l not in self._ext_bottoms.keys():
-                        print '[e] External ring #'+str(l), 'defined, but not used. Please check your annotations file'
+                        print('[e] External ring #'+str(l), 'defined, but not used. Please check your annotations file')
                         continue
 
                     bot = offset + self._ext_bottoms[l]
@@ -1125,7 +1131,7 @@ class CircTree(PpaTree):
                 height = round(self._tot_offset * len(labels) * charsize * self.class_legend_marker_size * 10.) / 10.
                 plt.figure(figsize=(width, height))
             else:
-                print '[w] External legend not created, no annotated labels!'
+                print('[w] External legend not created, no annotated labels!')
 
         if labels:
             plt.figlegend(handles, labels, loc, labelspacing=0.1, frameon=False,
