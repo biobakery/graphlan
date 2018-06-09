@@ -147,10 +147,14 @@ class CircTree(PpaTree):
         for line in (l.strip().split('\t') for l in lines if l[0] != '#'):
             if not ''.join(line): # skip empty lines
                 continue
+    
             ll = len(line)
+
             if (ll < 2) or (ll > 4):
-                sys.stderr.write('Unrecognized annotation "{}", maybe spaces '
-                                 'instead of tabs?\n'.format(line))
+                sys.stderr.write('Unrecognized annotationline:\n> {}\nMaybe spaces instead of tabs or extra tabs?\n'.format('\t'.join(line)))
+                exit(1)
+            elif len([l for l in line if l]) != ll:
+                sys.stderr.write('Wrong annotation line:\n> {}\nSome of the values are empty!\n'.format('\t'.join(line)))
                 exit(1)
             elif ll == 2:
                 legal( line[0] ) #  in legal_options, "%s is not a valid option" % line[1]
@@ -204,7 +208,7 @@ class CircTree(PpaTree):
                     classes[clade][prop] = val
             elif ll == 4:
                 clade,prop,lev,val = line
-                legal( prop )
+                legal(prop)
                 if clade == '*':
                     ilev = int(lev)
                     if prop in gprops :
