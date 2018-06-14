@@ -192,7 +192,7 @@ branch_bracket_width [def 1.0] : the width of the branch bracket relative to
 
 branch_thickness [def 0.75] : the global thickness of the lines connecting taxa
 
-branch_color [def black] : the global thickness of the lines connecting taxa
+branch_color [def black] : the color of the lines connecting taxa
 
 branch_color_from_ancestor [def 1] : whether to use the color of the closest
     ancestor colored taxa for the downstream branches
