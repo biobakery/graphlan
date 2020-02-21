@@ -1,0 +1,3 @@
+[submodule "export2graphlan"]
+	path = export2graphlan
+	url = git@github.com:SegataLab/export2graphlan.git
