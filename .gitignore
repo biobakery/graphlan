@@ -1,4 +1,5 @@
 *.pyc
+.vscode/
 # ignore wiki's folder
 wiki/
 # ignore internal examples
