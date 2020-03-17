@@ -5,25 +5,22 @@ phylogenetically- and taxonomically-driven investigation.
 
 You can find below the instruction for installing and using the software.
 If you have any questions or comment please refer to the project home page at
-https://bitbucket.org/nsegata/graphlan
-or to the GraPhlAn google group:
-https://groups.google.com/d/forum/graphlan-users
-or email me at 
-nsegata@hsph.harvard.edu
+https://github.com/biobakery/graphlan
+or to thebioBakery help forum:
+https://forum.biobakery.org/
+
 
 
 ==============================================================================
 	INSTALLATION
 ..............................................................................
 
-GraPhlAn is available in bitbucket and should be obtained using Mercurial 
-(http://mercurial.selenic.com/) at https://bitbucket.org/nsegata/graphlan/
+GraPhlAn is available in GitHub and should be obtained at 
+https://github.com/biobakery/graphlan.
 
 
 In a Unix environment, this means you have to type:
-$ hg clone ssh://hg@bitbucket.org/nsegata/graphlan
-or
-$ hg clone https://hg@bitbucket.org/nsegata/graphlan
+$ git clone https://github.com/biobakery/graphlan.git
 
 This will download the GraPhlAn repository locally in the "graphlan" 
 subfolder. You then have to put this subfolder into the system path so that
@@ -34,9 +31,8 @@ Adding the above line into the bash configuration file will make the path
 addition permanent.
 
 For Windows or MacOS systems a similar procedure should be followed. Is is also
-possible (but not recommended) to obtain the software using the download link
-available at https://bitbucket.org/nsegata/graphlan/src ("get source" on the
-top right corner).
+possible to obtain the software using the releases page at
+https://github.com/biobakery/graphlan/releases.
 
 
 
@@ -68,19 +64,17 @@ and style of the taxa, labels, shadows, heatmaps, ...); graphlan_annotate.py
 generates PhyloXML files that can be converted into images by graphlan.py.
 
 
-				...........
-
-
 More specifically, here are all the options one can set for graphlan.py:
+
+				...........
 
 usage: graphlan.py [-h] [--format ['output_image_format']]
                    [--warnings WARNINGS] [--positions POSITIONS]
                    [--dpi image_dpi] [--size image_size] [--pad pad_in]
-                   [--external_legends] [-v]
+                   [--external_legends] [--avoid_reordering] [-v]
                    input_tree output_image
 
-GraPhlAn 0.9.7 (21 July 2014) AUTHORS: Nicola Segata
-(nsegata@hsph.harvard.edu)
+GraPhlAn 1.1.3 (5 June 2018) AUTHORS: Nicola Segata (nsegata@hsph.harvard.edu)
 
 positional arguments:
   input_tree            the input tree in PhyloXML format
@@ -107,6 +101,8 @@ optional arguments:
   --external_legends    specify whether the two external legends should be put
                         in separate file or keep them along with the image
                         (default behavior)
+  --avoid_reordering    specify whether the tree will be reorder or not
+                        (default the tree will be reordered)
   -v, --version         Prints the current GraPhlAn version and exit
 
 				...........
@@ -119,10 +115,13 @@ using the graphlan_annotate.py module. In addition to the tree topology and
 syntax of the annotation file is described comprehensively below. Here is the
 command line invocation syntax.
 
+
+				...........
+
 usage: graphlan_annotate.py [-h] [--annot annotation_file] [-v]
                             input_tree [output_tree]
 
-GraPhlAn annotate module 0.9 (22 August 2012) AUTHORS: Nicola Segata
+GraPhlAn annotate module 1.1.3 (5 June 2018) AUTHORS: Nicola Segata
 (nsegata@hsph.harvard.edu)
 
 positional arguments:
@@ -138,6 +137,7 @@ optional arguments:
                         specify the annotation file
   -v, --version         Prints the current GraPhlAn version and exit
 
+				...........
 
 
 
@@ -237,6 +237,7 @@ class_legend_marker_size [def. 1.0] : the size of the markers in the legend
 internal_labels_rotation [def. None] : set the internal labels orientation. It 
     does not work well, already put in the known issues list
 
+
 ------------------------------------------------------------------------------
     GRAPHICAL TREE OPTIONS:
 ------------------------------------------------------------------------------
@@ -285,6 +286,7 @@ be used to apply the same property to multiple parts of the clade' subtree
 * : the specified clade and all its descendants are affected by the property
 + : the specified clade and all its terminal nodes are affected 
 ^ : all (and only) the terminal nodes of the specified clade are affected
+
 
 ------------------------------------------------------------------------------
     ANNOTATION OPTIONS
@@ -340,6 +342,7 @@ internal_label_font_size [def. 8] : the font
 
 The rotational position of the labels can be specified with the 
 internal_labels_rotation parameter (see GLOBAL GRAPHICAL OPTIONS) 
+
 
 ------------------------------------------------------------------------------
     RING OPTIONS
@@ -414,9 +417,6 @@ ring_separator_color [def. 'k' for black]: the color of the circular line
     separating different ring levels.
 
 
-				...........
-
-
 ------------------------------------------------------------------------------
     COLORS
 ------------------------------------------------------------------------------
@@ -430,6 +430,7 @@ Colors are strings that can be:
 
 - a RGB color code in the hexadecimal format: #rrggbb, for example #FF0000
     corresponds to (full) red
+
 
 ------------------------------------------------------------------------------
     MARKER SHAPES:
@@ -465,4 +466,3 @@ markers.
 
 
 ==============================================================================
-
