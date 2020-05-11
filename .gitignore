@@ -1,7 +1,5 @@
 *.pyc
 .vscode/
-# ignore wiki's folder
-wiki/
 # ignore internal examples
 examples/ade_pcopri/
 examples/andrew_crc_cutc/
