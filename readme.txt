@@ -42,7 +42,7 @@ https://github.com/biobakery/graphlan/releases.
 
 You need to have the following programs and libraries installed:
 - python 2.7 or higher ( http://www.python.org/ )
-- the biopython python library 1.6 or higher ( http://biopython.org )
+- the biopython python library 1.76 ( http://biopython.org )
 - the matplotlib python library 1.1 or higher 
   ( http://matplotlib.sourceforge.net )
 
