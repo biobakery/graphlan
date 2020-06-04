@@ -66,7 +66,7 @@ def read_params(args):
     return vars(parser.parse_args())
 
 
-if __name__ == "__main__":
+def main():
     args = read_params( argv )
     ctree = CTree( args['intree'], args['warnings'] )
     ctree.positions = args['positions']
@@ -77,3 +77,6 @@ if __name__ == "__main__":
                out_pad=args['pad'],
                external_legends=args['external_legends'],
                reorder_tree=args['avoid_reordering'])
+
+if __name__ == "__main__":
+    main()
