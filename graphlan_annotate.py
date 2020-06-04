@@ -55,9 +55,11 @@ def read_params(args):
         help="Prints the current GraPhlAn version and exit" )
     return vars(parser.parse_args())
 
-
-if __name__ == "__main__":
+def main():
     args = read_params( argv )
     ctree = CTree( args['intree'] )
     ctree.annotate( args['annot'], args['outtree'] if args['outtree'] else args['intree'] ) # ,
     #                c = args['c'], p = args['p'], v = args['v']) 
+
+if __name__ == "__main__":
+    main()
