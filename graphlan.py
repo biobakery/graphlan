@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #------------------------------------------------------------------------------
 # NAME: graphlan.py
@@ -19,10 +19,6 @@ __date__ = '5 June 2018'
 
 
 import sys
-
-if sys.version_info[0] > 2:
-    raise Exception("GraPhlAn requires Python 2, your current Python version is {}.{}.{}"
-                    .format(sys.version_info[0], sys.version_info[1], sys.version_info[2]))
 
 from sys import argv
 from argparse import ArgumentParser

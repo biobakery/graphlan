@@ -1,9 +1,5 @@
 import sys
 
-if sys.version_info[0] > 2:
-    raise Exception("GraPhlAn requires Python 2, your current Python version is {}.{}.{}"
-                    .format(sys.version_info[0], sys.version_info[1], sys.version_info[2]))
-
 from Bio import Phylo
 from Bio.Phylo import PhyloXML
 from Bio.Phylo import PhyloXMLIO
@@ -25,7 +21,7 @@ import matplotlib
 matplotlib.use('Agg')
 matplotlib.rcParams['svg.fonttype'] = 'none'
 from pylab import *
-from pyphlan import PpaTree
+from .pyphlan import PpaTree
 
 
 clade_attr = ( ( 'clade_marker_size',                float, 20.0      ),
@@ -96,7 +92,7 @@ leg_attr = ( ( 'annotation_background_color',      str,   "w"  ),
              ( 'keys',                             str,   "?"  ) )
 
 lev_sep = '.'
-legal_options = set(zip(*clade_attr+ext_attr+int_attr+structural_attr+global_graphical_attr+branch_attr+leg_attr)[0]) | set(['class'])
+legal_options = set(list(zip(*clade_attr+ext_attr+int_attr+structural_attr+global_graphical_attr+branch_attr+leg_attr))[0]) | set(['class'])
 
 def random_keys(used_keys):
     n = 1
@@ -282,7 +278,7 @@ class CircTree(PpaTree):
 
                                 if kkk == '*':
                                     if fn is None:
-                                        kkk = rkeys_gen.next()
+                                        kkk = next(rkeys_gen)
                                     else:
                                         kkk = fn
                                     fn = kkk
