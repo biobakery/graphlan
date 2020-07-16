@@ -14,8 +14,8 @@
 #------------------------------------------------------------------------------
 
 __author__ = 'Nicola Segata (nsegata@hsph.harvard.edu)'
-__version__ = '1.1.3'
-__date__ = '5 June 2018'
+__version__ = '1.1.4'
+__date__ = '16 July 2020'
 
 
 import sys
