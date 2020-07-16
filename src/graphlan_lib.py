@@ -167,7 +167,7 @@ class CircTree(PpaTree):
                         ilev = int(lev)
                     except:
                         print(line)
-                        asdasdasd
+                        raise
 
                     if prop not in gprops:
                         gprops[prop] = {}
@@ -216,16 +216,16 @@ class CircTree(PpaTree):
                         ilev = int(lev)
                     except:
                         print(line)
-                        asdasdasd
+                        raise
 
                     self._tmp_levs.add( ilev )
                     if prop in props[clade]:
-                        # print "clade", clade
-                        # print "prop", prop
-                        # print "props[clade]", props[clade]
-                        # print "val", val
-                        # print "ilev", ilev
-                        # print
+                        # print("clade", clade)
+                        # print("prop", prop)
+                        # print("props[clade]", props[clade])
+                        # print("val", val)
+                        # print("ilev", ilev)
+                        # print()
 
                         props[clade][prop][ilev] = val
                     else:
@@ -235,11 +235,11 @@ class CircTree(PpaTree):
                     if ilev not in gprops[prop]:
                         gprops[prop][ilev] = ext_attr_d[prop][1]
                 else:
-                    # print ll
-                    # print clade.split(lev_sep)[-1]
-                    # print clade_names
-                    # print line
                     sys.stderr.write( "Classes not implemented for external annotations\n" )
+                    # print(ll)
+                    # print(clade.split(lev_sep)[-1])
+                    # print(clade_names)
+                    print(line)
                     exit(1)
 
 
@@ -274,7 +274,7 @@ class CircTree(PpaTree):
                                     kkk,vvv = v.split(":")
                                 except:
                                     print(v)
-                                    asdasdasd
+                                    raise
 
                                 if kkk == '*':
                                     if fn is None:
@@ -706,30 +706,30 @@ class CircTree(PpaTree):
 
     def set_wings( self ):
         if not self._wing_levs:
-            # print "not self._wing_levs", not self._wing_levs
+            # print("not self._wing_levs", not self._wing_levs)
 
             self._wing_tot_offset = 1.0 # self._max_depth
             self._tot_offset = 1.0
             return
 
         if self.ignore_branch_len:
-            # print "self.ignore_branch_len", self.ignore_branch_len
+            # print("self.ignore_branch_len", self.ignore_branch_len)
 
             self._wing_levs.sort(reverse=True)
             nlevs = len(self._wing_levs)
             minl, maxl = min(self._wing_levs), max(self._wing_levs)
 
-            # print "nlevs", nlevs
-            # print "minl", minl
-            # print "maxl", maxl
+            # print("nlevs", nlevs)
+            # print("minl", minl)
+            # print("maxl", maxl)
 
         lthetas = [l.theta for l in self.tree.get_terminals()]
         rad_offset = self.annotation_background_separation
         lev_width = self.annotation_background_width
 
-        # print "lthetas", lthetas
-        # print "rad_offset", rad_offset
-        # print "lev_width", lev_width
+        # print("lthetas", lthetas)
+        # print("rad_offset", rad_offset)
+        # print("lev_width", lev_width)
 
         def set_wings_rec( clade ):
             if hasattr(clade, 'annotation') and not hasattr(clade, 'annotation_background_color'):
@@ -740,13 +740,13 @@ class CircTree(PpaTree):
 
             if hasattr(clade, 'annotation_background_color'):
                 if clade.is_terminal(): # same as non-terminal ??
-                    # print "clade.theta", clade.theta
-                    # print ''
-                    # print "clade.pc", clade.pc
-                    # print "clade.nc", clade.nc
-                    # print ''
-                    # print "clade.pc.theta", clade.pc.theta
-                    # print "clade.nc.theta", clade.nc.theta
+                    # print("clade.theta", clade.theta)
+                    # print()
+                    # print("clade.pc", clade.pc)
+                    # print("clade.nc", clade.nc)
+                    # print()
+                    # print("clade.pc.theta", clade.pc.theta)
+                    # print("clade.nc.theta", clade.nc.theta)
 
                     cpc = clade.theta + (clade.theta-clade.nc.theta) if clade.pc is None else clade.pc.theta
                     cnc = clade.theta - (clade.pc.theta-clade.theta) if clade.nc is None else clade.nc.theta
@@ -760,17 +760,17 @@ class CircTree(PpaTree):
                     lsm = (clade.theta + cpc) * 0.5
                     lgr = (clade.theta + cnc) * 0.5
                 else:
-                    # print "clade.fc.pc", clade.fc.pc
-                    # print "clade.lc.nc", clade.lc.nc
-                    # print ''
-                    # print "clade.fc.theta", clade.fc.theta
-                    # print "clade.lc.theta", clade.lc.theta
-                    # print ''
-                    # print "clade.fc.pc.theta", clade.fc.pc.theta
-                    # print "clade.fc.nc.theta", clade.fc.nc.theta
-                    # print ''
-                    # print "clade.lc.pc.theta", clade.lc.pc.theta
-                    # print "clade.lc.nc.theta", clade.lc.nc.theta
+                    # print("clade.fc.pc", clade.fc.pc)
+                    # print("clade.lc.nc", clade.lc.nc)
+                    # print()
+                    # print("clade.fc.theta", clade.fc.theta)
+                    # print("clade.lc.theta", clade.lc.theta)
+                    # print()
+                    # print("clade.fc.pc.theta", clade.fc.pc.theta)
+                    # print("clade.fc.nc.theta", clade.fc.nc.theta)
+                    # print()
+                    # print("clade.lc.pc.theta", clade.lc.pc.theta)
+                    # print("clade.lc.nc.theta", clade.lc.nc.theta)
 
                     f, t = clade.fc.theta, clade.fc.pc.theta if clade.fc.pc else clade.fc.nc.theta
                     cpc = min(abs(f-t), abs(f+rpi2-t), abs(t+rpi2-f))
@@ -780,11 +780,11 @@ class CircTree(PpaTree):
                     lsm = clade.fc.theta - cpc * 0.5
                     lgr = clade.lc.theta + cnc * 0.5
 
-                # print ''
-                # print "cpc", cpc
-                # print "cnc", cnc
-                # print "lsm", lsm
-                # print "lgr", lgr
+                # print()
+                # print("cpc", cpc)
+                # print("cnc", cnc)
+                # print("lsm", lsm)
+                # print("lgr", lgr)
 
                 self._wing_thetas.append(lsm)
 
@@ -793,12 +793,12 @@ class CircTree(PpaTree):
                 else:
                     rad = (1.0 - clade.r) + lev_width
 
-                # print "rad", rad
+                # print("rad", rad)
 
                 self._wing_radii.append(rad + rad_offset)
                 width = abs(lgr - lsm)
 
-                # print "width", width
+                # print("width", width)
 
                 self._wing_widths.append(width)
                 self._wing_bottoms.append(clade.r)
@@ -808,9 +808,9 @@ class CircTree(PpaTree):
                     self._wing_tot_offset = clade.r + rad + rad_offset
                     self._tot_offset = self._wing_tot_offset
 
-                    # print ''
-                    # print "self._wing_tot_offset", self._wing_tot_offset
-                    # print "self._tot_offset", self._tot_offset
+                    # print()
+                    # print("self._wing_tot_offset", self._wing_tot_offset)
+                    # print("self._tot_offset", self._tot_offset)
 
                 if hasattr( clade, 'annotation') and clade.annotation:
                     lab, ext_key = clade.annotation, None
@@ -834,14 +834,14 @@ class CircTree(PpaTree):
                     else:
                         rad = 1.0 + lev_width * fract
 
-                    # print "rad", rad
+                    # print("rad", rad)
 
                     self._label_r.append( rad + rad_offset )
                     rot = avgtheta * 180.0 / rpi + 90.0 if rpi < clade.theta%rpi2 < rpi2 else avgtheta * 180.0 / rpi - 90.0
                     rot = (rot + 360.0) % 360.0 + 1e-10
                     rot = -rot if rot90 else rot
 
-                    # print "rot", rot
+                    # print("rot", rot)
 
                     self._label_rot.append( rot )
                     lfs = clade.annotation_font_size if hasattr(clade,"annotation_font_size") else self.default_annotation_font_size
@@ -1122,7 +1122,7 @@ class CircTree(PpaTree):
                     bbox_extra_artists=handles, pad_inches=out_pad, format=out_format)
                 plt.close()
         # else:
-        #     print '[w] External annotation not created, no annotated labels!'
+        #     print('[w] External annotation not created, no annotated labels!')
 
         if external_legends:
             if labels: # need to check if there are annotated labels!
