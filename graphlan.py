@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #------------------------------------------------------------------------------
 # NAME: graphlan.py
@@ -14,15 +14,11 @@
 #------------------------------------------------------------------------------
 
 __author__ = 'Nicola Segata (nsegata@hsph.harvard.edu)'
-__version__ = '1.1.3'
-__date__ = '5 June 2018'
+__version__ = '1.1.4'
+__date__ = '16 July 2020'
 
 
 import sys
-
-if sys.version_info[0] > 2:
-    raise Exception("GraPhlAn requires Python 2, your current Python version is {}.{}.{}"
-                    .format(sys.version_info[0], sys.version_info[1], sys.version_info[2]))
 
 from sys import argv
 from argparse import ArgumentParser
