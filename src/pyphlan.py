@@ -15,6 +15,13 @@ import collections as colls
 import sys
 #core_test = lambda ok,tot,pr: 1.0-st.binom.sf(ok,tot,pr)
 
+###############################################################################
+#  Modifications log by George Weingart 2022/01/13                            #
+#                                                                             #
+#  if names contains None in names = set([c.name for c in clades])            #
+#  then  return sorted(names)  throws an error                                #
+#  so I removed Nones from the names set and then returned it sorted          #
+###############################################################################
 lev_sep = "."
 
 # Here are three functions that I'd love to see in Biopython but they
@@ -737,5 +744,9 @@ class PpaTree:
             names = set(rec_name(self.tree.root))
         else:
             names = set([c.name for c in clades])
-        return sorted(names)
+        ####   Modification by GW 20220113
+        tempnames = [i for i in names if i]
+        names = tempnames
 
+        ####   End Modification
+        return sorted(names)
