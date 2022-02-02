@@ -745,8 +745,7 @@ class PpaTree:
         else:
             names = set([c.name for c in clades])
         ####   Modification by GW 20220113
-        tempnames = [i for i in names if i]
-        names = tempnames
-
+        #tempnames = [i for i in names if i]
+        #names = tempnames
         ####   End Modification
-        return sorted(names)
+        return sorted([i for i in names if i])
