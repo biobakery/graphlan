@@ -239,7 +239,7 @@ class CircTree(PpaTree):
                     # print(ll)
                     # print(clade.split(lev_sep)[-1])
                     # print(clade_names)
-                    print(line)
+                    # print(line)
                     exit(1)
 
 
