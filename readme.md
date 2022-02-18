@@ -442,3 +442,6 @@ markers.
 - `d` : thin_diamond marker
 - `|` : vline marker
 - `_` : hline marker
+
+## Contributions
+Thanks go to these wonderful people:
