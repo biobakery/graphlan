@@ -1107,7 +1107,7 @@ class CircTree(PpaTree):
                 ax = fig_annot.add_subplot(111, frame_on=False, xticks=[], yticks=[])
 
             ll = [ax.scatter(0.0, 0.0, s=0.0)] * len(self._ext_key)
-            plt.figlegend(ll, sorted(self._ext_key), 'upper left', frameon=False,
+            plt.figlegend(ll, sorted(self._ext_key), loc='upper left', frameon=False,
                 shadow=False, scatterpoints=1, handlelength=0, markerscale=0.0,
                 handletextpad=0.2, ncol=1, labelspacing=0.1,
                 prop={'size': self.annotation_legend_font_size})
@@ -1134,7 +1134,7 @@ class CircTree(PpaTree):
                 print('[w] External legend not created, no annotated labels!')
 
         if labels:
-            plt.figlegend(handles, labels, loc, labelspacing=0.1, frameon=False,
+            plt.figlegend(handles, labels, loc=loc, labelspacing=0.1, frameon=False,
                 markerscale=self.class_legend_marker_size, scatterpoints=1,
                 handletextpad=0.2, prop={'size': self.class_legend_font_size})
 
