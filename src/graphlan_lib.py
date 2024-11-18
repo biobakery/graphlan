@@ -143,7 +143,7 @@ class CircTree(PpaTree):
         for line in (l.strip().split('\t') for l in lines if l[0] != '#'):
             if not ''.join(line): # skip empty lines
                 continue
-    
+
             ll = len(line)
 
             if (ll < 2) or (ll > 4):
@@ -826,8 +826,21 @@ class CircTree(PpaTree):
                     avgtheta = (lgr + lsm)*0.5
                     self._label_theta.append( avgtheta )
 
-                    rot90 = hasattr(clade, 'annotation_rotation') and clade.annotation_rotation
-                    fract = 0.05 if rot90 else 0.5
+                    # Default values for fract and rot90
+                    fract = 0.5
+                    rot90 = False
+
+                    # If the option 'annotation_rotation' is given as global option and != 0, rotate
+                    if self.default_annotation_rotation:
+                        fract = 0.05
+                        rot90 = True
+
+                    clade_rot90 = hasattr(clade, 'annotation_rotation') and clade.annotation_rotation
+
+                    # If the option 'annotation_rotation' is given as clade option, overwrite fract and rot90
+                    if hasattr(clade, 'annotation_rotation'):
+                        fract = 0.05 if clade_rot90 else 0.5
+                        rot90 = clade_rot90
 
                     if self.ignore_branch_len:
                         rad = 1.0 + lev_width * ( 1 + self._wing_levs.index(int(self._depths[clade.name]))  ) - lev_width * fract
